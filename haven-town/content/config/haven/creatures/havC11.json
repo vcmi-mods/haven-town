@@ -1,0 +1,118 @@
+{
+	"havC11":
+	{
+		"name" :
+		{
+			"plural" : "Gaint Turtles",
+			"singular" : "Gaint Turtle"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "haven",
+		"aiValue" : 1963,
+		"attack" : 13,
+		"cost" :
+		{
+			"gold" : 900
+			
+		},
+		"damage" :
+		{
+			 "max" : 16,
+			 "min" : 13
+		},
+		"defense" : 17,
+		"fightValue" : 1704,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav11.def",
+			"map" : "haven/map/AVWHAV11.def",
+			"iconSmall" : "haven/iconsSmall/port11S.bmp",
+			"iconLarge" : "haven/iconsBig/port11.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.60,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			    "flight" : 1.00
+			}
+	
+		},
+		"growth" : 2,	
+		"hitPoints" : 90,
+		"doubleWide" : true,
+		"level" : 6,
+		"upgrades":
+		[
+			"havC12"
+		],
+		"sound" :
+		{
+			"attack": "CGORATTK.wav",			
+			"defend" : "CGORDFND.wav",
+			"killed" : "HYDRKILL.wav",
+			"move": "HYDRMOVE.wav",			
+			"wince": "HYDRWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" : 
+		{
+            "shield" : { "subtype" : 0, "type" : "GENERAL_DAMAGE_REDUCTION", "val" : 30 }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

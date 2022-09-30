@@ -1,0 +1,67 @@
+{
+	"havMhero16" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "Haniyyah",
+			"biography" : "Mermaid Haniyyah is popular from harbor residents. She often brings corals and pearls from the sea to exchange some stuffs from local people. She is also skilled at healing, which made her become more popular.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Cure",
+				"description" : "Casts Cure with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units)."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero16/skill16S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero16/skill16.bmp",
+			"large" : "haven/heroes/havHero16/hero16.bmp",
+			"small" : "haven/heroes/havHero16/hero16S.bmp"
+		},
+		"spellbook": [ "cure" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 5
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"weakness" : {
+					"addInfo" : 0,
+					"subtype" : "spell.cure",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				}
+			}
+		}	
+	}
+}

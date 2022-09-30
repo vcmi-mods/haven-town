@@ -1,0 +1,153 @@
+{
+	"havC06":
+	{
+		"name" :
+		{
+			"plural" : "Treasure Hunters",
+			"singular" : "Treasure Hunter"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "haven",
+		"aiValue" : 281,
+		"attack" : 10,
+        "cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 4
+		},
+		"defense" : 7,
+		"fightValue" : 287,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav06.def",
+			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV06.def",
+			"iconSmall" : "haven/iconsSmall/port6S.bmp",
+			"iconLarge" : "haven/iconsBig/port6.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "PELFX.DEF",	
+			    "attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+		},
+		"growth" : 7,
+		"horde" : 3,
+		"hitPoints" : 15,
+		"level" : 3,
+		"shots" : 12,
+		"sound" :
+		{
+			"attack" : "haven/CHV3ATTK.wav",
+			"defend" : "haven/CHV3DFND.wav",
+			"killed" : "haven/CHV3KILL.wav",
+			"move": "haven/CHV3MOVE.wav",
+			"shoot": "haven/CHV3SHOT.wav",
+			"wince" : "haven/CHV3WNCE.wav"
+		},
+		"speed" : 7,
+		"abilities" :
+		{
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"caster": {
+				"type" : "SPELL_AFTER_ATTACK",
+				"addInfo" : 1001,
+				"subtype" : "spell.smokeShell",
+				"val" : 30
+			},
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 30
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : 0, //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : 1, //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		]
+	}
+}

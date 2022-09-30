@@ -1,0 +1,79 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"havD01" : {
+				"name" : "Stockpile",
+				"creatures" : [[ "havC01" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav01Map.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				}
+			},
+			"havD02" : {
+				"name" : "Reef Aisle",
+				"creatures" : [[ "havC03" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "haven/adventure-map/Hav02Map.def",
+						"mask" : [ "VVV", "VBA"  ]
+					}
+				}
+			},			
+			"havD03" : {
+				"name" : "Harbour Guild",
+				"creatures" : [[ "havC05" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav03Map.def",
+						"mask" : [ "VVV", "VBV", "VAB" ]
+					}
+				}
+			},
+			"havD04" : {
+				"name" : "Coral Reef",
+				"creatures" : [[ "havC07" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav04Map.def",
+						"mask" : [ "VVV", "VBA" ]
+					}
+				}
+			},
+			"havD05" : {
+				"name" : "Spiritual Spring",
+				"creatures" : [[ "havC09" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav05Map.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+					}
+				}
+			},
+			"havD06" : {
+				"name" : "Turtle Hatchery",
+				"creatures" : [[ "havC11" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav06Map.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				}
+			},
+			"havD07" : {
+				"name" : "Abyssal Gate",
+				"creatures" : [[ "havC13" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav07Map.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}

@@ -1,0 +1,148 @@
+{
+	"havC08":
+	{
+		"name" :
+		{
+			"plural" : "Coral Mermaids",
+			"singular" : "Coral Mermaid"
+		},
+		"faction" : "haven",		
+		"advMapAmount" :
+		{
+			 "min" : 10,
+			 "max" : 16
+		},
+		"level" : 4,
+		"attack" : 9,
+		"defense" : 12,
+		"damage" :
+		{
+			 "min" : 7,
+			 "max" : 9
+		},
+		"growth" : 4,
+		"horde" : 2,
+		"hitPoints" : 30,
+		"speed" : 6,
+		"fightValue" : 477,
+		"aiValue" : 486,
+		"cost" :
+		{
+			"gold" : 370
+		},
+		"doubleWide" : true,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav08.def",
+			"map" : "haven/map/AVWHAV08.def",
+			"iconSmall" : "haven/iconsSmall/port8S.bmp",
+			"iconLarge" : "haven/iconsBig/port8.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			}
+		},
+		"sound" :
+		{
+			"attack" : "haven/CHV4ATTK.wav",
+			"defend" : "haven/CHV4DFND.wav",
+			"killed" : "haven/CHV4KILL.wav",
+			"move": "haven/CHV4MOVE.wav",
+			"wince" : "haven/CHV4WNCE.wav"
+        },
+		"abilities" :
+		{
+			"lucky" :
+			{
+				"type" : "SELF_LUCK"
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			}, 	
+			"castsFortune" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fortune",
+				"val" : 2
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 200
+			}, 	
+			"hypnotize" : {
+				"addInfo" : 0,
+				"subtype" : "spell.mermaidSeduce",
+				"type" : "SPELL_AFTER_ATTACK",
+				"val" : 20
+			},
+			"whirlpoolProtection" : 
+			{ 
+				"type" : "WHIRLPOOL_PROTECTION", 
+				"propagator" : "HERO"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			}
+		]
+	}
+}

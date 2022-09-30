@@ -1,0 +1,106 @@
+{
+	"havC01":
+	{
+		"name" :
+		{
+			"plural" : "Wererats",
+			"singular" : "Wererat"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 50,
+			 "min" : 20
+		},
+		"faction" : "haven",
+		"aiValue" : 99,
+		"attack" : 4,
+		"cost" :
+		{
+			"gold" : 55
+		},
+		"damage" :
+		{
+			 "max" : 2,
+			 "min" : 1
+		},
+		"defense" : 3,
+		"fightValue" : 109,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav01.def",
+			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV01.def",
+			"iconSmall" : "haven/iconsSmall/port1S.bmp",
+			"iconLarge" : "haven/iconsBig/port1.bmp",
+			"timeBetweenFidgets" : 1
+		},
+
+		"growth" : 14,
+		"hitPoints" : 8,
+		"level" : 1,
+		"upgrades":
+		[
+			"havC02"
+		],
+		"sound" :
+		{
+			"attack" : "haven/CHV1ATTK.wav",
+			"defend" : "haven/CHV1DFND.wav",
+			"killed" : "haven/CHV1KILL.wav",
+			"move": "haven/CHV1MOVE.wav",
+			"wince" : "haven/CHV1WNCE.wav"
+		},
+		"speed" : 4,
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1, //min
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2, //max
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			}
+		]
+	}
+}

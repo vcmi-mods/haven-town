@@ -1,0 +1,69 @@
+{
+	"havMhero10" :
+	{
+		"class" : "havMhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "Marcus",
+			"biography" : "Marcus claims he is an oceanographer. He always sit on the beach and looking at sea for a whole day. His theory of sea creature is demonstrated as useless, but he never stop his thought for oceanology.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Intelligence",
+				"description" : "Receives a 5% per level bonus to Intelligence skill percentage."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero10/skill10S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero10/skill10.bmp",
+			"large" : "haven/heroes/havHero10/hero10.bmp",
+			"small" : "haven/heroes/havHero10/hero10S.bmp"
+		},
+		"spellbook": [ "bless" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"intelligence" : {
+					"subtype" : "skill.intelligence",
+					"type" : "SECONDARY_SKILL_PREMY",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

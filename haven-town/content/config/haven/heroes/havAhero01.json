@@ -1,0 +1,68 @@
+{
+	"havAhero01" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "Ethan",
+			"biography" : "Ethan claimed he is a master of archery. He used to join the union of pirates in Regna, and devoted himself for this union.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Archery",
+				"description" : "Receives a 5% per level bonus to Archery skill."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero1/skill1S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero1/skill1.bmp",
+			"large" : "haven/heroes/havHero1/hero1.bmp",
+			"small" : "haven/heroes/havHero1/hero1S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"archery" : {
+					"subtype" : "skill.archery",
+					"type" : "SECONDARY_SKILL_PREMY",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

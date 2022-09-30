@@ -1,0 +1,127 @@
+{
+	"havC09":
+	{
+		"name" :
+		{
+			"plural" : "Marids",
+			"singular" : "Marid"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"faction" : "haven",
+		"aiValue" : 812,
+		"attack" : 12,
+		"cost" :
+		{
+			"gold" : 450
+		},
+		"damage" :
+		{
+			 "max" : 15,
+			 "min" : 12
+		},
+		"defense" : 11,
+		"fightValue" : 760,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav09.def",
+			"map" : "haven/map/AVWHAV09.def",
+			"iconSmall" : "haven/iconsSmall/port9S.bmp",
+			"iconLarge" : "haven/iconsBig/port9.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.60,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			    "flight" : 1.00
+			}
+	
+		},
+
+        "growth" : 3,
+		"hitPoints" : 50,
+		"level" : 5,
+        "upgrades":
+		[
+			"havC10"
+		],
+		"sound" :
+		{
+			"attack" : "haven/CHV5ATTK.wav",
+			"defend" : "haven/CHV5DFND.wav",
+			"killed" : "haven/CHV5KILL.wav",
+			"move": "haven/CHV5MOVE.wav",
+			"wince" : "haven/CHV5WNCE.wav"
+ 		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+			    "type" : "FLYING"
+			},
+			"immuneToWater" :
+			{
+				"type" : "WATER_IMMUNITY",
+				"subtype" : 2 //immune to damage spells only
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION",
+				"subtype" : 1, //shield effect
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		]
+	}
+}
+

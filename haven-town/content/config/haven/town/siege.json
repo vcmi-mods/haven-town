@@ -1,0 +1,58 @@
+{
+	"haven" :
+	{
+		"town" :
+		{
+			"siege" :
+			{
+				"shooter" : "havC05",
+				"imagePrefix" : "haven/siege/sgfg",
+				"gate" :
+				{
+					"arch" : { "x" : 476, "y" : 219 },
+					"gate" : { "x" : 394, "y" : 240 }
+				},
+				"moat" :
+				{
+					"bank" : { "x" : 406, "y" : 80 },
+					"moat" : { "x" : 406, "y" : 80 }
+				},
+				"static" :
+				{
+					"background" : { "x" : 600, "y" : 46 },
+					"bottom" : { "x" : 514, "y" : 342 },
+					"top" : { "x" : 502, "y" : 79 }
+				},
+				"towers" :
+				{
+					"bottom" :
+					{
+						"battlement" : { "x" : 633, "y" : 514 },
+						"creature" : { "x" : 397, "y" : 305 },
+						"tower" : { "x" : 633, "y" : 514 }
+					},
+					"keep" :
+					{
+						"battlement" : { "x" : 705, "y" : 149 },
+						"creature" : { "x" : 528, "y" : -32 },
+						"tower" : { "x" : 705, "y" : 149 }
+					},
+					"top" :
+					{
+						"battlement" : { "x" : 581, "y" : 30 },
+						"creature" : { "x" : 342, "y" : -182 },
+						"tower" : { "x" : 581, "y" : 30 }
+					}
+				},
+				"walls" :
+				{
+					"bottom" : { "x" : 553, "y" : 413 },
+					"bottomMid" : { "x" : 483, "y" : 299 },
+					"upper" : { "x" : 546, "y" : 52 },
+					"upperMid" : { "x" : 502, "y" : 174 }
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,114 @@
+{
+	"havC03":
+	{
+		"name" :
+		{
+			"plural" : "Divers",
+			"singular" : "Diver"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 16
+		},
+		"faction" : "haven",
+		"aiValue" : 192,
+		"attack" : 7,
+        "cost" :
+		{
+			"gold" : 120
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 2
+		},
+		"defense" : 5,
+		"fightValue" : 196,
+		"hasDoubleWeek": true,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav03.def",
+			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV03.def",
+			"iconSmall" : "haven/iconsSmall/port3S.bmp",
+			"iconLarge" : "haven/iconsBig/port3.bmp",
+			"timeBetweenFidgets" : 1
+		},
+
+		"growth" : 8,
+		"hitPoints" : 10,
+		"level" : 2,
+		"upgrades":
+		[
+			"havC04"
+		],
+		"sound" :
+		{
+			"attack": "PLIZATTK.wav",
+			"defend": "PLIZDFND.wav",
+			"killed": "TROGKILL.wav",
+			"move": "PLIZMOVE.wav",
+			"wince": "BASLWNCE.wav"
+		},
+		"speed" : 5,		  
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"values" : [ false, false, false, false, false, false, false, false, true, true ]
+			}
+		]
+	}
+}

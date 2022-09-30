@@ -1,0 +1,68 @@
+{
+	"havAhero02" :
+	{
+		"class" : "havAhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "Irene",
+			"biography" : "Irene was born in an island in Regna and she joined the pirates at a very young age. She battled for establishing the great union of pirates, but she supposes her life in Regnan Union is not ideal. Maybe this union is not suitable for a pirate who yearns for real freedom.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Scouting",
+				"description" : "Receives a 5% per level bonus to Scouting skill."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero2/skill2S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero2/skill2.bmp",
+			"large" : "haven/heroes/havHero2/hero2.bmp",
+			"small" : "haven/heroes/havHero2/hero2S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"archery" : {
+					"subtype" : "skill.scouting",
+					"type" : "SECONDARY_SKILL_PREMY",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

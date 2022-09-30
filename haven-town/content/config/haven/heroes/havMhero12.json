@@ -1,0 +1,69 @@
+{
+	"havMhero12" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "Beth",
+			"biography" : "Beth lost her family at a very young age, and she became the youngest crew mate from pirates. No one will underestimate her as a girl, because she is more dangerous than male pirates.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Offense",
+				"description" : "Receives a 5% per level bonus to Offense skill percentage."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero12/skillS12.bmp",
+			"specialtyLarge" : "haven/heroes/havHero12/skill12.bmp",
+			"large" : "haven/heroes/havHero12/hero12.bmp",
+			"small" : "haven/heroes/havHero12/hero12S.bmp"
+		},
+		"spellbook": [ "bloodlust" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"archery" : {
+					"subtype" : "skill.offence",
+					"type" : "SECONDARY_SKILL_PREMY",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE"
+				}
+			}
+		}	
+	}
+}

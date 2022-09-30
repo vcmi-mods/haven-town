@@ -1,0 +1,73 @@
+{
+	"smokeShell" : {
+		"type": "ability",
+		"name": "Smoke Shell",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"targetType": "CREATURE",
+		"level": 1,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+		"animation":{
+			"affect":["CSGRCK"]
+		},
+		"flags" : {
+			"negative": true
+		},
+		"targetCondition" : {
+			"allOf" : {
+				"bonus.SHOOTER" : "absolute"
+			}
+		},
+		"sounds": {
+			"cast": "DISEASE"
+		},
+		"graphics":
+		{
+			"iconEffect": "haven/spells/havspell3.bmp"
+		},
+		"levels" : {
+			"base":{
+				"range": "0-1",
+				"power": 10,
+				"aiValue": 20,
+				"targetModifier":{"smart":true},
+				"effects" : {
+					"primarySkill" : {
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primSkill.attack",
+						"val" : -5,
+						"effectRange" : "ONLY_DISTANCE_FIGHT",
+						"duration" : ["N_TURNS"],
+						"turns" : 3
+					}
+				},
+			"description": "{smoke shell}\r\n\r\nReduce distance attack by 5."
+			},
+			"none":
+			{	 
+				"cost": 0
+			},
+			"basic":
+			{	 
+				"cost": 0
+			},
+			"advanced":
+			{	 
+				"cost": 0
+			},
+			"expert":
+			{
+				"cost": 0
+			}
+		}
+	}
+}

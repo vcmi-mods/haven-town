@@ -1,0 +1,84 @@
+{
+	"havAhero" : 
+	{
+		"name" : "Admiral",
+		"animation" :
+		{
+			"battle" : 
+			{
+				"female" : "haven/HAVbatt01",
+				"male"   : "haven/HAVbatt02"
+			}
+		},	
+		"mapObject" : { "templates" : { "default" : { "animation" : "haven/HAVmap02" }}},
+		"commander" : "havYachtswoman",
+		"faction" : "haven",
+		"affinity" : "might",
+		"primarySkills" :
+		{
+			"attack"     : 3,
+			"defence"    : 1,
+			"spellpower" : 1,
+			"knowledge"  : 1
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 45,
+			"defence"    : 45,
+			"spellpower" : 5,
+			"knowledge"  : 5
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 30,
+			"spellpower" : 20,
+			"knowledge"  : 20
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 4,
+			"archery"      : 7,
+			"logistics"    : 5,
+			"scouting"     : 6,
+			"diplomacy"    : 2,
+			"navigation"   : 10,
+			"leadership"   : 6,
+			"wisdom"       : 2,
+			"mysticism"    : 2,
+			"luck"         : 4,
+			"ballistics"   : 7,
+			"eagleEye"     : 0,
+			"necromancy"   : 0,
+			"estates"      : 5,
+			"fireMagic"    : 1,
+			"airMagic"     : 2,
+			"waterMagic"   : 2,
+			"earthMagic"   : 2,
+			"scholar"      : 2,
+			"tactics"      : 6,
+			"artillery"    : 6,
+			"learning"     : 4,
+			"offence"      : 6,
+			"armorer"      : 6,
+			"intelligence" : 3,
+			"sorcery"      : 3,
+			"resistance"   : 5,
+			"firstAid"     : 4
+		},
+		"defaultTavern" : 5,
+		"tavern" :
+		{
+			"castle"     : 4,
+			"rampart"    : 4,
+			"tower"      : 4,
+			"inferno"    : 4,
+			"necropolis" : 4,
+			"dungeon"    : 4,
+			"stronghold" : 4,
+			"fortress"   : 4,
+			"conflux"    : 4,
+			"haven"   : 4                  
+		}
+	}
+}

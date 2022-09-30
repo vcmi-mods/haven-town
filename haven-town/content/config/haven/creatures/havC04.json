@@ -1,0 +1,117 @@
+{
+	"havC04":
+	{
+		"name" :
+		{
+			"plural" : "Deep Ones",
+			"singular" : "Deep One"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "haven",
+		"aiValue" : 220,
+		"attack" : 8,
+        "cost" :
+		{
+			"gold" : 160
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 3
+		},
+		"defense" : 6,
+		"fightValue" : 226,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav04.def",
+			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV04.def",
+			"iconSmall" : "haven/iconsSmall/port4S.bmp",
+			"iconLarge" : "haven/iconsBig/port4.bmp",
+			"timeBetweenFidgets" : 1
+		},
+
+		"growth" : 8,
+		"hitPoints" : 14,
+		"level" : 2,
+		"abilities" :
+        {
+			"extraRetaliation" :
+			{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 1
+			}
+		},
+		"sound" :
+		{
+			"attack": "PLIZATTK.wav",
+			"defend": "PLIZDFND.wav",
+			"killed": "TROGKILL.wav",
+			"move": "PLIZMOVE.wav",
+			"wince": "BASLWNCE.wav"
+		},
+		"speed" : 6,		  
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"values" : [ false, false, false, false, false, false, false, false, true, true ]
+			}
+		]
+	}
+}

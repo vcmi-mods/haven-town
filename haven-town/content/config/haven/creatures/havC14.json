@@ -1,0 +1,154 @@
+{
+	"havC14":
+	{
+		"name" :
+		{
+			"plural" : "Imperial Leviathans",
+			"singular" : "Imperial Leviathan"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 8,
+			 "min" : 3
+		},
+		"faction" : "haven",
+		"aiValue" : 6377,
+		"attack" : 26,
+		"cost" :
+		{
+			"gold" : 4000,
+			"sulfur" : 2
+		},
+		"damage" :
+		{
+			 "max" : 50,
+			 "min" : 30
+		},
+		"defense" : 22,
+		"fightValue" : 4990,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav14.def",
+			"map" : "haven/map/AVWHAV14.def",
+			"iconSmall" : "haven/iconsSmall/port14S.bmp",
+			"iconLarge" : "haven/iconsBig/port14.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			    "flight" : 1.00
+			}
+	
+		},
+		"growth" : 1,
+		"hitPoints" : 300,
+		"level" : 7,
+	    "doubleWide" : true,		
+		"sound" :
+		{
+			"attack" : "haven/CHV7ATTK.wav",
+			"defend" : "haven/CHV7DFND.wav",
+			"killed" : "haven/CHV7KILL.wav",
+			"move": "haven/CHV7MOVE.wav",
+			"wince" : "haven/CHV7WNCE.wav"
+		},
+		"speed" : 11,
+		"abilities" :
+		{
+			"dragon" : 
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			},
+			"lifeEater" :
+			{
+				"type": "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.seaWrath",
+				"val" : 100
+			},
+			"KING1" :
+			{
+				"type" : "KING1"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 2, 3, 3, 3, 3, 3, 3, 4]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEAR"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "EARTH_IMMUNITY",
+				"subtype" : 0, //shield effect
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"//shield effect
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			}
+		]
+	}
+}

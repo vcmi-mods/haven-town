@@ -1,0 +1,60 @@
+{
+	"havAhero03" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "Maxon",
+			"biography" : "Maxon found giant turtles in a cove far from Regna islands. Now he tamed some of them and bring them back to his hometown. His experience impressed all of his friends. ",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Gaint Turtles",
+				"description" : "Increases Speed of any Gaint Turtle or Dragon Turtle by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up)"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero3/skill3S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero3/skill3.bmp",
+			"large" : "haven/heroes/havHero3/hero3.bmp",
+			"small" : "haven/heroes/havHero3/hero3S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC11"
+		}	
+	}
+}

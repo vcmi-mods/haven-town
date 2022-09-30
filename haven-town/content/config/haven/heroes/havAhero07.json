@@ -1,0 +1,60 @@
+{
+	"havAhero07" :
+	{
+		"class" : "havAhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "Gemma",
+			"biography" : "Gemma used to be a subordinate from Captain Bidley, she considered to train females as pirates during the war for establishing Regnan Union. Now she has her own ship and a loyal troop which constituted by female pirates.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Bounty Hunters",
+				"description" : "Increases the Attack and Defense skills of any Bounty Hunter or Treasure Hunter for each level attained after 3rd level."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero7/skill7S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero7/skill7.bmp",
+			"large" : "haven/heroes/havHero7/hero7.bmp",
+			"small" : "haven/heroes/havHero7/hero7S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC05",
+				"max" : 7,
+				"min" : 5
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC05"
+		}	
+	}
+}

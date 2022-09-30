@@ -1,0 +1,66 @@
+{
+	"havAhero05" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "Hayden",
+			"biography" : "Hayden betrayed previous captain because he would like to possess his own ship. He also left the Regnan Union to start a new voyage of discovery.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "+350 Gold",
+				"description" : "Increases kingdom's income by 350 gold per day."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero5/skill5S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero5/skill5.bmp",
+			"large" : "haven/heroes/havHero5/hero5.bmp",
+			"small" : "haven/heroes/havHero5/hero5S.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 350
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"havMhero14" :
+	{
+		"class" : "havMhero",
+		"female": true,
+		"texts" :
+		{
+			"name" : "Maram",
+			"biography" : "Maram learned much from pirates, she was not skilled as navigation, but people often see some marine monsters in her ship. Maybe her voyage was helped by these creatures.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Divers",
+				"description" : "Increases the Attack and Defense skills of any Diver or Deep one for each level attained after 2nd level."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero14/skill14S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero14/skill14.bmp",
+			"large" : "haven/heroes/havHero14/hero14.bmp",
+			"small" : "haven/heroes/havHero14/hero14S.bmp"
+		},
+		"spellbook": [ "dispel" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC03",
+				"max" : 8,
+				"min" : 6
+			},
+			{
+				"creature" : "havC03",
+				"max" : 7,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "scholar"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "havC03"
+		}	
+	}
+}

@@ -1,0 +1,84 @@
+{
+	"havMhero" :
+	{
+		"name" : "Hydromancer",
+		"animation" :
+		{
+			"battle" : 
+			{
+				"female" : "haven/HAVbatt01",
+				"male"   : "haven/HAVbatt02"
+			}
+		},		
+		"mapObject" : { "templates" : { "default" : { "animation" : "haven/HAVmap01" }}},
+		"commander" : "havYachtswoman",		
+		"faction" : "haven",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 1,
+			"defence"    : 0,
+			"spellpower" : 1,
+			"knowledge"  : 3
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 10,
+			"defence"    : 10,
+			"spellpower" : 30,
+			"knowledge"  : 50
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 4,
+			"archery"      : 4,
+			"logistics"    : 4,
+			"scouting"     : 3,
+			"diplomacy"    : 2,
+			"navigation"   : 7,
+			"leadership"   : 3,
+			"wisdom"       : 8,
+			"mysticism"    : 6,
+			"luck"         : 4,
+			"ballistics"   : 5,
+			"eagleEye"     : 4,
+			"necromancy"   : 0,
+			"estates"      : 3,
+			"fireMagic"    : 3,
+			"airMagic"     : 6,
+			"waterMagic"   : 5,
+			"earthMagic"   : 4,
+			"scholar"      : 5,
+			"tactics"      : 2,
+			"artillery"    : 2,
+			"learning"     : 6,
+			"offence"      : 2,
+			"armorer"      : 3,
+			"intelligence" : 6,
+			"sorcery"      : 5,
+			"resistance"   : 2,
+			"firstAid"     : 4
+		},
+		"defaultTavern" : 5,
+		"tavern" :
+		{
+			"castle"     : 4,
+			"rampart"    : 4,
+			"tower"      : 4,
+			"inferno"    : 4,
+			"necropolis" : 4,
+			"dungeon"    : 4,
+			"stronghold" : 4,
+			"fortress"   : 4,
+			"conflux"    : 4,
+			"haven"   : 4
+		}
+	}
+}

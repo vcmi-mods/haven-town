@@ -1,0 +1,82 @@
+{
+	"name" : "Haven",
+	"description" : "Haven Town",
+	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
+	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
+	"version" : "1.10",
+	"modType" : "Town",
+	"changelog" :
+    {
+		"1.10"	:  [ "Great Updates" ],
+		"1.04"   : [ "Special buildings support" ],
+		"1.03"   : [ "Another fixes" ],
+		"1.02"   : [ "Some missing buildings" ],
+		"1.01"   : [ "New hero specialty format", "Bugfixes" ],
+		"1.0"   : [ "Initial release" ]
+    },
+	"compatibility" :
+	{
+		"min" : "1.0.0"
+	},	
+	"factions" :
+	[
+		"config/haven/town/buildings.json",
+		"config/haven/town/faction.json",
+		"config/haven/town/siege.json",
+		"config/haven/town/spells.json",
+		"config/haven/town/structures.json",
+		"config/haven/town/puzzle.json"
+
+	],
+	"creatures" :
+	[
+		"config/haven/creatures/havC01.json",
+		"config/haven/creatures/havC02.json",
+		"config/haven/creatures/havC03.json",
+		"config/haven/creatures/havC04.json",
+		"config/haven/creatures/havC05.json",
+		"config/haven/creatures/havC06.json",
+		"config/haven/creatures/havC07.json",
+		"config/haven/creatures/havC08.json",				
+		"config/haven/creatures/yachtswoman.json",		
+		"config/haven/creatures/havC09.json",
+		"config/haven/creatures/havC10.json",		
+		"config/haven/creatures/havC11.json",
+		"config/haven/creatures/havC12.json",
+		"config/haven/creatures/havC13.json",
+		"config/haven/creatures/havC14.json"
+	],
+	"heroClasses" :
+	[
+		"config/haven/heroes/havAhero.json",		
+		"config/haven/heroes/havMhero.json"		
+
+	],
+
+	"heroes" :
+	[
+		"config/haven/heroes/havAhero01.json",
+		"config/haven/heroes/havAhero02.json",
+		"config/haven/heroes/havAhero03.json",
+		"config/haven/heroes/havAhero04.json",
+		"config/haven/heroes/havAhero05.json",
+		"config/haven/heroes/havAhero06.json",
+		"config/haven/heroes/havAhero07.json",
+		"config/haven/heroes/havAhero08.json",
+		"config/haven/heroes/havMhero09.json",
+		"config/haven/heroes/havMhero10.json",
+		"config/haven/heroes/havMhero11.json",
+		"config/haven/heroes/havMhero12.json",
+		"config/haven/heroes/havMhero13.json",
+		"config/haven/heroes/havMhero14.json",
+		"config/haven/heroes/havMhero15.json",
+		"config/haven/heroes/havMhero16.json"
+	],
+	"spells" :
+	[
+		"config/haven/spells/mermaidSeduce.json",
+		"config/haven/spells/seaWrath.json",
+		"config/haven/spells/smokeShell.json"
+	],
+	"objects" : [ "config/haven/dwellings" ]
+}

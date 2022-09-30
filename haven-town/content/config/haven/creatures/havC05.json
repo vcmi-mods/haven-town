@@ -1,0 +1,146 @@
+{
+	"havC05":
+	{
+		"name" :
+		{
+			"plural" : "Bounty Hunters",
+			"singular" : "Bounty Hunter"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "haven",
+		"aiValue" : 221,
+		"attack" : 9,
+        "cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 3
+		},
+		"defense" : 7,
+		"fightValue" : 226,
+		"graphics" :
+		{
+			"animation" : "haven/battle/Hav05.def",
+			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV05.def",
+			"iconSmall" : "haven/iconsSmall/port5S.bmp",
+			"iconLarge" : "haven/iconsBig/port5.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "PELFX.DEF",	
+			    "attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+		},
+		"growth" : 7,
+		"horde" : 3,
+		"hitPoints" : 15,
+		"level" : 3,
+		"shots" : 8,
+		"upgrades":
+		[
+			"havC06"
+		],
+		"sound" :
+		{
+			"attack" : "haven/CHV3ATTK.wav",
+			"defend" : "haven/CHV3DFND.wav",
+			"killed" : "haven/CHV3KILL.wav",
+			"move": "haven/CHV3MOVE.wav",
+			"shoot": "haven/CHV3SHOT.wav",
+			"wince" : "haven/CHV3WNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : 0,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 2,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : 1,
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : 0, //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : 1, //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		]
+	}
+}

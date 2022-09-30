@@ -1,0 +1,68 @@
+{
+	"havMhero11" :
+	{
+		"class" : "havMhero",
+		"female": false,
+		"texts" :
+		{
+			"name" : "Raymond",
+			"biography" : "Raymond has an unconventional attitude of life. Compared with being a pirate, he like to find some different sea creatures. Some one said he is the first one who found the Sea Serpent in a stormy cove.",
+			"specialty" :
+			{
+				"tooltip" : "No description",
+				"name" : "Lightning Bolt",
+				"description" : "Casts Lightning Bolt with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units)."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero11/skill11S.bmp",
+			"specialtyLarge" : "haven/heroes/havHero11/skill11.bmp",
+			"large" : "haven/heroes/havHero11/hero11.bmp",
+			"small" : "haven/heroes/havHero11/hero11S.bmp"
+		},
+		"spellbook": [ "lightningBolt" ],
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}	
+	}
+}

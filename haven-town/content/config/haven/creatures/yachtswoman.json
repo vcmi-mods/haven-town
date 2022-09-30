@@ -1,0 +1,115 @@
+{
+	"havYachtswoman":
+	{
+		"name" :
+		{
+			"plural" : "Yachtswomen",
+			"singular" : "Yachtswoman"
+		},
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"faction" : "neutral",
+		"special" : true,
+		"aiValue" : 1000,
+		"attack" : 5,
+		"damage" :
+		{
+			 "max" : 10,
+			 "min" : 10
+		},
+		"defense" : 5,
+		"fightValue" : 1000,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "haven/battle/yachtswoman",
+//			"map" : "haven/map/", not available
+			"iconSmall" : "haven/iconsSmall/cmdr",
+			"iconLarge" : "haven/iconsBig/cmdr.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			    "flight" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "PORCHX",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"lowerX" : 42,
+					"lowerY" : -83,
+					"middleX" : 42,
+					"middleY" : -83,
+					"upperX" : 42,
+					"upperY" : -83
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+
+			}
+	
+		},
+		"growth" : 9,
+		"hasDoubleWeek": false,
+		"hitPoints" : 50,
+		"level" : 0,
+		"shots" : 24,
+		"sound" :
+		{
+			"attack" : "haven/swattack",
+			"defend" : "haven/swdefend",
+			"killed" : "haven/CHV3KILL",
+			"move": "haven/CHV3MOVE",
+			"shoot": "haven/swshoot",
+			"wince" : "haven/CHV3WNCE"
+ 		},
+		"speed" : 5,
+				"abilities" :
+		{
+		    "canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bless",
+				"val" : 3
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+	    }
+	}
+}
+
