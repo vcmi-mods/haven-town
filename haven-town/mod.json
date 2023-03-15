@@ -23,7 +23,7 @@
 		"description" : "Hafen Stadt",
 		"modType" : "Stadt",		
 		"translations" : [
-			"translation/german.json"
+			"translation/haven/german.json"
 		]
 	},	
 	"factions" :
