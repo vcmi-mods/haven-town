@@ -18,6 +18,14 @@
 	{
 		"min" : "1.0.0"
 	},	
+	"german" : {
+		"name" : "Hafen",
+		"description" : "Hafen Stadt",
+		"modType" : "Stadt",		
+		"translations" : [
+			"translation/haven/german.json"
+		]
+	},	
 	"factions" :
 	[
 		"config/haven/town/buildings.json",
