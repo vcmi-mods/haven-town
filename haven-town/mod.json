@@ -21,7 +21,6 @@
 	"german" : {
 		"name" : "Hafen",
 		"description" : "Hafen Stadt",
-		"modType" : "Stadt",		
 		"translations" : [
 			"translation/haven/german.json"
 		]
