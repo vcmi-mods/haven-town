@@ -221,7 +221,7 @@
 						"wood" : 5
 					},
 					"requires" : [ "mageGuild1" ],
-					"bonuses": [ { "type": "SECONDARY_SKILL_PREMY", "subtype": "skill.navigation", "val": 50, "propagator": "PLAYER_PROPAGATOR" } ] ,
+					"bonuses": [ { "type": "MOVEMENT", "subtype": 0, "val": 50, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR" } ] ,
 					"id" : 17
 				},
 				"horde4" :
@@ -276,11 +276,11 @@
 				},
 				"grail" :
 				{
-					"description" : "The presence of Ultramarine Storm increases weekly creature generation by 50 percent and adds 5000 gold per day.It also increases attack and defence skills by 15% for all heroes.",
+					"description" : "The presence of Ultramarine Storm increases weekly creature generation by 50 percent and adds 5000 gold per day. It also increases attack and defence skills by 15% for all heroes.",
 					"name" : "Ultramarine Storm",
 					"bonuses": [
-					{ "type": "SECONDARY_SKILL_PREMY", "subtype": "skill.armorer", "val": 15, "propagator": "PLAYER_PROPAGATOR" },
-					{ "type": "SECONDARY_SKILL_PREMY", "subtype": "skill.offence", "val": 15, "propagator": "PLAYER_PROPAGATOR" }
+					{ "type": "GENERAL_DAMAGE_REDUCTION", "subtype": -1, "val": 15, "valueType" : "ADDITIVE_VALUE" , "propagator": "PLAYER_PROPAGATOR" },
+					{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": 0, "val": 15, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER_PROPAGATOR" }
 					],
 					"id" : 26,
 					"mode" : "grail"
@@ -315,7 +315,7 @@
 					"cost" : {
 						"gold" : 2000,
 						"ore" : 5,
-						"wood" : 5,
+						"wood" : 5
 					},
 					"requires" : [ "dwellingLvl1" ],
 					"id" : 32
@@ -459,7 +459,7 @@
 						"sulfur" : 20
 					},
 					"id" : 43,
-					"upgrades" : "dwellingLvl7",
+					"upgrades" : "dwellingLvl7"
 					//"requires" : [ "mageGuild2" ],
 				}
 			}

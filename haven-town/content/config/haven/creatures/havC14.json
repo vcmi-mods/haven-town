@@ -37,8 +37,7 @@
 			{
 				"walk" : 0.9,
 				"idle" : 10.00,
-				"attack" : 1.00,
-			    "flight" : 1.00
+				"attack" : 1.00
 			}
 	
 		},
@@ -74,7 +73,9 @@
 			},
 			"KING1" :
 			{
-				"type" : "KING1"
+				"type" : "KING",
+				"val" : 0,
+				"valueType" : "ADDITIVE_VALUE"
 			}
 		},
 		"stackExperience" :
@@ -138,7 +139,7 @@
 				"bonus" :
 				{
 					"type" : "EARTH_IMMUNITY",
-				"subtype" : 0, //shield effect
+				"subtype" : 0 //shield effect
 				},
 				"values" : [ false, false, false, false, true, true, true, true, true, true ]
 			},

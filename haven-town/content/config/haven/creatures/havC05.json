@@ -28,7 +28,7 @@
 		"graphics" :
 		{
 			"animation" : "haven/battle/Hav05.def",
-			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
 			"map" : "haven/map/AVWHAV05.def",
 			"iconSmall" : "haven/iconsSmall/port5S.bmp",
 			"iconLarge" : "haven/iconsBig/port5.bmp",
@@ -47,7 +47,7 @@
 					"lowerY" : -14
 				},
 				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-			},
+			}
 		},
 		"growth" : 7,
 		"horde" : 3,
@@ -122,7 +122,7 @@
 				"bonus" :
 				{
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 0, //shield effect
+				"subtype" : 0 //shield effect
 				},
 				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
 			},
@@ -130,7 +130,7 @@
 				"bonus" :
 				{
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 1, //shield effect
+				"subtype" : 1 //shield effect
 				},
 				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
 			},

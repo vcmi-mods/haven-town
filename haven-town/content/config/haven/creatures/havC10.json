@@ -36,8 +36,7 @@
 			{
 				"walk" : 1.60,
 				"idle" : 10.00,
-				"attack" : 1.00,
-			    "flight" : 1.00
+				"attack" : 1.00
 			}
 	
 		},
@@ -117,7 +116,7 @@
 				"bonus" :
 				{
 					"type" : "HP_REGENERATION",
-				"subtype" : 1, //shield effect
+				"subtype" : 1 //shield effect
 				},
 				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
 			}

@@ -29,7 +29,7 @@
 		"graphics" :
 		{
 			"animation" : "haven/battle/Hav03.def",
-			"animationTime" : { "attack" : 1, "flight" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
 			"map" : "haven/map/AVWHAV03.def",
 			"iconSmall" : "haven/iconsSmall/port3S.bmp",
 			"iconLarge" : "haven/iconsBig/port3.bmp",

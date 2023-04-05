@@ -55,12 +55,12 @@
 		
 		"specialty" : {
 			"bonuses" : {
-				"archery" : {
-					"subtype" : "skill.scouting",
-					"type" : "SECONDARY_SKILL_PREMY",
-					"updater" : "TIMES_HERO_LEVEL",
+				"scouting" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SIGHT_RADIUS",
 					"val" : 5,
-					"valueType" : "PERCENT_TO_BASE"
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
 				}
 			}
 		}	
