@@ -3,10 +3,11 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.11",
+	"version" : "1.12",
 	"modType" : "Town",
 	"changelog" :
     {
+		"1.12"	:  [ "Chinese translation from https://www.h3wog.com/thread-77661-1-1.html" ],
 		"1.11"	:  [ "Update to vcmi-1.2" ],
 		"1.10"	:  [ "Great Updates" ],
 		"1.04"   : [ "Special buildings support" ],
@@ -19,6 +20,12 @@
 	{
 		"min" : "1.2.0"
 	},	
+	"chinese" : {
+		"name" : "峡湾",
+		"translations" : [
+			"translation/haven/chinese.json"
+		]
+	},
 	"german" : {
 		"name" : "Hafen",
 		"description" : "Hafen Stadt",
