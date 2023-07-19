@@ -4,6 +4,7 @@
 		"creatureBackground" : { "120px" : "haven/back120", "130px" : "haven/back130" },
 		"name" : "Haven",
 		"nativeTerrain" : "sand",
+		"boat" : "boatFortress",
 		"town" :
 		{
 			"musicTheme" : "music/haven/theme",
@@ -31,8 +32,8 @@
 				[ "havC11", "havC12" ],
 				[ "havC13", "havC14" ]
 			],
-			"moatDamage" : 90,
 			"horde" : [ 3, 2 ],
+			"moatAbility" : "havenMoat",
 			"mageGuild" : 4,
 			"primaryResource" : "sulfur",
 			"warMachine" : "ballista",
