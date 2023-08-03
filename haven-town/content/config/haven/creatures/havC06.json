@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Treasure Hunters",
-			"singular" : "Treasure Hunter"
+			"plural" : "Elite Arbalists",
+			"singular" : "Elite Arbalist"
 		},
 		"advMapAmount" :
 		{
@@ -47,13 +47,13 @@
 					"lowerY" : -14
 				},
 				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-			}
+			},
 		},
 		"growth" : 7,
 		"horde" : 3,
 		"hitPoints" : 15,
 		"level" : 3,
-		"shots" : 12,
+		"shots" : 24,
 		"sound" :
 		{
 			"attack" : "haven/CHV3ATTK.wav",
@@ -129,7 +129,7 @@
 				"bonus" :
 				{
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 0 //shield effect
+				"subtype" : 0, //shield effect
 				},
 				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
 			},
@@ -137,7 +137,7 @@
 				"bonus" :
 				{
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 1 //shield effect
+				"subtype" : 1, //shield effect
 				},
 				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
 			},

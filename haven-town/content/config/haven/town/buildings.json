@@ -224,6 +224,18 @@
 					"bonuses": [ { "type": "MOVEMENT", "subtype": 0, "val": 50, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR" } ] ,
 					"id" : 17
 				},
+				"special2" :
+				{
+					"description" : "Lighthouse can improve ship movement for all heroes.",
+					"name" : "lighthouse",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 10
+					},
+					"requires" : [ "special1" ],
+					"type" : "lighthouse" ,
+					"id" : 21
+				},
 				"horde4" :
 				{
 					"description" : "Enchanted Conch increases weekly production of Mermaids by 2 per week.",
@@ -276,11 +288,12 @@
 				},
 				"grail" :
 				{
-					"description" : "The presence of Ultramarine Storm increases weekly creature generation by 50 percent and adds 5000 gold per day. It also increases attack and defence skills by 15% for all heroes.",
+					"description" : "The presence of Ultramarine Storm increases weekly creature generation by 50 percent and adds 5000 gold per day. All heroes will gain three times of ship movement. It also increases attack and defence skills by 10% for all heroes.",
 					"name" : "Ultramarine Storm",
 					"bonuses": [
-					{ "type": "GENERAL_DAMAGE_REDUCTION", "subtype": -1, "val": 15, "valueType" : "ADDITIVE_VALUE" , "propagator": "PLAYER_PROPAGATOR" },
-					{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": 0, "val": 15, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER_PROPAGATOR" }
+					{ "subtype" : 0, "type" : "MOVEMENT", "val" : 300, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR"},
+					{ "type": "GENERAL_DAMAGE_REDUCTION", "subtype": -1, "val": 10, "valueType" : "ADDITIVE_VALUE" , "propagator": "PLAYER_PROPAGATOR" },
+					{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": 0, "val": 10, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER_PROPAGATOR" }
 					],
 					"id" : 26,
 					"mode" : "grail"
@@ -466,4 +479,3 @@
 		}
 	}
 }
-

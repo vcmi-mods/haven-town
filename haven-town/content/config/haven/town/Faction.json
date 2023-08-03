@@ -4,7 +4,7 @@
 		"creatureBackground" : { "120px" : "haven/back120", "130px" : "haven/back130" },
 		"name" : "Haven",
 		"nativeTerrain" : "sand",
-		"boat" : "boatFortress",
+		"boat" : "boatHaven",
 		"town" :
 		{
 			"musicTheme" : "music/haven/theme",
@@ -13,14 +13,14 @@
 			"guildBackground" : "TPMAGE.bmp",
 			"townBackground": "haven/town-screen/TBHVBACK",
 			"guildWindow": "haven/town-screen/TBHVSPEL",
-			"hallBackground": "TPTHBKFR",
+			"hallBackground": "TPTHBKDG",
 			"hallSlots":
 			[
 				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
-				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4" ],[ "shipyard" ] ],
-				[ [ "special1" ], ["horde4", "horde4Upg" ], [ "horde3", "horde3Upg" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4" ],[ "special1" ],[ "shipyard" ] ],
+				[ [ "special2" ], ["horde4", "horde4Upg" ], [ "horde3", "horde3Upg" ] ],
 				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3"], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
-				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ]  ]
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ],  ]
 			],
 			"creatures" :
 			[
@@ -32,8 +32,8 @@
 				[ "havC11", "havC12" ],
 				[ "havC13", "havC14" ]
 			],
-			"horde" : [ 3, 2 ],
 			"moatAbility" : "havenMoat",
+			"horde" : [ 3, 2 ],
 			"mageGuild" : 4,
 			"primaryResource" : "sulfur",
 			"warMachine" : "ballista",
@@ -42,22 +42,22 @@
 			{
 				"village" : {
 					"normal" : {
-						"small" : "haven/icons/HAV01S.png",
-						"large" : "haven/icons/HAV01.png"
+						"small" : "haven/icons/HAV01S.bmp",
+						"large" : "haven/icons/HAV01.bmp"
 					},
 					"built" : {
-						"small" : "haven/icons/HAV02S.png",
-						"large" : "haven/icons/HAV02.png"
+						"small" : "haven/icons/HAV02S.bmp",
+						"large" : "haven/icons/HAV02.bmp"
 					}
 				},
 				"fort" : {
 					"normal" : {
-						"small" : "haven/icons/HAV03S.png",
-						"large" : "haven/icons/HAV03.png"
+						"small" : "haven/icons/HAV03S.bmp",
+						"large" : "haven/icons/HAV03.bmp"
 					},
 					"built" : {
-						"small" : "haven/icons/HAV04S.png",
-						"large" : "haven/icons/HAV04.png"
+						"small" : "haven/icons/HAV04S.bmp",
+						"large" : "haven/icons/HAV04.bmp"
 					}
 				}
 			},

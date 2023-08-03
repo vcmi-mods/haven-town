@@ -1,0 +1,66 @@
+{
+	"havAhero05B" :
+	{
+		"class" : "havAhero",
+		"female": false,
+		"onlyOnWaterMap" : true,
+		"texts" :
+		{
+			"name" : "Wesley", //Wesley the new navigation specialty
+			"biography" : "Wesley is fond of recording his experience from sailing. His diary is very detailed with different climates, animals and customs. During thirty years, he finished his own encyclopedia of navigation.",
+			"specialty" :
+			{
+				"name" : "Navigation",
+				"description": "{Navigation}\r\n\r\nReceives a 5% per level bonus to movement points at sea.",
+				"tooltip": "Secondary Skill Bonus: Navigation"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/havHero5/skill5BS.bmp",
+			"specialtyLarge" : "haven/heroes/havHero5/skill5B.bmp",
+			"large" : "haven/heroes/havHero5/hero5B.bmp",
+			"small" : "haven/heroes/havHero5/hero5BS.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "havC01",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "havC03",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "havC05",
+				"max" : 6,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "navigation"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"navigation" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : 0,
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}	
+	}
+}

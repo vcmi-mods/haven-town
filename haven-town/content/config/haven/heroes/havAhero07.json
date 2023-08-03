@@ -10,8 +10,8 @@
 			"specialty" :
 			{
 				"tooltip" : "No description",
-				"name" : "Bounty Hunters",
-				"description" : "Increases the Attack and Defense skills of any Bounty Hunter or Treasure Hunter for each level attained after 3rd level."
+				"name" : "Arbalists",
+				"description" : "Increases the Attack and Defense skills of any Arbalists or Elite Arbalists for each level attained after 3rd level."
 			}
 		},
 		"images" :
