@@ -43,7 +43,7 @@
 				"effects" : {
 					"primarySkill" : {
 						"type" : "PRIMARY_SKILL",
-						"subtype" : "primSkill.attack",
+						"subtype" : "primarySkill.attack",
 						"val" : -5,
 						"effectRange" : "ONLY_DISTANCE_FIGHT",
 						"duration" : ["N_TURNS"],
