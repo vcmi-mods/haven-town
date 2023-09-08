@@ -1,0 +1,109 @@
+{
+	"core:creatureBank" : 
+	{
+		"types" : 
+		{
+			"fhavenBank01" : 
+			{
+				"name" : "Pirate Keep",
+				"templates" : {
+					"base" : { "animation" : "haven/adventure-map/havenbank.def", 
+					"visitableFrom" : [ "+++", "+++", "+++" ], 
+					"mask" : [ "VVV", "VVV", "VVA" ],
+					"allowedTerrains":["sand"] 
+					}
+				},
+				"rmg" : {
+					"value"		: 1500,
+					"rarity"	: 40
+				},
+				"sounds" : {
+					"ambient" : ["LOOPCAMP"]
+				},
+				"levels": [
+					{
+						"chance": 30,
+						"guards": [
+							{ "amount": 4, "type" : "havC05" },
+							{ "amount": 4, "type" : "havC05" },
+							{ "amount": 4, "type" : "havC05", "upgradeChance": 50 },
+							{ "amount": 4, "type" : "havC05" },
+							{ "amount": 4, "type" : "havC05" }
+						],
+						"combat_value": 100,
+						"reward" : {
+							"value": 2000,
+							"resources": 
+							{
+								"gold" : 3000
+							}
+						}
+					},
+										
+					{
+						"chance": 30,
+						"guards": [
+							{ "amount": 6, "type" : "havC05" },
+							{ "amount": 6, "type" : "havC05" },
+							{ "amount": 6, "type" : "havC05", "upgradeChance": 50 },
+							{ "amount": 6, "type" : "havC05" },
+							{ "amount": 6, "type" : "havC05" }
+						],
+						"combat_value": 150,
+						"reward" : {
+							"value": 3000,
+							"resources": 
+							{
+								"wood": 5,
+								"gold" : 3000
+							},
+							"artifacts": [ { "class" : "TREASURE" } ]
+						}
+					},
+					
+					{
+						"chance": 30,
+						"guards": [
+							{ "amount": 8, "type" : "havC05" },
+							{ "amount": 8, "type" : "havC05" },
+							{ "amount": 8, "type" : "havC05", "upgradeChance": 50},
+							{ "amount": 8, "type" : "havC05" },
+							{ "amount": 8, "type" : "havC05" }
+						],
+						"combat_value": 300,
+						"reward" : {
+							"value": 4000,
+							"resources": 
+							{
+								"wood": 7,
+								"gold" : 4000
+							},
+							"artifacts": [ { "class" : "TREASURE" } ]
+						}
+					},
+					
+					{
+						"chance": 10,
+						"guards": [
+							{ "amount": 12, "type" : "havC05" },
+							{ "amount": 12, "type" : "havC05" },
+							{ "amount": 12, "type" : "havC05", "upgradeChance": 50 },
+							{ "amount": 12, "type" : "havC05" },
+							{ "amount": 12, "type" : "havC05" }
+						],
+						"combat_value": 300,
+						"reward" : {
+							"value": 6000,
+							"resources": 
+							{
+								"wood": 10,
+								"gold" : 6000
+							},
+							"artifacts": [ { "class" : "MINOR" } ]
+						}
+					}
+				]
+			}
+		}
+	}
+}
