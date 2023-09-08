@@ -1,0 +1,60 @@
+{
+	"chestHaven02"	: {
+		"name" : "Pirate Flag",
+		"handler": "configurable",
+		"types" : {
+			"seaBarrel" : {
+				"name":"Pirate Flag",
+				"rmg" : {
+					"value"		: 500,
+					"rarity"	: 400
+				},
+				"sounds" : {
+					"visit" : ["GENIE"],
+					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+				},
+				"blockedVisitable" : true,
+				"rewards" :
+				[
+					{
+						"appearChance": 
+						{
+							"max" : 20
+						},
+						"message": "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, but after your searching, there is nothing valuable from their hideout.",
+						"removeObject": true
+					},
+					{
+						"appearChance" : { "min" : 20, "max" : 30 },
+						"message" : "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, after your searching, you have found resources from their hideout.",
+						"removeObject" : true,
+						"resources" : {
+							"wood" : 5,
+							"gold" : 500
+						}
+					},
+					{
+						"appearChance" : { "min" : 30 },
+						"message" : "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, after your searching, you have found resources from their hideout.",
+						"removeObject" : true,
+						"resources" : {
+							"ore" : 5,
+							"gold" : 500
+						}
+					}
+				],
+				"visitMode" : "once",
+				"selectMode": "selectRandom",
+				"templates" : {
+					"AVAbrrlw" :
+					{
+						"animation" : "haven/adventure-map/pirateFlag.def",
+						"visitableFrom" : [ "+++", "+++", "+++" ],
+						"mask" : [ "A"],
+						"allowedTerrains":["sand","swamp"] 
+					}
+				}
+			}
+		}
+	}
+}
