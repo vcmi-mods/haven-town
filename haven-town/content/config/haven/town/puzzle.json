@@ -2,7 +2,7 @@
 	"haven":
 	{
 		"puzzleMap" : {
-			"prefix" : "haven/puzzle-map/PUZ",
+			"prefix" : "haven/puzzle-map/PUZZ",
 			"pieces" :
 			[
 { "index" : 48, "x" : 6,  "y" : 7 },

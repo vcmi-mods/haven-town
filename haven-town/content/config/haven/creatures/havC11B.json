@@ -1,0 +1,152 @@
+{
+	"havC11B":
+	{
+		"name" :
+		{
+			"plural" : "Sea Mages",
+			"singular" : "Sea Mage"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 8
+		},
+		"faction" : "haven",
+		"aiValue" : 1221,
+		"attack" : 15,
+        "cost" :
+		{
+			"gold" : 800
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 15
+		},
+		"defense" : 13,
+		"fightValue" : 1046,
+		"graphics" :
+		{
+			"animation" : "haven/battle/P6Ha.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV15.def",
+			"iconSmall" : "haven/iconsSmall/port15S.bmp",
+			"iconLarge" : "haven/iconsBig/port15.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "PICEE.DEF",	
+			    "attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+		},
+		"growth" : 2,
+		"hitPoints" : 70,
+		"level" : 6,
+		"shots" : 12,
+		"upgrades":
+		[
+			"havC12B"
+		],
+		"sound" :
+		{
+			"attack": "MAGEATTK.wav",
+			"defend": "MAGEWNCE.wav",
+			"killed": "haven/SAYLKILL.wav",
+			"move": "ENCHMOVE.wav",
+			"shoot": "ENCHSHOT.wav",
+			"wince": "haven/SAYLWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_WALL_PENALTY"
+			},
+			"navigationBoost" :
+			{
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementSea",
+				"val" : 300, 
+				"propagator" : "HERO"
+			},
+			"iceIsComing" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.iceShot",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		]
+	}
+}

@@ -6,12 +6,12 @@
 		"texts" :
 		{
 			"name" : "Amber",
-			"biography" : "Amber never forget to find treasure during her voyage. She is crazy about collecting different gems, pearls and diamonds. She also builded a large house to place her collection.",
+			"biography" : "Amber is similar with his father Andal from almost all aspects. She knew his father as a 'famous' smuggler who can always collect crystal and gems. The girl is good at business as well as his father. Nowadays she left his father because he chose to become a servant of King Bidley. She disagreed with his decision and finally decided to start a new life, with herself.",
 			"specialty" :
 			{
 				"tooltip" : "No description",
 				"name" : "+1 Gems",
-				"description" : "Increases kingdom's gem production by 1 per day."
+				"description" : "Increases kingdom's gems production by 1 per day."
 			}
 		},
 		"images" :

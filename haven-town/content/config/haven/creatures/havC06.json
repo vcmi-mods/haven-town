@@ -103,7 +103,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : 2,
+					"subtype" : "creatureDamageMax",
 					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
@@ -111,7 +111,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : 1,
+					"subtype" : "creatureDamageMin",
 					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
@@ -127,15 +127,7 @@
 				"bonus" :
 				{
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 0, //shield effect
-				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : 1, //shield effect
+					"subtype" : "damageTypeAll",
 				},
 				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
 			},

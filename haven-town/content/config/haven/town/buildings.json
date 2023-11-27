@@ -221,13 +221,13 @@
 						"wood" : 5
 					},
 					"requires" : [ "mageGuild1" ],
-					"bonuses": [ { "type": "MOVEMENT", "subtype": 0, "val": 50, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR" } ] ,
+					"bonuses": [ { "type": "MOVEMENT", "subtype": "heroMovementSea", "val": 50, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR" } ] ,
 					"id" : 17
 				},
 				"special2" :
 				{
 					"description" : "Lighthouse can improve ship movement for all heroes.",
-					"name" : "lighthouse",
+					"name" : "Lighthouse",
 					"cost" : {
 						"gold" : 1000,
 						"wood" : 10
@@ -263,7 +263,7 @@
 				},
 				"horde3" :
 				{
-					"description" : "Black Sailboat increases weekly production of Bounty Hunters by 3 per week.",
+					"description" : "Black Sailboat increases weekly production of Arbalists by 3 per week.",
 					"name" : "Black Sailboat",
 					"upgrades" : "dwellingLvl3",
 					"requires" : [ "allOf", ["fort"], ["dwellingLvl3"] ],
@@ -275,7 +275,7 @@
 				},
 				"horde3Upg" :
 				{
-					"description" : "Black Sailboat increases weekly production of Treasure Hunters by 3 per week.",
+					"description" : "Black Sailboat increases weekly production of Elite Arbalists by 3 per week.",
 					"name" : "Black Sailboat",
 					"requires" : [ "horde3" ],
 					"upgrades" : "dwellingUpLvl3",
@@ -291,9 +291,9 @@
 					"description" : "The presence of Ultramarine Storm increases weekly creature generation by 50 percent and adds 5000 gold per day. All heroes will gain three times of ship movement. It also increases attack and defence skills by 10% for all heroes.",
 					"name" : "Ultramarine Storm",
 					"bonuses": [
-					{ "subtype" : 0, "type" : "MOVEMENT", "val" : 300, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR"},
-					{ "type": "GENERAL_DAMAGE_REDUCTION", "subtype": -1, "val": 10, "valueType" : "ADDITIVE_VALUE" , "propagator": "PLAYER_PROPAGATOR" },
-					{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": 0, "val": 10, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER_PROPAGATOR" }
+						{ "subtype" : "heroMovementSea", "type" : "MOVEMENT", "val" : 300, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER_PROPAGATOR"},
+						{ "type": "GENERAL_DAMAGE_REDUCTION", "subtype": "damageTypeAll", "val": 10, "valueType" : "ADDITIVE_VALUE" , "propagator": "PLAYER_PROPAGATOR" },
+						{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": "damageTypeMelee", "val": 10, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER_PROPAGATOR" }
 					],
 					"id" : 26,
 					"mode" : "grail"
@@ -323,7 +323,7 @@
 				},
 				"dwellingLvl3" :
 				{
-					"description" : "Harbour Guild allows you to recruit Bounty Hunters.",
+					"description" : "Harbour Guild allows you to recruit Arbalists.",
 					"name" : "Harbour Guild",
 					"cost" : {
 						"gold" : 2000,
@@ -361,14 +361,28 @@
 				},
 				"dwellingLvl6" :
 				{
+					"description" : "Temple of Tides allows you to recruit Sea Mages.",
+					"name" : "Temple of Tides",
+					"cost" : {
+						"gold" : 4000,
+						"mercury" : 5,
+						"crystal" : 5,
+						"gems" : 5,
+						"sulfur" : 5
+					},
+					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6B" ] ] ],
+					"id" : 35
+				},
+				"dwellingLvl6B" :
+				{
 					"description" : "Turtle Hatchery allows you to recruit Gaint Turtles.",
 					"name" : "Turtle Hatchery",
 					"cost" : {
 						"gold" : 4000,
 						"ore" : 20
 					},
-					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "mageGuild1" ] ],
-					"id" : 35
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6" ] ] ],
+					"id" : 49
 				},
 				"dwellingLvl7" :
 				{
@@ -411,7 +425,7 @@
 				},
 				"dwellingUpLvl3" :
 				{
-					"description" : "Upg. Harbour Guild allows you to recruit Treasure Hunters.",
+					"description" : "Upg. Harbour Guild allows you to recruit Elite Arbalists.",
 					"name" : "Upg. Harbour Guild",
 					"cost" : {
 						"gold" : 1500,
@@ -451,6 +465,20 @@
 				},
 				"dwellingUpLvl6" :
 				{
+					"description" : "Upg. Temple of Tides allows you to recruit Dragon Turtles.",
+					"name" : "Upg. Temple of Tides",
+					"cost" : {
+						"mercury" : 3,
+						"sulfur" : 3,
+						"gems" : 3,
+						"gold" : 3000,
+						"crystal" : 3
+					},
+					"id" : 42,
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl6B" :
+				{
 					"description" : "Upg. Turtle Hatchery allows you to recruit Dragon Turtles.",
 					"name" : "Upg. Turtle Hatchery",
 					"cost" : {
@@ -458,8 +486,8 @@
 						"ore" : 5,
 						"sulfur" : 10
 					},
-					"id" : 42,
-					"upgrades" : "dwellingLvl6"
+					"id" : 56,
+					"upgrades" : "dwellingLvl6B"
 				},
 				"dwellingUpLvl7" :
 				{
@@ -479,3 +507,4 @@
 		}
 	}
 }
+

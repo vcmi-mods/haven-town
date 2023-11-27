@@ -4,6 +4,9 @@
 			"havD01" : {
 				"name" : "Stockpile",
 				"creatures" : [[ "havC01" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAMP"]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "haven/adventure-map/Hav01Map.def",
@@ -14,6 +17,9 @@
 			"havD02" : {
 				"name" : "Reef Aisle",
 				"creatures" : [[ "havC03" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAVE"]
+				},
 				"templates" : {
 					"default" : {	
 						"animation" : "haven/adventure-map/Hav02Map.def",
@@ -24,6 +30,9 @@
 			"havD03" : {
 				"name" : "Harbour Guild",
 				"creatures" : [[ "havC05" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAMP"]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "haven/adventure-map/Hav03Map.def",
@@ -34,6 +43,9 @@
 			"havD04" : {
 				"name" : "Coral Reef",
 				"creatures" : [[ "havC07" ]],
+				"sounds" : {
+					"ambient": ["haven/LOOPMERM"]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "haven/adventure-map/Hav04Map.def",
@@ -44,6 +56,9 @@
 			"havD05" : {
 				"name" : "Spiritual Spring",
 				"creatures" : [[ "havC09" ]],
+				"sounds" : {
+					"ambient" : ["LOOPFOUN"]
+				},
 				"guards" : true,
 				"templates" : {
 					"default" : {
@@ -53,8 +68,25 @@
 				}
 			},
 			"havD06" : {
+				"name" : "Temple of Tides",
+				"creatures" : [[ "havC11B" ]],
+				"sounds" : {
+					"ambient" : ["LOOPMAGI"]
+				},
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/Hav06_1Map.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"havD06B" : {
 				"name" : "Turtle Hatchery",
 				"creatures" : [[ "havC11" ]],
+				"sounds" : {
+					"ambient" : ["LOOPCAVE"]
+				},
 				"guards" : true,
 				"templates" : {
 					"default" : {
@@ -66,6 +98,9 @@
 			"havD07" : {
 				"name" : "Abyssal Gate",
 				"creatures" : [[ "havC13" ]],
+				"sounds" : {
+					"ambient" : ["LOOPGATE"]
+				},
 				"guards" : true,
 				"templates" : {
 					"default" : {

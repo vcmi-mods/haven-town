@@ -68,7 +68,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : 1, //min
+					"subtype" : "creatureDamageMin",
 					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
@@ -76,7 +76,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : 2, //max
+					"subtype" : "creatureDamageMax",
 					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]

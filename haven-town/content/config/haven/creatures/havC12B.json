@@ -1,0 +1,168 @@
+{
+	"havC12B":
+	{
+		"name" :
+		{
+			"plural" : "Hydromancers",
+			"singular" : "Hydromancer"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "haven",
+		"aiValue" : 1440,
+		"attack" : 17,
+        "cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 16
+		},
+		"defense" : 13,
+		"fightValue" : 1108,
+		"graphics" :
+		{
+			"animation" : "haven/battle/P6Hb.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/AVWHAV16.def",
+			"iconSmall" : "haven/iconsSmall/port16S.bmp",
+			"iconLarge" : "haven/iconsBig/port16.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "PICEE.DEF",	
+			    "attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+		},
+		"growth" : 2,
+		"hitPoints" : 70,
+		"level" : 6,
+		"shots" : 16,
+		"sound" :
+		{
+			"attack": "MAGEATTK.wav",
+			"defend": "MAGEWNCE.wav",
+			"killed": "haven/SAYLKILL.wav",
+			"move": "ENCHMOVE.wav",
+			"shoot": "ENCHSHOT.wav",
+			"wince": "haven/SAYLWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"iceIsComing" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.iceShot",
+				"val" : 1
+			},
+			"noPenalty" : 
+			{
+				"type" : "NO_WALL_PENALTY"
+			},
+			"caster": {
+				"type" : "SPELL_AFTER_ATTACK",
+				"addInfo" : 1001,
+				"subtype" : "spell.havenWaterWeaken",
+				"val" : 20
+			},
+			"navigationBoost" :
+			{
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementSea",
+				"val" : 500, 
+				"propagator" : "HERO"
+			},
+			"enraged" :
+			{
+				"type": "ENCHANTER",
+				"subtype": "spell.havenSpell05",
+				"val" : 3,
+				"addInfo" : 3,				
+				"limiters" : [ "CREATURE_NATIVE_TERRAIN" ]
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 2,			
+				"limiters" : [ "CREATURE_NATIVE_TERRAIN" ]
+			}	
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeMelee", //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged", //shield effect
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		]
+	}
+}

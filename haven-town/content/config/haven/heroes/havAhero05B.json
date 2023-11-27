@@ -6,7 +6,7 @@
 		"onlyOnWaterMap" : true,
 		"texts" :
 		{
-			"name" : "Wesley", //Wesley the new navigation specialty
+			"name" : "Wesley",
 			"biography" : "Wesley is fond of recording his experience from sailing. His diary is very detailed with different climates, animals and customs. During thirty years, he finished his own encyclopedia of navigation.",
 			"specialty" :
 			{
@@ -54,7 +54,7 @@
 			"bonuses" : {
 				"navigation" : {
 					"targetSourceType" : "SECONDARY_SKILL",
-					"subtype" : 0,
+					"subtype" : "heroMovementSea",
 					"type" : "MOVEMENT",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 5,

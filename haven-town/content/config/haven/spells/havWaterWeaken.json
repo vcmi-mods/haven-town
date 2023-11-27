@@ -1,0 +1,80 @@
+{
+	"havenWaterWeaken":
+	{
+		"type": "ability", 
+		"targetType": "CREATURE", 
+		"name": "Water Vulnerability",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 2,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+		"animation":{
+		"affect":["haven/spells/havSpell04"]
+		},
+
+		"flags" : {
+			"negative": true},
+		"graphics":
+		{
+			"iconEffect": "haven/spells/havspell4"
+		},
+		"sounds":
+		{
+			"cast":"WEAKNESS"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"description": "More damaged from water spell and -3 defence in 2 turns",
+				"cost": 0,
+				"power": 10,
+				"aiValue": 15,
+				"range": "0",
+				"targetModifier":{"smart":true},
+				"battleEffects":
+				{
+					"weakenEffect" :
+					{
+						"type": "core:timed",
+						"cumulative": false,
+						"bonus" : {
+							"defence" : {
+								"val" : -3,
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "primarySkill.defence",
+								"duration" : "N_TURNS",
+								"turns": 2
+							},
+                            "earthSusceptible" : {
+                                "type" : "SPELL_DAMAGE_REDUCTION",
+                                "val" : -50,
+                                "subtype" : "water",
+                                "duration" : "N_TURNS",
+								"turns": 4
+                            }
+											
+											
+						}
+					}
+				}
+			},
+			"none": {},
+			"basic": {
+				"range": "1"
+            },
+			"advanced":{},
+			"expert": {}
+		}
+	}
+}
