@@ -3,10 +3,11 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.24",
+	"version" : "1.25",
 	"modType" : "Town",
 	"changelog" :
     {
+		"1.25"	:  [ "Polish translation by Dru" ],
 		"1.24"	:  [ "Update chinese translation" ],
 		"1.23"	:  [ "New level 6 units for an alternative change", "Update to vcmi-1.4 format" ],
 		"1.22"	:  [ "Improved chinese translation by Rindlit" ],
@@ -38,6 +39,13 @@
 		"description" : "Hafen Stadt",
 		"translations" : [
 			"translation/haven/german.json"
+		]
+	},
+	"polish" : {
+		"name" : "Przystań",
+		"description" : "Dodaje miasto stworzeń morskich - Przystań",
+		"translations" : [
+			"translation/haven/polish.json"
 		]
 	},
 	"factions" :
