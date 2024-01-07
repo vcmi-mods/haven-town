@@ -9,7 +9,7 @@
 		"advMapAmount" :
 		{
 			 "max" : 12,
-			 "min" : 8
+			 "min" : 5
 		},
 		"faction" : "haven",
 		"aiValue" : 1221,
@@ -116,6 +116,14 @@
 					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :

@@ -224,12 +224,12 @@
 	"mapObject.haven-town.creatureGeneratorCommon.havD05.name" : "灵之泉",
 	"mapObject.haven-town.creatureGeneratorCommon.havD06.name" : "巨龟洞穴",
 	"mapObject.haven-town.creatureGeneratorCommon.havD07.name" : "深渊之门",
-	"spell.haven-town.havenWaterWeaken.name" : "水系易伤"
-	"spell.haven-town.iceShot.name" : "霹雳寒冰"
+	"spell.haven-town.havenWaterWeaken.name" : "水系易伤",
+	"spell.haven-town.iceShot.name" : "霹雳寒冰",
 	"spell.haven-town.mermaidSeduce.name" : "诱惑",
 	"spell.haven-town.havenMoatTrigger.name" : "海沟",
 	"spell.haven-town.havenMoat.name" : "海沟",
 	"spell.haven-town.seaWrath.name" : "海之怒",
-	"spell.haven-town.smokeShell.name" : "烟雾弹"
+	"spell.haven-town.smokeShell.name" : "烟雾弹",
 	"spell.haven-town.havenSpell05.name" : "潮汐之力"
 }
