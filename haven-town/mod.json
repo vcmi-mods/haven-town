@@ -31,7 +31,7 @@
 	},	
 	"chinese" : {
 		"name" : "峡湾",
-		"description" : "峡湾",
+		"description" : "峡湾是独立于港口的种族。因为彼得利用深渊号角的力量统一了瑞格纳，而不服从者则想要摆脱深渊号角的控制。这些海盗也因此去深海寻找克制这件神器的力量。",
 		"translations" : [
 			"translation/haven/chinese.json"
 		]
