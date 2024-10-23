@@ -3,10 +3,11 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.30",
+	"version" : "1.31",
 	"modType" : "Town",
 	"changelog" :
     {
+		"1.31"	:  [ "Czech translation by George King" ],
 		"1.30"	:  [ "New Marids models by Kurek" ],
 		"1.29"	:  [ "New female hero's battle model", "Improved battle model for Hydromancer (lvl 6 unit)" ],
 		"1.28"	:  [ "New town theme by Fabrice-TIERCELIN and AI Udio" ],
@@ -22,11 +23,11 @@
 		"1.12"	:  [ "Chinese translation from https://www.h3wog.com/thread-77661-1-1.html" ],
 		"1.11"	:  [ "Update to vcmi-1.2" ],
 		"1.10"	:  [ "Great Updates" ],
-		"1.04"   : [ "Special buildings support" ],
-		"1.03"   : [ "Another fixes" ],
-		"1.02"   : [ "Some missing buildings" ],
-		"1.01"   : [ "New hero specialty format", "Bugfixes" ],
-		"1.0"   : [ "Initial release" ]
+		"1.04"  :  [ "Special buildings support" ],
+		"1.03"  :  [ "Another fixes" ],
+		"1.02"  :  [ "Some missing buildings" ],
+		"1.01"  :  [ "New hero specialty format", "Bugfixes" ],
+		"1.0"   :  [ "Initial release" ]
     },
 	"compatibility" :
 	{
@@ -51,6 +52,13 @@
 		"description" : "Dodaje miasto stworzeń morskich - Przystań",
 		"translations" : [
 			"translation/haven/polish.json"
+		]
+	},
+	"czech" : {
+		"name" : "Přístav",
+		"description" : "Nové město Přístav",
+		"translations" : [
+			"translation/haven/czech.json"
 		]
 	},
 	"factions" :
