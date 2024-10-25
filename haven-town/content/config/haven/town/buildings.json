@@ -198,12 +198,14 @@
 						"gold" : 5000
 					},
 					"requires" : [ "marketplace" ],
+					"produce": { "sulfur": 1 },
 					"id" : 15
 				},
 				"blacksmith" :
 				{
 					"description" : "The Blacksmith provides your armies with Ballista.",
 					"name" : "Blacksmith",
+					"warMachine" : "ballista",
 					"cost" :
 					{
 						"wood" : 5,
@@ -233,7 +235,16 @@
 						"wood" : 10
 					},
 					"requires" : [ "special1" ],
-					"type" : "lighthouse" ,
+					"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.580",
+								"movePoints" : 400,
+								"bonuses" : [ { "type" : "MOVEMENT", "subtype" : "heroMovementLand",  "val" : 400, "valueType" : "ADDITIVE_VALUE", "duration" : "ONE_WEEK"} ]
+							}
+						]
+					},
 					"id" : 21
 				},
 				"horde4" :

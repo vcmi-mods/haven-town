@@ -3,10 +3,11 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.31",
+	"version" : "1.40",
 	"modType" : "Town",
 	"changelog" :
     {
+		"1.40"	:  [ "Update to vcmi-1.6 format" ],
 		"1.31"	:  [ "Czech translation by George King" ],
 		"1.30"	:  [ "New Marids models by Kurek" ],
 		"1.29"	:  [ "New female hero's battle model", "Improved battle model for Hydromancer (lvl 6 unit)" ],
@@ -31,7 +32,7 @@
     },
 	"compatibility" :
 	{
-		"min" : "1.4.0"
+		"min" : "1.6.0"
 	},	
 	"chinese" : {
 		"name" : "峡湾",

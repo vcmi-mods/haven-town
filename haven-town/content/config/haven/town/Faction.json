@@ -7,7 +7,7 @@
 		"boat" : "boatHaven",
 		"town" :
 		{
-			"musicTheme" : "music/haven/theme",
+			"musicTheme" : [ "music/haven/theme" ],
 			"defaultTavern" : 5,
 			"tavernVideo" : "TAVERN.BIK",
 			"guildBackground" : "TPMAGE.bmp",
@@ -36,7 +36,6 @@
 			"horde" : [ 3, 2 ],
 			"mageGuild" : 4,
 			"primaryResource" : "sulfur",
-			"warMachine" : "ballista",
 			"buildingsIcons" : "haven/town-hall.def",
 			"icons" :
 			{
