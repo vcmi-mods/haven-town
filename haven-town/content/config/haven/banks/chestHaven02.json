@@ -43,7 +43,7 @@
 						}
 					}
 				],
-				"visitMode" : "once",
+				"visitMode" : "unlimited",
 				"selectMode": "selectRandom",
 				"templates" : {
 					"AVAbrrlw" :
