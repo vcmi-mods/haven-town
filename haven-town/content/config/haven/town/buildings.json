@@ -169,6 +169,7 @@
 						"wood" : 5,
 						"gold" : 500
 					},
+				"marketModes" : ["resource-resource", "resource-player"],
 					"id" : 14
 				},
 				"ship" :
