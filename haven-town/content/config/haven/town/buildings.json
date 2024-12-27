@@ -308,6 +308,7 @@
 						{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": "damageTypeMelee", "val": 10, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER_PROPAGATOR" }
 					],
 					"id" : 26,
+					"produce": { "gold": 5000 },
 					"mode" : "grail"
 				},
 				"dwellingLvl1" :
