@@ -3,11 +3,12 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.42",
+	"version" : "1.43",
 	"modType" : "Town",
 	"changelog" :
     {
-		"1.42"	:  [ "Fix Grail not to produce gold" ],
+		"1.43"	:  [ "Russian translation" ],	
+	    	"1.42"	:  [ "Fix Grail not to produce gold" ],
 		"1.41"	:  [ "Fix for creature banks" ],
 		"1.40"	:  [ "Update to vcmi-1.6 format" ],
 		"1.31"	:  [ "Czech translation by George King" ],
@@ -62,6 +63,13 @@
 		"description" : "Nové město Přístav",
 		"translations" : [
 			"translation/haven/czech.json"
+		]
+	},
+	"russian" : {
+		"name" : "Гавань",
+		"description" : "Добавляет город морских существ - Гавань",
+		"translations" : [
+			"translation/haven/russian.json"
 		]
 	},
 	"factions" :
