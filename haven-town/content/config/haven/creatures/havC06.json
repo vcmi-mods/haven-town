@@ -36,7 +36,7 @@
 			"missile" :
 			{
      			"projectile" : "PELFX.DEF",	
-			    "attackClimaxFrame" : 8,
+			    "attackClimaxFrame" : 7,
 				"offset" :
 				{
 					"upperX" : 41,
@@ -70,16 +70,55 @@
 			{
 				"type" : "SHOOTER"
 			},
-			"caster": {
-				"type" : "SPELL_AFTER_ATTACK",
-				"addInfo" : 1001,
+			"noCastByDefault" :
+			{
+				"type" : "NO_SPELLCAST_BY_DEFAULT"
+			},
+			"castMarkedTarget" :
+			{
+				"type" : "SPELLCASTER",
 				"subtype" : "spell.smokeShell",
-				"val" : 30
+				"val" : 0
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
 			},
 			"reduceDefence" :
 			{
 				"type" : "ENEMY_DEFENCE_REDUCTION",
 				"val" : 30
+			},
+			"attackInWater" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"defenceInWater"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"speedInWater" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
 			}
 		},
 		"stackExperience" :

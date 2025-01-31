@@ -98,14 +98,70 @@
 				"subtype": "spell.havenSpell05",
 				"val" : 3,
 				"addInfo" : 3,				
-				"limiters" : [ "CREATURE_NATIVE_TERRAIN" ]
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["sand"]
+				} ]
+			},
+			"enraged2" :
+			{
+				"type": "ENCHANTER",
+				"subtype": "spell.havenSpell05",
+				"val" : 3,
+				"addInfo" : 3,				
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
 			},
 			"castsCount" :
 			{
 				"type" : "CASTS",
 				"val" : 2,			
-				"limiters" : [ "CREATURE_NATIVE_TERRAIN" ]
-			}	
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["sand"]
+				} ]
+			},
+			"castsCount2" :
+			{
+				"type" : "CASTS",
+				"val" : 2,			
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+			},
+			"attackInWater" : 
+			{
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.attack",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"defenceInWater"  : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "primarySkill.defence",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			},
+			"speedInWater" : {
+				"type" : "STACKS_SPEED",
+				"val" : 1,
+				"limiters" : [ {
+					"type" : "CREATURE_TERRAIN_LIMITER",
+					"parameters" : ["water"]
+				} ]
+				
+			}
 		},
 		"stackExperience" :
 		[

@@ -3,12 +3,13 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.43",
+	"version" : "1.50",
 	"modType" : "Town",
 	"changelog" :
     {
+		"1.50"	:  [ "Remade by Ben Yan" ],
 		"1.43"	:  [ "Russian translation by Keloraen" ],	
-	    "1.42"	:  [ "Fix Grail not to produce gold" ],
+		"1.42"	:  [ "Fix Grail not to produce gold" ],
 		"1.41"	:  [ "Fix for creature banks" ],
 		"1.40"	:  [ "Update to vcmi-1.6 format" ],
 		"1.31"	:  [ "Czech translation by George King" ],

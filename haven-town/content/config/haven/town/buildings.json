@@ -236,17 +236,134 @@
 						"wood" : 10
 					},
 					"requires" : [ "special1" ],
-					"configuration" : {
-						"visitMode" : "bonus",
-						"rewards" : [
-							{
-								"message" : "@core.genrltxt.580",
-								"movePoints" : 400,
-								"bonuses" : [ { "type" : "MOVEMENT", "subtype" : "heroMovementLand",  "val" : 400, "valueType" : "ADDITIVE_VALUE", "duration" : "ONE_WEEK"} ]
-							}
-						]
-					},
+					"bonuses": [
+						{
+							"propagator": "PLAYER_PROPAGATOR",
+							"type": "MOVEMENT",
+							"subtype": "heroMovementSea",
+							"val": 500
+						}
+					],
 					"id" : 21
+				},
+				"special3" :
+				{
+					"description" : "Casino allows you to spend 1000 gold once a week to draw a reward, including random resources, treasures, or no reward.",
+					"name" : "Casino",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"gems": 2
+					},
+					"requires" : [ "allOf", ["fort"], ["marketplace"] ],
+					"manualHeroVisit" : true,
+					"configuration" : {
+					"rewards" :
+					[
+					{
+						"appearChance": 
+						{
+							"max" : 25
+						},
+						"resources" : {
+							"gold" : -1000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, and you didn't win any rewards. Please come back next time."
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 25,
+							"max" : 50
+						},
+						"resources" : [
+							{
+								"anyOf" : [ "ore", "mercury", "gems", "sulfur", "crystal" ],
+								"min" : 1,
+								"max" : 6
+							},
+							{
+								"type" : "gold",
+								"amount" : -1000
+							}
+						],
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won some resources, congratulations!"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 50,
+							"max" : 75
+						},
+						"artifacts" : [
+							{ "class" : "TREASURE" }
+						],
+						"resources" : {
+							"gold" : -1000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won an artifact, congratulations!"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 75,
+							"max" : 95
+						},
+						"artifacts" : [
+							{ "class" : "MINOR" }
+						],
+						"resources" : {
+							"gold" : 2000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won an artifact, and you get your money back. congratulations!"
+					},
+					{
+						"appearChance": 
+						{
+							"min" : 95,
+							"max" : 100
+						},
+						"artifacts" : [
+							{ "class" : "MAJOR" }
+						],
+						"resources" : {
+							"gold" : 5000
+						},
+						"limiter": 
+						{
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you become the focus of everyone...You won the jackpot, congratulations! Wish you good luck everyday!"
+					}
+				],
+				"onSelectMessage" : "{Casino}\r\n\r\nCasino allows you to spend 1000 gold once a week to draw a reward, including random resources, treasures, or no reward.",
+                "onVisitedMessage": "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you still think that you should not waste your time on boring gambling.",
+				"onEmptyMessage": "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you cannot afford the gambling money. You convince yourself that you should not waste your time on boring gambling.",
+                "visitMode" : "once",
+				"resetParameters" : {
+					"period" : 7,
+					"visitors" : true,
+					"rewards" : true
+				},     
+				"selectMode" : "selectPlayer",
+					},
+					"id" : 22
 				},
 				"horde4" :
 				{
@@ -369,7 +486,7 @@
 						"ore" : 5,
 						"mercury" : 5
 					},
-					"requires" : [ "dwellingLvl4" ],
+					"requires" : [ "dwellingLvl3" ],
 					"id" : 34
 				},
 				"dwellingLvl6" :
@@ -378,10 +495,10 @@
 					"name" : "Temple of Tides",
 					"cost" : {
 						"gold" : 4000,
-						"mercury" : 5,
-						"crystal" : 5,
-						"gems" : 5,
-						"sulfur" : 5
+						"mercury" : 3,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
 					},
 					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6B" ] ] ],
 					"id" : 35
@@ -391,7 +508,7 @@
 					"description" : "Turtle Hatchery allows you to recruit Gaint Turtles.",
 					"name" : "Turtle Hatchery",
 					"cost" : {
-						"gold" : 4000,
+						"gold" : 5000,
 						"ore" : 20
 					},
 					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6" ] ] ],
@@ -404,11 +521,8 @@
 					"cost" : {
 						"gold" : 10000,
 						"wood" : 10,
-						"mercury" : 10,
 						"ore" : 10,
-						"sulfur" : 10,
-						"crystal" : 10,
-						"gems" : 10
+						"sulfur" : 15
 					},
 					"requires" : [ "allOf", [ "dwellingLvl5" ] ],
 					"id" : 36
@@ -508,7 +622,7 @@
 					"name" : "Upg. Abyssal Gate",
 					"cost" : {
 						"ore" : 10,
-						"gold" : 25000,
+						"gold" : 20000,
 						"wood" : 10,
 						"sulfur" : 20
 					},

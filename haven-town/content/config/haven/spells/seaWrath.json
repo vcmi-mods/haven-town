@@ -12,7 +12,7 @@
 		"targetType": "CREATURE",
 		"targetCondition" : {
 			"anyOf" : {
-				"haven-town:creature.havC14":"absolute"}
+				"haven:creature.havC14":"absolute"}
 		},
 		"level": 1,
 		"power": 10,
@@ -21,9 +21,11 @@
 		{
 		},
 		"animation":{
-			"affect":["sp13_"]
+			"affect":[{"defName":"haven/spells/seaWrath.def","verticalPosition":"bottom","transparency" : 0.5}]
 		},
-		"flags" : {"positive": true
+		"flags" : {
+			"positive": true,
+			"nonMagical": true
 					},
 		"sounds": {
 			"cast": "LICHDFND"

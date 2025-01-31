@@ -30,19 +30,19 @@
 					"bottom" :
 					{
 						"battlement" : { "x" : 633, "y" : 514 },
-						"creature" : { "x" : 397, "y" : 305 },
+						"creature" : { "x" : 403, "y" : 305 },
 						"tower" : { "x" : 633, "y" : 514 }
 					},
 					"keep" :
 					{
 						"battlement" : { "x" : 705, "y" : 149 },
-						"creature" : { "x" : 528, "y" : -32 },
+						"creature" : { "x" : 530, "y" : -32 },
 						"tower" : { "x" : 705, "y" : 149 }
 					},
 					"top" :
 					{
 						"battlement" : { "x" : 581, "y" : 30 },
-						"creature" : { "x" : 342, "y" : -182 },
+						"creature" : { "x" : 349, "y" : -182 },
 						"tower" : { "x" : 581, "y" : 30 }
 					}
 				},

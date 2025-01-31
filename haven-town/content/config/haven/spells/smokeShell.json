@@ -1,7 +1,7 @@
 {
 	"smokeShell" : {
 		"type": "ability",
-		"name": "Smoke Shell",
+		"name": "Precise Marking",
 		"school":
 		{
 			"air": false,
@@ -17,18 +17,19 @@
 		{
 		},
 		"animation":{
-			"affect":["CSGRCK"]
+			"affect":["haven/spells/mark"]
 		},
 		"flags" : {
-			"negative": true
+			"negative": true,
+			"nonMagical":true
+		},
+		"counters" : {
+			"spell.airShield": true
 		},
 		"targetCondition" : {
-			"allOf" : {
-				"bonus.SHOOTER" : "absolute"
-			}
 		},
 		"sounds": {
-			"cast": "DISEASE"
+			"cast": "HHAGSHOT"
 		},
 		"graphics":
 		{
@@ -36,21 +37,20 @@
 		},
 		"levels" : {
 			"base":{
-				"range": "0-1",
+				"range": "0",
 				"power": 10,
 				"aiValue": 20,
 				"targetModifier":{"smart":true},
 				"effects" : {
 					"primarySkill" : {
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.attack",
-						"val" : -5,
-						"effectRange" : "ONLY_DISTANCE_FIGHT",
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"val": -50,
+						"subtype" : "damageTypeRanged",
 						"duration" : ["N_TURNS"],
 						"turns" : 3
 					}
 				},
-			"description": "{smoke shell}\r\n\r\nReduce distance attack by 5."
+			"description": "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack."
 			},
 			"none":
 			{	 
@@ -69,5 +69,11 @@
 				"cost": 0
 			}
 		}
+	},
+	"core:airShield":
+	{
+		"counters" : {
+			"spell.smokeShell": true
+		},
 	}
 }
