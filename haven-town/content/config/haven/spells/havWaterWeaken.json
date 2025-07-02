@@ -39,7 +39,7 @@
 				"description": "More damaged from water spell and -3 defence in 2 turns",
 				"cost": 0,
 				"power": 10,
-				"aiValue": 15,
+//				"aiValue": 15,
 				"range": "0",
 				"targetModifier":{"smart":true},
 				"battleEffects":

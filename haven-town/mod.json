@@ -3,10 +3,11 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.51",
+	"version" : "1.52",
 	"modType" : "Town",
 	"changelog" :
     {
+		"1.52"	:  [ "Update to vcmi-1.7 format" ],
 		"1.51"	:  [ "Updated Czech translation", "Updated screenshots" ],
 		"1.50"	:  [ "Remade by Ben Yan" ],
 		"1.43"	:  [ "Russian translation by Keloraen" ],	
@@ -37,7 +38,7 @@
     },
 	"compatibility" :
 	{
-		"min" : "1.6.0"
+		"min" : "1.7.0"
 	},	
 	"chinese" : {
 		"name" : "峡湾",
@@ -93,8 +94,7 @@
 		"config/haven/creatures/havC05.json",
 		"config/haven/creatures/havC06.json",
 		"config/haven/creatures/havC07.json",
-		"config/haven/creatures/havC08.json",				
-		"config/haven/creatures/yachtswoman.json",		
+		"config/haven/creatures/havC08.json",					
 		"config/haven/creatures/havC09.json",
 		"config/haven/creatures/havC10.json",		
 		"config/haven/creatures/havC11.json",
@@ -102,7 +102,9 @@
 		"config/haven/creatures/havC11B.json",
 		"config/haven/creatures/havC12B.json",
 		"config/haven/creatures/havC13.json",
-		"config/haven/creatures/havC14.json"
+		"config/haven/creatures/havC14.json",
+		"config/haven/creatures/yachtswoman.json",	
+		"config/haven/creatures/wiki.json"
 	],
 	"heroClasses" :
 	[

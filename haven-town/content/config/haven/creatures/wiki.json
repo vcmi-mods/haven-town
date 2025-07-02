@@ -1,0 +1,70 @@
+{
+	"havC01":
+	{
+		"description" : "{green|Wererat}\n\n{gold|Special Ability : Water Warrior.}\n\nOn water terrain Wererats attack, defence and speed are increased by 1."
+	},
+	"havC02":
+	{
+		"description" : "{green|Wererat Rager}\n\n\n\n{gold|Special Ability : Water Warrior.}\n\nOn water terrain Wererat Ragers attack, defence and speed are increased by 1."
+	},
+	"havC03":
+	{
+		"description" : "{green|Diver}\n\n{gold|Special Ability : Water Warrior.}\n\nOn water terrain Divers attack, defence and speed are increased by 1."
+	},
+	"havC04":
+	{
+		"description" : "{green|Deep One}\n\n{gold|Special Ability : Water Warrior. Retaliated twice.}\n\nOn water terrain Deep Ones attack, defence and speed are increased by 1.\n\nRetaliation refers to the counterattack of a stack that has been the target of a melee attack. All creatures have one retaliation per combat round with the exceptions of several creatures like Griffins, which have two retaliations per combat round. With the Counterstrike spell, it is possible for a hero to magically add one or two extra retaliations per combat round. For Deep Ones this means three or four in total."
+	},
+	"havC05":
+	{
+		"description" : "{green|Arbalist}\n\n{gold|Special Ability : Water Warrior. Shooter.}\n\nOn water terrain Arbalists attack, defence and speed are increased by 1.\n\nRanged attack is a special ability of creatures, which allows them to attack without engaging into hand-to-hand combat. Visually, typical ranged creature are armed with bows or crossbows (e.g. Elves or Archers), but there are also several creatures that use some kind of magic or elements (lightning, etc.), like Monks or Titans. However, this is only a visual effect and has no effect on the gameplay. When attacking in melee, most ranged creatures suffer melee penalty, which halves their damage. Ranged penalty halves the ranged damage farther away than 10 hexes."
+	},
+	"havC06":
+	{
+		"description" : "{green|Elite Arbalist}\n\n{gold|Special Ability : Water Warrior. Shooter. Enemy defence reduction 30%. Can cast Precise Marking spell.}\n\nOn water terrain Elite Arbalists attack, defence and speed are increased by 1.\n\nOnce per battle elite arbalists can cast Precise Marking spell - affected enemy stacks gain 50% more damege from shoots for three rounds. Effects of this spell can be countered by Air Shield (and vice versa).\n\nRanged attack is a special ability of creatures, which allows them to attack without engaging into hand-to-hand combat. Visually, typical ranged creature are armed with bows or crossbows (e.g. Elves or Archers), but there are also several creatures that use some kind of magic or elements (lightning, etc.), like Monks or Titans. However, this is only a visual effect and has no effect on the gameplay. When attacking in melee, most ranged creatures suffer melee penalty, which halves their damage. Ranged penalty halves the ranged damage farther away than 10 hexes."
+	},
+	"havC07":
+	{
+		"description" : "{green|Mermaid}\n\n{gold|Special Ability : Water Warrior. Whirlpool Protector. Can cast Fortune. Always have +1 luck.}\n\nOn water terrain Mermaids attack, defence and speed are increased by 1.\n\nWhen a hero enters the whirlpool, he loses 50% rounded up (i.e. is left with 50% rounded down) of the creatures in his army's weakest stack. The weakness is determined by the total Fight Value of the stacks. With Mermaids in army, a hero can enter whirlpools without losing creatures.\n\nMermaids can cast two times per battle Fortune spell at advanced level (spell duration - 6 rounds).\n\nThe positive luck ability of mermaids can be affected by Hourglass of the Evil Hour or Cursed Ground magical terrain only. Their luck cannot be decreased below +1 by any other luck modifier. Mermaids are unable to get luck unless being commanded by a hero, like all the other neutral creatures, despite the game saying that they have +1 luck."
+	},
+	"havC08":
+	{
+		"description" : "{green|Coral Mermaid}\n\n{gold|Special Ability : Water Warrior. Whirlpool Protector. Can cast Fortune. Can cast Seduce spell ater attack. Always have +1 luck.}\n\nOn water terrain Coral Mermaids attack, defence and speed are increased by 1.\n\nWhen a hero enters the whirlpool, he loses 50% rounded up (i.e. is left with 50% rounded down) of the creatures in his army's weakest stack. The weakness is determined by the total Fight Value of the stacks. With Coral Mermaids in army, a hero can enter whirlpools without losing creatures.\n\nCoral mermaids have 20% chance to cast Seduce spell after attack. This spell allows hero to control enemy troop until it will be attacked or after two turns (hypnotize effect). Undead, non-living and creatures with mind immunity are unaffected of this ability.\n\nAdditionally coral mermaids can cast two times per battle Fortune spell at advanced level (spell duration - 6 rounds).\n\nThe positive luck ability of coral mermaids can be affected by Hourglass of the Evil Hour or Cursed Ground magical terrain only. Their luck cannot be decreased below +1 by any other luck modifier. Coral mermaids are unable to get luck unless being commanded by a hero, like all the other neutral creatures, despite the game saying that they have +1 luck."
+	},
+	"havC09":
+	{
+		"description" : "{green|Marid}\n\n{gold|Special Ability : Water Warrior. Flying. Immune to water damaging spells.}\n\nOn water terrain Marids attack, defence and speed are increased by 1.\n\nFlying is a special ability of creatures, which allows them to bypass obstacles (e.g. walls) during combat. Having creatures with this special ability in a hero's army does not affect the movement of that hero on the adventure map in any way (meaning that flying creatures also cause a movement penalty on non-native terrain). Flying creatures are always immune to Quicksand.\n\nSpell immunity is creature special ability which makes them unable to be target of the specific spell or a range of spells. The immunity also regards creature abilities which cause the same effect as the specific spell or spells (for example, Troglodytes are immune to the Blind spell as well as Unicorns' blinding special ability), even if technically this ability doesn't mean respective spell (for example, Gold and Black Dragons are immune to the Resurrection spell as well as Archangels' resurrecting special ability). The Orb of Vulnerability can bypass some spell immunities."
+	},
+	"havC10":
+	{
+		"description" : "{green|Marid Sultan}\n\n{gold|Special Ability : Water Warrior. Flying. Immune to water damaging spells. No enemy retaliation.}\n\nOn water terrain Sultan Marids attack, defence and speed are increased by 1.\n\nFlying is a special ability of creatures, which allows them to bypass obstacles (e.g. walls) during combat. Having creatures with this special ability in a hero's army does not affect the movement of that hero on the adventure map in any way (meaning that flying creatures also cause a movement penalty on non-native terrain). Flying creatures are always immune to Quicksand.\n\nSpell immunity is creature special ability which makes them unable to be target of the specific spell or a range of spells. The immunity also regards creature abilities which cause the same effect as the specific spell or spells (for example, Troglodytes are immune to the Blind spell as well as Unicorns' blinding special ability), even if technically this ability doesn't mean respective spell (for example, Gold and Black Dragons are immune to the Resurrection spell as well as Archangels' resurrecting special ability). The Orb of Vulnerability can bypass some spell immunities.\n\nSome creatures have special ability typically phrased as \"no enemy retaliation\", which does not allow the stack(s) they attack to retaliate against them. This also means, that the attacked stack will not lose one of their retaliations for that combat round if attacked by a creature stack with no enemy retaliation. Thus, while attack with no retaliation is a very strong ability, sometimes it's a double-edged sword as creatures with no enemy retaliation cannot be used to prevent an enemy creature from retaliating that round."
+	},
+	"havC11":
+	{
+		"description" : "{green|Giant Turtle}\n\n{gold|Special Ability : Water Warrior. Damage reduction 30%.}\n\nOn water terrain Giant Turtles attack, defence and speed are increased by 1.\n\nGiant turtles reduce physical damage from melee attacks by 30%."
+	},
+	"havC11B":
+	{
+		"description" : "{green|Sea Mage}\n\n{gold|Special Ability : Water Warrior. Shooter. No obstacle penalty. Ice Bolt attack. Increases see movement.}\n\nFOn water terrain Giant Turtles attack, defence and speed are increased by 1.\n\nObstacle penalty is a term for reduction of damage for ranged attacks. It occurs only during sieges when the target is behind walls. The attack suffering from the obstacle penalty only does half the damage compared to an attack made against a target being in front of the wall. The obstacle penalty is cumulative with the range penalty."
+	},
+	"havC12":
+	{
+		"description" : "{green|Dragon Turtle}\n\n{gold|Special Ability : Water Warrior. Damage reduction 50%. Breath attack.}\n\nOn water terrain Dragon Turtles attack, defence and speed are increased by 1.\n\nGiant turtles reduce physical damage from melee attacks by 50%.\n\nBreath attack is a special ability typical for living dragons, but also for Firebirds and Phoenixs (and Mechanic Engineer Mechanics and Engineers Horn of the Abyss). It enables them to attack two consecutive hexes at once, making individual damage to both hexes. However, creatures that are two hexes wide do not suffer double damage from the breath attack. Although creatures with breath attack specialty cannot directly attack allied creatures, they can - similar to Liches and Power Liches' Death Cloud and Magogs' Fireball Attack - cause damage to allied creatures located on the second hex. In other words, breath attack will also damage the hero's own troops if they are standing directly behind the attacked hex. Damage for each attacked stack is calculated separately. Black Dragons' hate against Titan Titans works even if the latter were not attacked directly and suffered from breath attack. If your Black Dragons by mistake attacked Titans who are part of your army, they will still deal 150% damage."
+	},
+	"havC12B":
+	{
+		"description" : "{green|Hydromancer}\n\n\n\n{gold|Special Ability : Flying.}\n\nFlying is a special ability of creatures, which allows them to bypass obstacles (e.g. walls) during combat. Having creatures with this special ability in a hero's army does not affect the movement of that hero on the adventure map in any way (meaning that flying creatures also cause a movement penalty on non-native terrain). Flying creatures are always immune to Quicksand."
+	},
+	"havC13":
+	{
+		"description" : "{green|Leviathan}\n\n\n\n{gold|Special Ability : Flying.}\n\nFlying is a special ability of creatures, which allows them to bypass obstacles (e.g. walls) during combat. Having creatures with this special ability in a hero's army does not affect the movement of that hero on the adventure map in any way (meaning that flying creatures also cause a movement penalty on non-native terrain). Flying creatures are always immune to Quicksand."
+	},
+	"havC14":
+	{
+		"description" : "{green|Imperial Leviathan}\n\n\n\n{gold|Special Ability : Flying.}\n\nFlying is a special ability of creatures, which allows them to bypass obstacles (e.g. walls) during combat. Having creatures with this special ability in a hero's army does not affect the movement of that hero on the adventure map in any way (meaning that flying creatures also cause a movement penalty on non-native terrain). Flying creatures are always immune to Quicksand."
+	},
+	"havYachtswoman":
+	{
+		"description" : "{green|Yachtswoman}\n\n\n\n{gold|Special Ability : Flying.}\n\nFlying is a special ability of creatures, which allows them to bypass obstacles (e.g. walls) during combat. Having creatures with this special ability in a hero's army does not affect the movement of that hero on the adventure map in any way (meaning that flying creatures also cause a movement penalty on non-native terrain). Flying creatures are always immune to Quicksand."
+	}
+}

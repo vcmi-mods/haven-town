@@ -50,7 +50,7 @@
 			"base":
 			{
 				"power": 10,
-				"aiValue": 12,
+//				"aiValue": 12,
 				"range": "0",
 				"targetModifier":
 				{
@@ -72,7 +72,7 @@
 						"turns": 3
 					},
 					"stacksSpeed" : {
-						"addInfo" : 0,
+//						"addInfo" : 0,
 						"type" : "STACKS_SPEED",
 						"val" : 2,
 						"duration" : "N_TURNS",
@@ -95,7 +95,7 @@
 						"turns": 3
 					},
 					"stacksSpeed" : {
-						"addInfo" : 0,
+//						"addInfo" : 0,
 						"type" : "STACKS_SPEED",
 						"val" : 2,
 						"duration" : "N_TURNS",
@@ -118,7 +118,7 @@
 						"turns": 3
 					},
 					"stacksSpeed" : {
-						"addInfo" : 0,
+//						"addInfo" : 0,
 						"type" : "STACKS_SPEED",
 						"val" : 2,
 						"duration" : "N_TURNS",
@@ -142,7 +142,7 @@
 						"turns": 3
 					},
 					"stacksSpeed" : {
-						"addInfo" : 0,
+//						"addInfo" : 0,
 						"type" : "STACKS_SPEED",
 						"val" : 2,
 						"duration" : "N_TURNS",
