@@ -1,30 +1,27 @@
 {
-	"havMhero09" :
-	{
+	"havMhero09" : {
 		"class" : "havMhero",
-		"female": true,
-		"texts" :
-		{
+		"female" : true,
+		"texts" : {
 			"name" : "Candice",
 			"biography" : "Candice's lover was a human and she used to enter the human society for living with him. However she cannot adapt the life far away from water. Finally she divorced with her lover and return to the sea. Sometimes she will also swim back to the port and looking at the village where used to live. She eventually knows becoming a human is only a dream.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "Mermaids",
 				"description" : "Increases the Attack and Defense skills of any Mermaid or Coral Mermaid for each level attained after 4th level."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero9/skill9S.bmp",
 			"specialtyLarge" : "haven/heroes/havHero9/skill9.bmp",
 			"large" : "haven/heroes/havHero9/hero9.bmp",
 			"small" : "haven/heroes/havHero9/hero9S.bmp"
 		},
-		"spellbook": [ "fortune" ],
+		"spellbook" : [
+			"fortune"
+		],
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -42,8 +39,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "waterMagic"
@@ -53,9 +49,9 @@
 				"skill" : "learning"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "havC07"
-		}	
+		}
 	}
 }

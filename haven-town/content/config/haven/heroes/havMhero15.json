@@ -1,30 +1,27 @@
 {
-	"havMhero15" :
-	{
+	"havMhero15" : {
 		"class" : "havMhero",
-		"female": true,
-		"texts" :
-		{
+		"female" : true,
+		"texts" : {
 			"name" : "Amber",
 			"biography" : "Amber is similar with his father Andal from almost all aspects. She knew his father as a 'famous' smuggler who can always collect crystal and gems. The girl is good at business as well as his father. Nowadays she left his father because he chose to become a servant of King Bidley. She disagreed with his decision and finally decided to start a new life, with herself.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "+1 Gems",
 				"description" : "Increases kingdom's gems production by 1 per day."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero15/skill15S.bmp",
 			"specialtyLarge" : "haven/heroes/havHero15/skill15.bmp",
 			"large" : "haven/heroes/havHero15/hero15.bmp",
 			"small" : "haven/heroes/havHero15/hero15S.bmp"
 		},
-		"spellbook": [ "haste" ],
+		"spellbook" : [
+			"haste"
+		],
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -42,8 +39,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "waterMagic"
@@ -53,7 +49,7 @@
 				"skill" : "wisdom"
 			}
 		],
-		
+
 		"specialty" : {
 			"bonuses" : {
 				"mercury" : {
@@ -62,6 +58,6 @@
 					"val" : 1
 				}
 			}
-		}	
+		}
 	}
 }

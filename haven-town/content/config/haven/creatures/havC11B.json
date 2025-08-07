@@ -1,44 +1,40 @@
 {
-	"havC11B":
-	{
-		"name" :
-		{
+	"havC11B" : {
+		"name" : {
 			"plural" : "Sea Mages",
 			"singular" : "Sea Mage"
 		},
-		"advMapAmount" :
-		{
-			 "max" : 12,
-			 "min" : 5
+		"advMapAmount" : {
+			"max" : 12,
+			"min" : 5
 		},
 		"faction" : "haven",
 		"aiValue" : 1221,
 		"attack" : 15,
-        "cost" :
-		{
+		"cost" : {
 			"gold" : 800
 		},
-		"damage" :
-		{
-			 "max" : 20,
-			 "min" : 15
+		"damage" : {
+			"max" : 20,
+			"min" : 15
 		},
 		"defense" : 13,
 		"fightValue" : 1046,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/P6Ha.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "haven/map/AVWHAV15.def",
 			"iconSmall" : "haven/iconsSmall/port15S.bmp",
 			"iconLarge" : "haven/iconsBig/port15.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
-     			"projectile" : "PICEE.DEF",	
-			    "attackClimaxFrame" : 8,
-				"offset" :
-				{
+			"missile" : {
+				"projectile" : "PICEE.DEF",
+				"attackClimaxFrame" : 8,
+				"offset" : {
 					"upperX" : 41,
 					"upperY" : -92,
 					"middleX" : 58,
@@ -46,139 +42,219 @@
 					"lowerX" : 29,
 					"lowerY" : -14
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-			},
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
+			}
 		},
 		"growth" : 2,
 		"hitPoints" : 70,
 		"level" : 6,
 		"shots" : 12,
-		"upgrades":
-		[
+		"upgrades" : [
 			"havC12B"
 		],
-		"sound" :
-		{
-			"attack": "MAGEATTK.wav",
-			"defend": "MAGEWNCE.wav",
-			"killed": "haven/SAYLKILL.wav",
-			"move": "ENCHMOVE.wav",
-			"shoot": "ENCHSHOT.wav",
-			"wince": "haven/SAYLWNCE.wav"
+		"sound" : {
+			"attack" : "MAGEATTK.wav",
+			"defend" : "MAGEWNCE.wav",
+			"killed" : "haven/SAYLKILL.wav",
+			"move" : "ENCHMOVE.wav",
+			"shoot" : "ENCHSHOT.wav",
+			"wince" : "haven/SAYLWNCE.wav"
 		},
 		"speed" : 6,
-		"abilities" :
-		{
-			"shooter" :
-			{
+		"abilities" : {
+			"shooter" : {
 				"type" : "SHOOTER"
 			},
-			"noPenalty" : 
-			{
+			"noPenalty" : {
 				"type" : "NO_WALL_PENALTY"
 			},
-			"navigationBoost" :
-			{
+			"navigationBoost" : {
 				"type" : "MOVEMENT",
 				"subtype" : "heroMovementSea",
-				"val" : 300, 
+				"val" : 300,
 				"propagator" : "HERO",
 				"description" : "{Navigator}\nInreases hero sea movement points by 300",
-				"icon" : "haven/icons/bonuses/e_whirl.png"				
+				"icon" : "haven/icons/bonuses/e_whirl.png"
 			},
-			"iceIsComing" :
-			{
+			"iceIsComing" : {
 				"type" : "SPELL_LIKE_ATTACK",
 				"subtype" : "iceShot",
 				"val" : 1
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageBoth",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+				"values" : [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeAll",
+					"subtype" : "damageTypeAll"
 				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+				"values" : [
+					2,
+					5,
+					7,
+					10,
+					12,
+					15,
+					17,
+					20,
+					22,
+					25
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+				"values" : [
+					0,
+					0,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					50
+				]
 			}
 		]
 	}

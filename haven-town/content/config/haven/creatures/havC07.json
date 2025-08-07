@@ -1,24 +1,20 @@
 {
-	"havC07":
-	{
-		"name" :
-		{
+	"havC07" : {
+		"name" : {
 			"plural" : "Mermaids",
 			"singular" : "Mermaid"
 		},
-		"faction" : "haven",		
-		"advMapAmount" :
-		{
-			 "min" : 10,
-			 "max" : 20
+		"faction" : "haven",
+		"advMapAmount" : {
+			"min" : 10,
+			"max" : 20
 		},
 		"level" : 4,
 		"attack" : 8,
 		"defense" : 12,
-		"damage" :
-		{
-			 "min" : 6,
-			 "max" : 9
+		"damage" : {
+			"min" : 6,
+			"max" : 9
 		},
 		"growth" : 4,
 		"horde" : 2,
@@ -26,158 +22,221 @@
 		"speed" : 5,
 		"fightValue" : 442,
 		"aiValue" : 459,
-		"upgrades":
-		[
+		"upgrades" : [
 			"havC08"
 		],
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 325
 		},
-		"hasDoubleWeek": true,
+		"hasDoubleWeek" : true,
 		"doubleWide" : true,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/Hav07.def",
 			"map" : "haven/map/AVWHAV07.def",
 			"iconSmall" : "haven/iconsSmall/port7S.bmp",
 			"iconLarge" : "haven/iconsBig/port7.bmp",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 0.9,
 				"attack" : 1,
 				"idle" : 10
 			}
 		},
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "haven/CHV4ATTK.wav",
 			"defend" : "haven/CHV4DFND.wav",
 			"killed" : "haven/CHV4KILL.wav",
-			"move": "haven/CHV4MOVE.wav",
+			"move" : "haven/CHV4MOVE.wav",
 			"wince" : "haven/CHV4WNCE.wav"
-        },
-		"abilities" :
-		{
-			"lucky" :
-			{
+		},
+		"abilities" : {
+			"lucky" : {
 				"type" : "LUCK",
 				"val" : 1,
 				"valueType" : "INDEPENDENT_MAX",
 				"description" : "{Positive luck}\nMermaid's luck cannot be decreased below +1",
-				"icon" : "haven/icons/bonuses/positiveluck.png"				
+				"icon" : "haven/icons/bonuses/positiveluck.png"
 			},
-			"castLength" :
-			{
+			"castLength" : {
 				"type" : "CREATURE_ENCHANT_POWER",
 				"val" : 6
-			}, 	
-			"castsFortune" :
-			{
+			},
+			"castsFortune" : {
 				"type" : "SPELLCASTER",
 				"subtype" : "fortune",
 				"val" : 2
 			},
-			"spellpoints" :
-			{
+			"spellpoints" : {
 				"type" : "CASTS",
 				"val" : 2
 			},
-			"whirlpoolProtection" : 
-			{ 
-				"type" : "WHIRLPOOL_PROTECTION", 
+			"whirlpoolProtection" : {
+				"type" : "WHIRLPOOL_PROTECTION",
 				"propagator" : "HERO",
 				"description" : "{Sea Protector}\nMermaids can help with safe travel through whirlpools",
-				"icon" : "haven/icons/bonuses/e_whirl.png"				
+				"icon" : "haven/icons/bonuses/e_whirl.png"
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
-			},	
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageMax",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+				"values" : [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageMin",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+				"values" : [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "BLOCKS_RETALIATION"
 				},
-				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
 			}
 		]
 	}

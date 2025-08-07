@@ -1,30 +1,27 @@
 {
-	"havMhero13" :
-	{
+	"havMhero13" : {
 		"class" : "havMhero",
-		"female": false,
-		"texts" :
-		{
+		"female" : false,
+		"texts" : {
 			"name" : "Leander",
 			"biography" : "Leander used to learn magic for decades of years, but he has a dream to become navigator at senior age. Now he started his voyage from a small harbour, it is still not late for chasing a dream.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "Sorcery",
 				"description" : "Receives a 5% per level bonus to Sorcery skill percentage."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero13/skill13S.bmp",
 			"specialtyLarge" : "haven/heroes/havHero13/skill13.bmp",
 			"large" : "haven/heroes/havHero13/hero13.bmp",
 			"small" : "haven/heroes/havHero13/hero13S.bmp"
 		},
-		"spellbook": [ "frostRing" ],
+		"spellbook" : [
+			"frostRing"
+		],
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -42,8 +39,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "waterMagic"
@@ -53,9 +49,9 @@
 				"skill" : "sorcery"
 			}
 		],
-		
+
 		"specialty" : {
 			"secondary" : "sorcery"
-		}	
+		}
 	}
 }

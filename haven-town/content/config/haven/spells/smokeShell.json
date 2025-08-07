@@ -1,79 +1,75 @@
 {
 	"smokeShell" : {
-		"type": "ability",
-		"name": "Precise Marking",
-		"school":
-		{
-			"air": false,
-			"earth": false,
-			"fire": false,
-			"water": false
+		"type" : "ability",
+		"name" : "Precise Marking",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"targetType": "CREATURE",
-		"level": 1,
-		"power": 10,
-		"defaultGainChance": 0, 
-		"gainChance":
-		{
-		},
-		"animation":{
-			"affect":["haven/spells/mark"]
+		"targetType" : "CREATURE",
+		"level" : 1,
+		"power" : 10,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"animation" : {
+			"affect" : [
+				"haven/spells/mark"
+			]
 		},
 		"flags" : {
-			"negative": true,
-			"nonMagical":true
+			"negative" : true,
+			"nonMagical" : true
 		},
 		"counters" : {
-			"spell.airShield": true
+			"spell.airShield" : true
 		},
-		"targetCondition" : {
+		"targetCondition" : {},
+		"sounds" : {
+			"cast" : "HHAGSHOT"
 		},
-		"sounds": {
-			"cast": "HHAGSHOT"
-		},
-		"graphics":
-		{
-			"iconEffect": "haven/spells/havspell3.bmp"
+		"graphics" : {
+			"iconEffect" : "haven/spells/havspell3.bmp"
 		},
 		"levels" : {
-			"base":{
-				"range": "0",
-				"power": 10,
-//				"aiValue": 20,
-				"targetModifier":{"smart":true},
+			"base" : {
+				"range" : "0",
+				"power" : 10,
+				//				"aiValue": 20,
+				"targetModifier" : {
+					"smart" : true
+				},
 				"effects" : {
 					"primarySkill" : {
 						"type" : "GENERAL_DAMAGE_REDUCTION",
-						"val": -50,
+						"val" : -50,
 						"subtype" : "damageTypeRanged",
-						"duration" : ["N_TURNS"],
+						"duration" : [
+							"N_TURNS"
+						],
 						"turns" : 3
 					}
 				},
-			"description": "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack."
+				"description" : "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack."
 			},
-			"none":
-			{	 
-				"cost": 0
+			"none" : {
+				"cost" : 0
 			},
-			"basic":
-			{	 
-				"cost": 0
+			"basic" : {
+				"cost" : 0
 			},
-			"advanced":
-			{	 
-				"cost": 0
+			"advanced" : {
+				"cost" : 0
 			},
-			"expert":
-			{
-				"cost": 0
+			"expert" : {
+				"cost" : 0
 			}
 		}
 	},
-	"core:airShield":
-	{
+	"core:airShield" : {
 		"counters" : {
-			"spell.smokeShell": true
+			"spell.smokeShell" : true
 		}
 	}
 }

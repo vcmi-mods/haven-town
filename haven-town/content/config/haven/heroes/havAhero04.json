@@ -1,29 +1,24 @@
 {
-	"havAhero04" :
-	{
+	"havAhero04" : {
 		"class" : "havAhero",
-		"female": false,
-		"texts" :
-		{
+		"female" : false,
+		"texts" : {
 			"name" : "Captain Swift",
 			"biography" : "Captain Swift used to be an admiral from Erathia Navy. His ability of high speed frightened each opponent who dared to resist his army. No one knows why he betrayed Erathia royal household, and he still has a loyal troop from previous army. ",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "+1 Speed",
 				"description" : "All creatures receive +1 speed."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero4/skill4S.bmp",
 			"specialtyLarge" : "haven/heroes/havHero4/skill4.bmp",
 			"large" : "haven/heroes/havHero4/hero4.bmp",
 			"small" : "haven/heroes/havHero4/hero4S.bmp"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -41,8 +36,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "leadership"
@@ -52,7 +46,7 @@
 				"skill" : "offence"
 			}
 		],
-		
+
 		"specialty" : {
 			"bonuses" : {
 				"speed" : {
@@ -60,6 +54,6 @@
 					"val" : 1
 				}
 			}
-		}	
+		}
 	}
 }

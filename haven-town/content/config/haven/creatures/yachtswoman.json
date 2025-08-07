@@ -1,50 +1,41 @@
 {
-	"havYachtswoman":
-	{
-		"name" :
-		{
+	"havYachtswoman" : {
+		"name" : {
 			"plural" : "Yachtswomen",
 			"singular" : "Yachtswoman"
 		},
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"faction" : "haven",
 		"special" : true,
 		"aiValue" : 156,
 		"attack" : 5,
-		"damage" :
-		{
-			 "max" : 12,
-			 "min" : 6
+		"damage" : {
+			"max" : 12,
+			"min" : 6
 		},
 		"defense" : 5,
 		"fightValue" : 130,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/yachtswoman",
-//			"map" : "haven/map/", not available
+			//			"map" : "haven/map/", not available
 			"iconSmall" : "haven/iconsSmall/cmdr",
 			"iconLarge" : "haven/iconsBig/cmdr.bmp",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
-				"walk" : 1.00,
-				"idle" : 10.00,
-				"attack" : 1.00
+			"animationTime" : {
+				"walk" : 1.0,
+				"idle" : 10.0,
+				"attack" : 1.0
 			},
-			"missile" :
-			{
+			"missile" : {
 				"projectile" : "PORCHX",
 				"attackClimaxFrame" : 6,
-				"offset" :
-				{
+				"offset" : {
 					"lowerX" : 42,
 					"lowerY" : -83,
 					"middleX" : 42,
@@ -52,87 +43,95 @@
 					"upperX" : 42,
 					"upperY" : -83
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
 			}
-	
 		},
 		"growth" : 9,
-		"hasDoubleWeek": false,
+		"hasDoubleWeek" : false,
 		"hitPoints" : 40,
 		"level" : 0,
 		"shots" : 24,
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "haven/swattack",
 			"defend" : "haven/swdefend",
 			"killed" : "haven/CHV3KILL",
-			"move": "haven/CHV3MOVE",
-			"shoot": "haven/swshoot",
+			"move" : "haven/CHV3MOVE",
+			"shoot" : "haven/swshoot",
 			"wince" : "haven/CHV3WNCE"
- 		},
+		},
 		"speed" : 4,
-				"abilities" :
-		{
-		    "magicResistance" :
-			{
+		"abilities" : {
+			"magicResistance" : {
 				"type" : "SPELL_DAMAGE_REDUCTION",
 				"subtype" : "any",
 				"val" : 5
 			},
-			"castsAmount" :
-			{
+			"castsAmount" : {
 				"type" : "CASTS",
 				"val" : 1
 			},
-			"enchant" :
-			{
+			"enchant" : {
 				"type" : "CREATURE_ENCHANT_POWER",
 				"val" : 1
 			},
-			"spellpower" :
-			{
+			"spellpower" : {
 				"type" : "CREATURE_SPELL_POWER",
 				"val" : 100
 			},
-			"canCast" :
-			{
+			"canCast" : {
 				"type" : "SPELLCASTER",
 				"subtype" : "bless",
 				"val" : 3
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
-	    }
+		}
 	}
 }
-

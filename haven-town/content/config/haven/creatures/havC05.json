@@ -1,44 +1,40 @@
 {
-	"havC05":
-	{
-		"name" :
-		{
+	"havC05" : {
+		"name" : {
 			"plural" : "Arbalists",
 			"singular" : "Arbalist"
 		},
-		"advMapAmount" :
-		{
-			 "max" : 25,
-			 "min" : 12
+		"advMapAmount" : {
+			"max" : 25,
+			"min" : 12
 		},
 		"faction" : "haven",
 		"aiValue" : 221,
 		"attack" : 9,
-        "cost" :
-		{
+		"cost" : {
 			"gold" : 200
 		},
-		"damage" :
-		{
-			 "max" : 5,
-			 "min" : 3
+		"damage" : {
+			"max" : 5,
+			"min" : 3
 		},
 		"defense" : 7,
 		"fightValue" : 226,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/Hav05.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "haven/map/AVWHAV05.def",
 			"iconSmall" : "haven/iconsSmall/port5S.bmp",
 			"iconLarge" : "haven/iconsBig/port5.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
-     			"projectile" : "PELFX.DEF",	
-			    "attackClimaxFrame" : 7,
-				"offset" :
-				{
+			"missile" : {
+				"projectile" : "PELFX.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" : {
 					"upperX" : 41,
 					"upperY" : -92,
 					"middleX" : 58,
@@ -46,121 +42,204 @@
 					"lowerX" : 29,
 					"lowerY" : -14
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-			},
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
+			}
 		},
 		"growth" : 7,
 		"horde" : 3,
 		"hitPoints" : 15,
 		"level" : 3,
 		"shots" : 12,
-		"upgrades":
-		[
+		"upgrades" : [
 			"havC06"
 		],
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "haven/CHV3ATTK.wav",
 			"defend" : "haven/CHV3DFND.wav",
 			"killed" : "haven/CHV3KILL.wav",
-			"move": "haven/CHV3MOVE.wav",
-			"shoot": "haven/CHV3SHOT.wav",
+			"move" : "haven/CHV3MOVE.wav",
+			"shoot" : "haven/CHV3SHOT.wav",
 			"wince" : "haven/CHV3WNCE.wav"
 		},
 		"speed" : 6,
-		"abilities" :
-		{
-			"shooter" :
-			{
+		"abilities" : {
+			"shooter" : {
 				"type" : "SHOOTER"
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageBoth",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+				"values" : [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll",
+					"subtype" : "damageTypeAll"
 				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+				"values" : [
+					2,
+					5,
+					7,
+					10,
+					12,
+					15,
+					17,
+					20,
+					22,
+					25
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+				"values" : [
+					0,
+					0,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					50
+				]
 			}
 		]
 	}

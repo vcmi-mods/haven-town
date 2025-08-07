@@ -1,31 +1,42 @@
 {
-	"chestHaven02"	: {
+	"chestHaven02" : {
 		"name" : "Pirate Flag",
-		"handler": "configurable",
+		"handler" : "configurable",
 		"types" : {
 			"seaBarrel" : {
-				"name":"Pirate Flag",
+				"name" : "Pirate Flag",
 				"rmg" : {
-					"value"		: 500,
-					"rarity"	: 100
+					"value" : 500,
+					"rarity" : 100
 				},
 				"sounds" : {
-					"visit" : ["GENIE"],
-					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+					"visit" : [
+						"GENIE"
+					],
+					"removal" : [
+						"PICKUP01",
+						"PICKUP02",
+						"PICKUP03",
+						"PICKUP04",
+						"PICKUP05",
+						"PICKUP06",
+						"PICKUP07"
+					]
 				},
 				"blockedVisitable" : true,
-				"rewards" :
-				[
+				"rewards" : [
 					{
-						"appearChance": 
-						{
+						"appearChance" : {
 							"max" : 20
 						},
-						"message": "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, but after your searching, there is nothing valuable from their hideout.",
-						"removeObject": true
+						"message" : "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, but after your searching, there is nothing valuable from their hideout.",
+						"removeObject" : true
 					},
 					{
-						"appearChance" : { "min" : 20, "max" : 30 },
+						"appearChance" : {
+							"min" : 20,
+							"max" : 30
+						},
 						"message" : "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, after your searching, you have found resources from their hideout.",
 						"removeObject" : true,
 						"resources" : {
@@ -34,7 +45,9 @@
 						}
 					},
 					{
-						"appearChance" : { "min" : 30 },
+						"appearChance" : {
+							"min" : 30
+						},
 						"message" : "{Pirate Flag}\r\n\r\nYou noticed a pirate flag, and reckon there are some treasures here, after your searching, you have found resources from their hideout.",
 						"removeObject" : true,
 						"resources" : {
@@ -44,14 +57,22 @@
 					}
 				],
 				"visitMode" : "unlimited",
-				"selectMode": "selectRandom",
+				"selectMode" : "selectRandom",
 				"templates" : {
-					"AVAbrrlw" :
-					{
+					"AVAbrrlw" : {
 						"animation" : "haven/adventure-map/pirateFlag.def",
-						"visitableFrom" : [ "+++", "+++", "+++" ],
-						"mask" : [ "A"],
-						"allowedTerrains":["sand","swamp"] 
+						"visitableFrom" : [
+							"+++",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"A"
+						],
+						"allowedTerrains" : [
+							"sand",
+							"swamp"
+						]
 					}
 				}
 			}

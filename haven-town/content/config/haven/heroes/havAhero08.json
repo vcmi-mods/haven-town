@@ -1,29 +1,24 @@
 {
-	"havAhero08" :
-	{
+	"havAhero08" : {
 		"class" : "havAhero",
-		"female": false,
-		"texts" :
-		{
+		"female" : false,
+		"texts" : {
 			"name" : "Sniff",
 			"biography" : "'Sniff' seems like a mocking nickname, but he's really proud of his sense of smell. That's also the reason why foes who try to track him often find themselves waylaid instead.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "Wererat",
 				"description" : "Increases the Attack and Defense skills of any Wererat or Wererat Rager for each level attained after 1st level."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero8/skill8S.png",
 			"specialtyLarge" : "haven/heroes/havHero8/skill8.png",
 			"large" : "haven/heroes/havHero8/hero8.bmp",
 			"small" : "haven/heroes/havHero8/hero8S.bmp"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -41,8 +36,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "scouting"
@@ -52,9 +46,9 @@
 				"skill" : "logistics"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "havC01"
-		}	
+		}
 	}
 }

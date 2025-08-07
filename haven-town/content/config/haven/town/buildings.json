@@ -1,27 +1,20 @@
 {
-	"haven" :
-	{
-		"town" :
-		{
-			"buildings" :
-			{
-				"mageGuild1" :
-				{
+	"haven" : {
+		"town" : {
+			"buildings" : {
+				"mageGuild1" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 1",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"ore" : 5,
 						"gold" : 2000
 					}
 				},
-				"mageGuild2" :
-				{
+				"mageGuild2" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 2",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 4,
 						"ore" : 5,
@@ -31,12 +24,10 @@
 						"gold" : 1000
 					}
 				},
-				"mageGuild3" :
-				{
+				"mageGuild3" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 3",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 6,
 						"ore" : 5,
@@ -46,12 +37,10 @@
 						"gold" : 1000
 					}
 				},
-				"mageGuild4" : 
-				{
+				"mageGuild4" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 4",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 8,
 						"ore" : 5,
@@ -61,131 +50,119 @@
 						"gold" : 1000
 					}
 				},
-						
-				"tavern" :
-				{
+
+				"tavern" : {
 					"name" : "Tavern",
 					"description" : "The Tavern increases increases morale for troops defending the city.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"gold" : 500
 					}
 				},
-				"fort" :
-				{
+				"fort" : {
 					"name" : "Fort",
 					"description" : "The Fort provides your town with defensive walls.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 20,
 						"ore" : 20,
 						"gold" : 5000
 					}
 				},
-				"citadel" :
-				{
+				"citadel" : {
 					"name" : "Citadel",
 					"description" : "Including a 50% increase to base creature growth, the Citadel adds a keep, and other terrain obstacles, to a town's defenses.",
-					"cost" :
-					{
+					"cost" : {
 						"ore" : 5,
 						"gold" : 2500
 					}
 				},
-				"castle" :
-				{
+				"castle" : {
 					"name" : "Castle",
 					"description" : "The Castle adds two arrow towers, fortifies your town's defenses, and doubles base creature growth.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 10,
 						"ore" : 10,
 						"gold" : 5000
 					}
 				},
-				"villageHall" :
-				{
+				"villageHall" : {
 					"name" : "Village Hall",
 					"description" : "The Village Hall allows you to purchase town structures and earns your kingdom 500 gold per day."
 				},
-				"townHall" :
-				{
+				"townHall" : {
 					"name" : "Town Hall",
 					"description" : "The Town Hall allows you to purchase town structures and earns your kingdom 1000 gold per day.",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 2500
 					}
 				},
-				"cityHall" :
-				{
+				"cityHall" : {
 					"name" : "City Hall",
 					"description" : "The City Hall allows you to purchase town structures and earns your kingdom 2000 gold per day.",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 5000
 					},
-					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"blacksmith"
+						],
+						[
+							"marketplace"
+						]
+					]
 				},
-				"capitol" :
-				{
+				"capitol" : {
 					"name" : "Capitol",
 					"description" : "The Capitol earns your kingdom 4000 gold per day.",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 10000
 					}
 				},
-				"marketplace" :
-				{
+				"marketplace" : {
 					"name" : "Marketplace",
 					"description" : "With the Marketplace, you can buy and sell resources (exchange rates increase with each Marketplace you own).",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"gold" : 500
 					}
 				},
-				"ship" :
-				{
+				"ship" : {
 					"name" : "Boat",
 					"description" : "Boats are waiting for sailing."
 				},
-				"shipyard" :
-				{
+				"shipyard" : {
 					"name" : "Shipyard",
 					"description" : "The Shipyard allows you to purchase ships.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 20,
 						"gold" : 2000
 					}
-				},				
-				"resourceSilo" :
-				{
+				},
+				"resourceSilo" : {
 					"description" : "The Resource Silo provides you with an additional +1 sulfur each day.",
 					"name" : "Resource Silo",
-					"cost" :
-					{
+					"cost" : {
 						"ore" : 5,
 						"gold" : 5000
 					},
-					"produce": { "sulfur": 1 }
+					"produce" : {
+						"sulfur" : 1
+					}
 				},
-				"blacksmith" :
-				{
+				"blacksmith" : {
 					"description" : "The Blacksmith provides your armies with Ballista.",
 					"name" : "Blacksmith",
 					"warMachine" : "ballista",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"gold" : 1000
 					}
 				},
-				"special1" :
-				{
+				"special1" : {
 					"description" : "Navigation Library increases navigation skills by one level for all heroes.",
 					"name" : "Navigation Library",
 					"cost" : {
@@ -193,206 +170,263 @@
 						"ore" : 5,
 						"wood" : 5
 					},
-					"requires" : [ "mageGuild1" ],
-					"bonuses": [ { "type": "MOVEMENT", "subtype": "heroMovementSea", "val": 50, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER" } ]
+					"requires" : [
+						"mageGuild1"
+					],
+					"bonuses" : [
+						{
+							"type" : "MOVEMENT",
+							"subtype" : "heroMovementSea",
+							"val" : 50,
+							"valueType" : "PERCENT_TO_BASE",
+							"propagator" : "PLAYER"
+						}
+					]
 				},
-				"special2" :
-				{
+				"special2" : {
 					"description" : "Lighthouse can improve ship movement for all heroes.",
 					"name" : "Lighthouse",
 					"cost" : {
 						"gold" : 1000,
 						"wood" : 10
 					},
-					"requires" : [ "special1" ],
-					"bonuses": [
+					"requires" : [
+						"special1"
+					],
+					"bonuses" : [
 						{
-							"propagator": "PLAYER",
-							"type": "MOVEMENT",
-							"subtype": "heroMovementSea",
-							"val": 500
+							"propagator" : "PLAYER",
+							"type" : "MOVEMENT",
+							"subtype" : "heroMovementSea",
+							"val" : 500
 						}
 					]
 				},
-				"special3" :
-				{
+				"special3" : {
 					"description" : "Casino allows you to spend 1000 gold once a week to draw a reward, including random resources, treasures, or no reward.",
 					"name" : "Casino",
 					"cost" : {
 						"gold" : 1000,
 						"ore" : 5,
-						"gems": 2
+						"gems" : 2
 					},
-					"requires" : [ "allOf", ["fort"], ["marketplace"] ],
+					"requires" : [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"marketplace"
+						]
+					],
 					"manualHeroVisit" : true,
 					"configuration" : {
-					"rewards" :
-					[
-					{
-						"appearChance": 
-						{
-							"max" : 25
-						},
-						"resources" : {
-							"gold" : -1000
-						},
-						"limiter": 
-						{
-							"resources" : {"gold" : 1000}
-						},
-						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, and you didn't win any rewards. Please come back next time."
-					},
-					{
-						"appearChance": 
-						{
-							"min" : 25,
-							"max" : 50
-						},
-						"resources" : [
+						"rewards" : [
 							{
-								"anyOf" : [ "ore", "mercury", "gems", "sulfur", "crystal" ],
-								"min" : 1,
-								"max" : 6
+								"appearChance" : {
+									"max" : 25
+								},
+								"resources" : {
+									"gold" : -1000
+								},
+								"limiter" : {
+									"resources" : {
+										"gold" : 1000
+									}
+								},
+								"message" : "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, and you didn't win any rewards. Please come back next time."
 							},
 							{
-								"type" : "gold",
-								"amount" : -1000
+								"appearChance" : {
+									"min" : 25,
+									"max" : 50
+								},
+								"resources" : [
+									{
+										"anyOf" : [
+											"ore",
+											"mercury",
+											"gems",
+											"sulfur",
+											"crystal"
+										],
+										"min" : 1,
+										"max" : 6
+									},
+									{
+										"type" : "gold",
+										"amount" : -1000
+									}
+								],
+								"limiter" : {
+									"resources" : {
+										"gold" : 1000
+									}
+								},
+								"message" : "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won some resources, congratulations!"
+							},
+							{
+								"appearChance" : {
+									"min" : 50,
+									"max" : 75
+								},
+								"artifacts" : [
+									{
+										"class" : "TREASURE"
+									}
+								],
+								"resources" : {
+									"gold" : -1000
+								},
+								"limiter" : {
+									"resources" : {
+										"gold" : 1000
+									}
+								},
+								"message" : "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won an artifact, congratulations!"
+							},
+							{
+								"appearChance" : {
+									"min" : 75,
+									"max" : 95
+								},
+								"artifacts" : [
+									{
+										"class" : "MINOR"
+									}
+								],
+								"resources" : {
+									"gold" : 2000
+								},
+								"limiter" : {
+									"resources" : {
+										"gold" : 1000
+									}
+								},
+								"message" : "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won an artifact, and you get your money back. congratulations!"
+							},
+							{
+								"appearChance" : {
+									"min" : 95,
+									"max" : 100
+								},
+								"artifacts" : [
+									{
+										"class" : "MAJOR"
+									}
+								],
+								"resources" : {
+									"gold" : 5000
+								},
+								"limiter" : {
+									"resources" : {
+										"gold" : 1000
+									}
+								},
+								"message" : "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you become the focus of everyone...You won the jackpot, congratulations! Wish you good luck everyday!"
 							}
 						],
-						"limiter": 
-						{
-							"resources" : {"gold" : 1000}
+						"onSelectMessage" : "{Casino}\r\n\r\nCasino allows you to spend 1000 gold once a week to draw a reward, including random resources, treasures, or no reward.",
+						"onVisitedMessage" : "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you still think that you should not waste your time on boring gambling.",
+						"onEmptyMessage" : "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you cannot afford the gambling money. You convince yourself that you should not waste your time on boring gambling.",
+						"visitMode" : "once",
+						"resetParameters" : {
+							"period" : 7,
+							"visitors" : true,
+							"rewards" : true
 						},
-						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won some resources, congratulations!"
-					},
-					{
-						"appearChance": 
-						{
-							"min" : 50,
-							"max" : 75
-						},
-						"artifacts" : [
-							{ "class" : "TREASURE" }
-						],
-						"resources" : {
-							"gold" : -1000
-						},
-						"limiter": 
-						{
-							"resources" : {"gold" : 1000}
-						},
-						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won an artifact, congratulations!"
-					},
-					{
-						"appearChance": 
-						{
-							"min" : 75,
-							"max" : 95
-						},
-						"artifacts" : [
-							{ "class" : "MINOR" }
-						],
-						"resources" : {
-							"gold" : 2000
-						},
-						"limiter": 
-						{
-							"resources" : {"gold" : 1000}
-						},
-						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you have won an artifact, and you get your money back. congratulations!"
-					},
-					{
-						"appearChance": 
-						{
-							"min" : 95,
-							"max" : 100
-						},
-						"artifacts" : [
-							{ "class" : "MAJOR" }
-						],
-						"resources" : {
-							"gold" : 5000
-						},
-						"limiter": 
-						{
-							"resources" : {"gold" : 1000}
-						},
-						"message": "{Casino}\r\n\r\nAfter spending 1,000 gold to participate, the casino staff opened the box, you become the focus of everyone...You won the jackpot, congratulations! Wish you good luck everyday!"
-					}
-				],
-				"onSelectMessage" : "{Casino}\r\n\r\nCasino allows you to spend 1000 gold once a week to draw a reward, including random resources, treasures, or no reward.",
-                "onVisitedMessage": "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you still think that you should not waste your time on boring gambling.",
-				"onEmptyMessage": "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you cannot afford the gambling money. You convince yourself that you should not waste your time on boring gambling.",
-                "visitMode" : "once",
-				"resetParameters" : {
-					"period" : 7,
-					"visitors" : true,
-					"rewards" : true
-				},     
-				"selectMode" : "selectPlayer",
+						"selectMode" : "selectPlayer"
 					}
 				},
-				"horde4" :
-				{
+				"horde4" : {
 					"description" : "Enchanted Conch increases weekly production of Mermaids by 2 per week.",
 					"name" : "Enchanted Conch",
 					"upgrades" : "dwellingLvl4",
-					"requires" : [ "allOf", ["fort"], ["dwellingLvl4"] ],
+					"requires" : [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"dwellingLvl4"
+						]
+					],
 					"id" : 18,
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 1000
-					}			
+					}
 				},
-				"horde4Upg" :
-				{
+				"horde4Upg" : {
 					"description" : "Enchanted Conch increases weekly production of Coral Mermaids by 2 per week.",
 					"name" : "Enchanted Conch",
-					"requires" : [ "horde4" ],
+					"requires" : [
+						"horde4"
+					],
 					"upgrades" : "dwellingUpLvl4",
 					"id" : 19,
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 1000
-					}			
+					}
 				},
-				"horde3" :
-				{
+				"horde3" : {
 					"description" : "Black Sailboat increases weekly production of Arbalists by 3 per week.",
 					"name" : "Black Sailboat",
 					"upgrades" : "dwellingLvl3",
-					"requires" : [ "allOf", ["fort"], ["dwellingLvl3"] ],
+					"requires" : [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"dwellingLvl3"
+						]
+					],
 					"id" : 24,
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 1000
-					}			
+					}
 				},
-				"horde3Upg" :
-				{
+				"horde3Upg" : {
 					"description" : "Black Sailboat increases weekly production of Elite Arbalists by 3 per week.",
 					"name" : "Black Sailboat",
-					"requires" : [ "horde3" ],
+					"requires" : [
+						"horde3"
+					],
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 25,
 					"mode" : "auto",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 1000
-					}		
+					}
 				},
-				"grail" :
-				{
+				"grail" : {
 					"description" : "The presence of Ultramarine Storm increases weekly creature generation by 50 percent and adds 5000 gold per day. All heroes will gain three times of ship movement. It also increases attack and defence skills by 10% for all heroes.",
 					"name" : "Ultramarine Storm",
-					"bonuses": [
-						{ "subtype" : "heroMovementSea", "type" : "MOVEMENT", "val" : 300, "valueType" : "PERCENT_TO_BASE", "propagator": "PLAYER"},
-						{ "type": "GENERAL_DAMAGE_REDUCTION", "subtype": "damageTypeAll", "val": 10, "valueType" : "ADDITIVE_VALUE" , "propagator": "PLAYER" },
-						{ "type": "PERCENTAGE_DAMAGE_BOOST", "subtype": "damageTypeMelee", "val": 10, "valueType" : "ADDITIVE_VALUE", "propagator": "PLAYER" }
+					"bonuses" : [
+						{
+							"subtype" : "heroMovementSea",
+							"type" : "MOVEMENT",
+							"val" : 300,
+							"valueType" : "PERCENT_TO_BASE",
+							"propagator" : "PLAYER"
+						},
+						{
+							"type" : "GENERAL_DAMAGE_REDUCTION",
+							"subtype" : "damageTypeAll",
+							"val" : 10,
+							"valueType" : "ADDITIVE_VALUE",
+							"propagator" : "PLAYER"
+						},
+						{
+							"type" : "PERCENTAGE_DAMAGE_BOOST",
+							"subtype" : "damageTypeMelee",
+							"val" : 10,
+							"valueType" : "ADDITIVE_VALUE",
+							"propagator" : "PLAYER"
+						}
 					]
 				},
-				"dwellingLvl1" :
-				{
+				"dwellingLvl1" : {
 					"description" : "Stockpile allows you to recruit Wererats.",
 					"name" : "Stockpile",
 					"cost" : {
@@ -400,20 +434,22 @@
 						"ore" : 5,
 						"wood" : 5
 					},
-					"requires" : [ "fort" ]
+					"requires" : [
+						"fort"
+					]
 				},
-				"dwellingLvl2" :
-				{
+				"dwellingLvl2" : {
 					"description" : "Reef Aisle allows you to recruit Divers.",
 					"name" : "Reef Aisle",
 					"cost" : {
 						"gold" : 1500,
 						"ore" : 10
 					},
-					"requires" : [ "dwellingLvl1" ]
+					"requires" : [
+						"dwellingLvl1"
+					]
 				},
-				"dwellingLvl3" :
-				{
+				"dwellingLvl3" : {
 					"description" : "Harbour Guild allows you to recruit Arbalists.",
 					"name" : "Harbour Guild",
 					"cost" : {
@@ -421,10 +457,11 @@
 						"ore" : 5,
 						"wood" : 5
 					},
-					"requires" : [ "dwellingLvl1" ]
+					"requires" : [
+						"dwellingLvl1"
+					]
 				},
-				"dwellingLvl4" :
-				{
+				"dwellingLvl4" : {
 					"description" : "Coral Reef allows you to recruit Mermaids.",
 					"name" : "Coral Reef",
 					"cost" : {
@@ -433,11 +470,12 @@
 						"crystal" : 3,
 						"gems" : 3,
 						"sulfur" : 3
-						},
-					"requires" : [ "dwellingLvl2" ]
+					},
+					"requires" : [
+						"dwellingLvl2"
+					]
 				},
-				"dwellingLvl5" :
-				{
+				"dwellingLvl5" : {
 					"description" : "Spiritual Spring allows you to recruit Marids.",
 					"name" : "Spiritual Spring",
 					"cost" : {
@@ -445,10 +483,11 @@
 						"ore" : 5,
 						"mercury" : 5
 					},
-					"requires" : [ "dwellingLvl3" ]
+					"requires" : [
+						"dwellingLvl3"
+					]
 				},
-				"dwellingLvl6" :
-				{
+				"dwellingLvl6" : {
 					"description" : "Temple of Tides allows you to recruit Sea Mages.",
 					"name" : "Temple of Tides",
 					"cost" : {
@@ -458,10 +497,23 @@
 						"gems" : 3,
 						"sulfur" : 3
 					},
-					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6B" ] ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl4"
+						],
+						[
+							"mageGuild1"
+						],
+						[
+							"noneOf",
+							[
+								"dwellingLvl6B"
+							]
+						]
+					]
 				},
-				"dwellingLvl6B" :
-				{
+				"dwellingLvl6B" : {
 					"description" : "Turtle Hatchery allows you to recruit Gaint Turtles.",
 					"name" : "Turtle Hatchery",
 					"cost" : {
@@ -469,10 +521,23 @@
 						"ore" : 20
 					},
 					"id" : 49,
-					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "mageGuild1" ],[ "noneOf", [ "dwellingLvl6" ] ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl3"
+						],
+						[
+							"mageGuild1"
+						],
+						[
+							"noneOf",
+							[
+								"dwellingLvl6"
+							]
+						]
+					]
 				},
-				"dwellingLvl7" :
-				{
+				"dwellingLvl7" : {
 					"description" : "Abyssal Gate allows you to recruit Leviathan.",
 					"name" : "Abyssal Gate",
 					"cost" : {
@@ -481,10 +546,14 @@
 						"ore" : 10,
 						"sulfur" : 15
 					},
-					"requires" : [ "allOf", [ "dwellingLvl5" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl5"
+						]
+					]
 				},
-				"dwellingUpLvl1" :
-				{
+				"dwellingUpLvl1" : {
 					"description" : "Upg. Stockpile allows you to recruit Wererat Ragers.",
 					"name" : "Upg. Stockpile",
 					"cost" : {
@@ -494,8 +563,7 @@
 					},
 					"upgrades" : "dwellingLvl1"
 				},
-				"dwellingUpLvl2" :
-				{
+				"dwellingUpLvl2" : {
 					"description" : "Upg. Reef Aisle allows you to recruit Deep Ones.",
 					"name" : "Upg. Reef Aisle",
 					"cost" : {
@@ -504,8 +572,7 @@
 					},
 					"upgrades" : "dwellingLvl2"
 				},
-				"dwellingUpLvl3" :
-				{
+				"dwellingUpLvl3" : {
 					"description" : "Upg. Harbour Guild allows you to recruit Elite Arbalists.",
 					"name" : "Upg. Harbour Guild",
 					"cost" : {
@@ -515,8 +582,7 @@
 					},
 					"upgrades" : "dwellingLvl3"
 				},
-				"dwellingUpLvl4" :
-				{
+				"dwellingUpLvl4" : {
 					"description" : "Uog. Coral Reef allows you to recruit Coral Mermaids.",
 					"name" : "Upg. Coral Reef",
 					"cost" : {
@@ -528,8 +594,7 @@
 					},
 					"upgrades" : "dwellingLvl4"
 				},
-				"dwellingUpLvl5" :
-				{
+				"dwellingUpLvl5" : {
 					"description" : "Upg. Spiritual Spring allows you to recruit Marid Sultans.",
 					"name" : "Upg. Spiritual Spring",
 					"cost" : {
@@ -541,8 +606,7 @@
 					//"requires" : [ "mageGuild1" ],
 					"upgrades" : "dwellingLvl5"
 				},
-				"dwellingUpLvl6" :
-				{
+				"dwellingUpLvl6" : {
 					"description" : "Upg. Temple of Tides allows you to recruit Hydromancers.",
 					"name" : "Upg. Temple of Tides",
 					"cost" : {
@@ -554,8 +618,7 @@
 					},
 					"upgrades" : "dwellingLvl6"
 				},
-				"dwellingUpLvl6B" :
-				{
+				"dwellingUpLvl6B" : {
 					"description" : "Upg. Turtle Hatchery allows you to recruit Dragon Turtles.",
 					"name" : "Upg. Turtle Hatchery",
 					"cost" : {
@@ -566,8 +629,7 @@
 					"id" : 56,
 					"upgrades" : "dwellingLvl6B"
 				},
-				"dwellingUpLvl7" :
-				{
+				"dwellingUpLvl7" : {
 					"description" : "Upg. Abyssal Gate allows you to recruit Imperial Leviathan.",
 					"name" : "Upg. Abyssal Gate",
 					"cost" : {
@@ -583,4 +645,3 @@
 		}
 	}
 }
-

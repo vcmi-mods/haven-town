@@ -1,188 +1,268 @@
 {
-	"havC13":
-	{
-		"name" :
-		{
+	"havC13" : {
+		"name" : {
 			"plural" : "Leviathans",
 			"singular" : "Leviathan"
 		},
-		"advMapAmount" :
-		{
-			 "max" : 10,
-			 "min" : 4
+		"advMapAmount" : {
+			"max" : 10,
+			"min" : 4
 		},
 		"faction" : "haven",
 		"aiValue" : 5062,
 		"attack" : 18,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 2400,
 			"sulfur" : 1
 		},
-		"damage" :
-		{
-			 "max" : 50,
-			 "min" : 30
+		"damage" : {
+			"max" : 50,
+			"min" : 30
 		},
 		"defense" : 18,
 		"fightValue" : 4100,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/Hav13.def",
 			"map" : "haven/map/AVWHAV13.def",
 			"iconSmall" : "haven/iconsSmall/port13S.bmp",
 			"iconLarge" : "haven/iconsBig/port13.bmp",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 0.9,
-				"idle" : 10.00,
-				"attack" : 1.00
+				"idle" : 10.0,
+				"attack" : 1.0
 			}
-	
 		},
 		"growth" : 1,
 		"hitPoints" : 170,
 		"level" : 7,
-	    "doubleWide" : true,		
-		"upgrades":
-		[
+		"doubleWide" : true,
+		"upgrades" : [
 			"havC14"
 		],
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "haven/CHV7ATTK.wav",
 			"defend" : "haven/CHV7DFND.wav",
 			"killed" : "haven/CHV7KILL.wav",
-			"move": "haven/CHV7MOVE.wav",
+			"move" : "haven/CHV7MOVE.wav",
 			"wince" : "haven/CHV7WNCE.wav"
 		},
 		"speed" : 7,
-		"abilities" :
-		{
-			"dragon" : 
-			{
+		"abilities" : {
+			"dragon" : {
 				"type" : "DRAGON_NATURE"
 			},
-			"KING1" :
-			{
+			"KING1" : {
 				"type" : "KING",
 				"val" : 0,
 				"valueType" : "ADDITIVE_VALUE"
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageBoth",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 2, 3, 3, 3, 3, 3, 3, 3]
+				"values" : [
+					0,
+					0,
+					2,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "FEARFUL",
 					"val" : 10,
-					"propagator": "BATTLE_WIDE",
+					"propagator" : "BATTLE_WIDE",
 					"propagationUpdater" : "BONUS_OWNER_UPDATER",
-					"limiters" : [ 
-						"OPPOSITE_SIDE", 
+					"limiters" : [
+						"OPPOSITE_SIDE",
 						{
-						"type" : "HAS_ANOTHER_BONUS_LIMITER",
-						"bonusType" :  "LIVING" 
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "LIVING"
 						}
-					]					
+					]
 				},
-				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "FEARFUL",
 					"valueType" : "INDEPENDENT_MIN"
 				},
-				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "SPELL_DAMAGE_REDUCTION",
-					"subtype" : "earth",
+					"subtype" : "earth"
 				},
-				"values" : [ 0, 0, 0, 0, 100, 100, 100, 100, 100, 100 ]
+				"values" : [
+					0,
+					0,
+					0,
+					0,
+					100,
+					100,
+					100,
+					100,
+					100,
+					100
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "ADDITIONAL_ATTACK"
-					
 				},
-				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+				"values" : [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1
+				]
 			}
 		]
 	}

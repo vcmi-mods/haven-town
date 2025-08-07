@@ -1,44 +1,40 @@
 {
-	"havC12B":
-	{
-		"name" :
-		{
+	"havC12B" : {
+		"name" : {
 			"plural" : "Hydromancers",
 			"singular" : "Hydromancer"
 		},
-		"advMapAmount" :
-		{
-			 "max" : 10,
-			 "min" : 5
+		"advMapAmount" : {
+			"max" : 10,
+			"min" : 5
 		},
 		"faction" : "haven",
 		"aiValue" : 1440,
 		"attack" : 17,
-        "cost" :
-		{
+		"cost" : {
 			"gold" : 1100
 		},
-		"damage" :
-		{
-			 "max" : 20,
-			 "min" : 16
+		"damage" : {
+			"max" : 20,
+			"min" : 16
 		},
 		"defense" : 13,
 		"fightValue" : 1108,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/P6Hb.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "haven/map/AVWHAV16.def",
 			"iconSmall" : "haven/iconsSmall/port16S.bmp",
 			"iconLarge" : "haven/iconsBig/port16.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
-     			"projectile" : "PICEE.DEF",	
-			    "attackClimaxFrame" : 8,
-				"offset" :
-				{
+			"missile" : {
+				"projectile" : "PICEE.DEF",
+				"attackClimaxFrame" : 8,
+				"offset" : {
 					"upperX" : 41,
 					"upperY" : -92,
 					"middleX" : 58,
@@ -46,183 +42,271 @@
 					"lowerX" : 29,
 					"lowerY" : -14
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-			},
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
+			}
 		},
 		"growth" : 2,
 		"hitPoints" : 70,
 		"level" : 6,
 		"shots" : 16,
-		"sound" :
-		{
-			"attack": "MAGEATTK.wav",
-			"defend": "MAGEWNCE.wav",
-			"killed": "haven/SAYLKILL.wav",
-			"move": "ENCHMOVE.wav",
-			"shoot": "ENCHSHOT.wav",
-			"wince": "haven/SAYLWNCE.wav"
+		"sound" : {
+			"attack" : "MAGEATTK.wav",
+			"defend" : "MAGEWNCE.wav",
+			"killed" : "haven/SAYLKILL.wav",
+			"move" : "ENCHMOVE.wav",
+			"shoot" : "ENCHSHOT.wav",
+			"wince" : "haven/SAYLWNCE.wav"
 		},
 		"speed" : 8,
-		"abilities" :
-		{
-			"shooter" :
-			{
+		"abilities" : {
+			"shooter" : {
 				"type" : "SHOOTER"
 			},
-			"iceIsComing" :
-			{
+			"iceIsComing" : {
 				"type" : "SPELL_LIKE_ATTACK",
 				"subtype" : "iceShot",
 				"val" : 1
 			},
-			"noPenalty" : 
-			{
+			"noPenalty" : {
 				"type" : "NO_WALL_PENALTY"
 			},
-			"caster": {
+			"caster" : {
 				"type" : "SPELL_AFTER_ATTACK",
-				"addInfo" : [1, 1],
+				"addInfo" : [
+					1,
+					1
+				],
 				"subtype" : "havenWaterWeaken",
 				"val" : 20
 			},
-			"navigationBoost" :
-			{
+			"navigationBoost" : {
 				"type" : "MOVEMENT",
 				"subtype" : "heroMovementSea",
-				"val" : 500, 
+				"val" : 500,
 				"propagator" : "HERO",
 				"description" : "{Navigator}\nInreases hero sea movement points by 500",
 				"icon" : "haven/icons/bonuses/e_whirl.png"
 			},
-			"enraged" :
-			{
-				"type": "ENCHANTER",
-				"subtype": "havenSpell05",
+			"enraged" : {
+				"type" : "ENCHANTER",
+				"subtype" : "havenSpell05",
 				"val" : 3,
-				"addInfo" : 3,				
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "sand"
-				} ],
-				"description" : "{Sand Enchanter}\nCan cast Power of Tides at sand terrain once per 3 turns"			
+				"addInfo" : 3,
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "sand"
+					}
+				],
+				"description" : "{Sand Enchanter}\nCan cast Power of Tides at sand terrain once per 3 turns"
 			},
-			"enraged2" :
-			{
-				"type": "ENCHANTER",
-				"subtype": "havenSpell05",
+			"enraged2" : {
+				"type" : "ENCHANTER",
+				"subtype" : "havenSpell05",
 				"val" : 3,
-				"addInfo" : 3,				
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
-				"description" : "{Water Enchanter}\nCan cast Power of Tides at water terrain once per 3 turns"				
+				"addInfo" : 3,
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
+				"description" : "{Water Enchanter}\nCan cast Power of Tides at water terrain once per 3 turns"
 			},
-			"castsCount" :
-			{
+			"castsCount" : {
 				"type" : "CASTS",
-				"val" : 2,			
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "sand"
-				} ]
+				"val" : 2,
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "sand"
+					}
+				]
 			},
-			"castsCount2" :
-			{
+			"castsCount2" : {
 				"type" : "CASTS",
-				"val" : 2,			
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ]
+				"val" : 2,
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				]
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageBoth",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+				"values" : [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeAll", 
+					"subtype" : "damageTypeAll"
 				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+				"values" : [
+					2,
+					5,
+					7,
+					10,
+					12,
+					15,
+					17,
+					20,
+					22,
+					25
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+				"values" : [
+					0,
+					0,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					50
+				]
 			}
 		]
 	}

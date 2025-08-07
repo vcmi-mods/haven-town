@@ -1,46 +1,63 @@
 {
-	"chestHaven01"	: {
+	"chestHaven01" : {
 		"name" : "Pirate Treasure",
-		"handler": "configurable",
+		"handler" : "configurable",
 		"types" : {
 			"seaBarrel" : {
-				"name":"Pirate Treasure",
+				"name" : "Pirate Treasure",
 				"rmg" : {
-					"value"		: 800,
-					"rarity"	: 100
+					"value" : 800,
+					"rarity" : 100
 				},
 				"sounds" : {
-					"visit" : ["GENIE"],
-					"removal" : [ "PICKUP01", "PICKUP02", "PICKUP03", "PICKUP04", "PICKUP05", "PICKUP06", "PICKUP07" ]
+					"visit" : [
+						"GENIE"
+					],
+					"removal" : [
+						"PICKUP01",
+						"PICKUP02",
+						"PICKUP03",
+						"PICKUP04",
+						"PICKUP05",
+						"PICKUP06",
+						"PICKUP07"
+					]
 				},
 				"blockedVisitable" : true,
-				"rewards" :
-				[
+				"rewards" : [
 					{
-						"appearChance": 
-						{
+						"appearChance" : {
 							"max" : 20
 						},
-						"message": "{Pirate Treasure}\r\n\r\nYou open the chest and find there is nothing in it.",
-						"removeObject": true
+						"message" : "{Pirate Treasure}\r\n\r\nYou open the chest and find there is nothing in it.",
+						"removeObject" : true
 					},
 					{
-						"appearChance" : { "min" : 20, "max" : 30 },
+						"appearChance" : {
+							"min" : 20,
+							"max" : 30
+						},
 						"message" : "{Pirate Treasure}\r\n\r\nYou open the chest and find some treasures which were left by pirates.",
 						"removeObject" : true,
 						"artifacts" : [
-							{ "class" : "MINOR" }
+							{
+								"class" : "MINOR"
+							}
 						],
 						"resources" : {
 							"gold" : 1500
 						}
 					},
 					{
-						"appearChance" : { "min" : 30 },
+						"appearChance" : {
+							"min" : 30
+						},
 						"message" : "{Pirate Treasure}\r\n\r\nYou open the chest and find some treasures which were left by pirates.",
 						"removeObject" : true,
 						"artifacts" : [
-							{ "class" : "TREASURE" }
+							{
+								"class" : "TREASURE"
+							}
 						],
 						"resources" : {
 							"gold" : 1500
@@ -48,13 +65,18 @@
 					}
 				],
 				"visitMode" : "unlimited",
-				"selectMode": "selectRandom",
+				"selectMode" : "selectRandom",
 				"templates" : {
-					"AVAbrrlw" :
-					{
+					"AVAbrrlw" : {
 						"animation" : "haven/adventure-map/chestHaven01.def",
-						"visitableFrom" : [ "+++", "+++", "+++" ],
-						"mask" : [ "A"]
+						"visitableFrom" : [
+							"+++",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"A"
+						]
 					}
 				}
 			}

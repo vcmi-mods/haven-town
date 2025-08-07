@@ -1,44 +1,153 @@
 {
 	"haven" : {
 		"alignment" : "neutral",
-		"creatureBackground" : { "120px" : "haven/back120", "130px" : "haven/back130" },
+		"creatureBackground" : {
+			"120px" : "haven/back120",
+			"130px" : "haven/back130"
+		},
 		"name" : "Haven",
 		"nativeTerrain" : "sand",
 		"boat" : "boatHaven",
-		"town" :
-		{
-			"musicTheme" : [ "music/haven/theme" ],
+		"town" : {
+			"musicTheme" : [
+				"music/haven/theme"
+			],
 			"defaultTavern" : 5,
 			"tavernVideo" : "TAVERN.BIK",
 			"guildBackground" : "TPMAGE.bmp",
-			"townBackground": "haven/town-screen/TBHVBACK",
-			"guildWindow": "haven/town-screen/TBHVSPEL",
-			"hallBackground": "haven/town-screen/TPTHBKHV",
-			"hallSlots":
-			[
-				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
-				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4" ],[ "special1","special2" ],[ "shipyard" ] ],
-				[ [ "special3" ], ["horde4", "horde4Upg" ], [ "horde3", "horde3Upg" ] ],
-				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3"], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
-				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ],[ "dwellingLvl6B", "dwellingUpLvl6B" ], [ "dwellingLvl7", "dwellingUpLvl7" ]  ]
+			"townBackground" : "haven/town-screen/TBHVBACK",
+			"guildWindow" : "haven/town-screen/TBHVSPEL",
+			"hallBackground" : "haven/town-screen/TPTHBKHV",
+			"hallSlots" : [
+				[
+					[
+						"villageHall",
+						"townHall",
+						"cityHall",
+						"capitol"
+					],
+					[
+						"fort",
+						"citadel",
+						"castle"
+					],
+					[
+						"tavern"
+					],
+					[
+						"blacksmith"
+					]
+				],
+				[
+					[
+						"marketplace",
+						"resourceSilo"
+					],
+					[
+						"mageGuild1",
+						"mageGuild2",
+						"mageGuild3",
+						"mageGuild4"
+					],
+					[
+						"special1",
+						"special2"
+					],
+					[
+						"shipyard"
+					]
+				],
+				[
+					[
+						"special3"
+					],
+					[
+						"horde4",
+						"horde4Upg"
+					],
+					[
+						"horde3",
+						"horde3Upg"
+					]
+				],
+				[
+					[
+						"dwellingLvl1",
+						"dwellingUpLvl1"
+					],
+					[
+						"dwellingLvl2",
+						"dwellingUpLvl2"
+					],
+					[
+						"dwellingLvl3",
+						"dwellingUpLvl3"
+					],
+					[
+						"dwellingLvl4",
+						"dwellingUpLvl4"
+					]
+				],
+				[
+					[
+						"dwellingLvl5",
+						"dwellingUpLvl5"
+					],
+					[
+						"dwellingLvl6",
+						"dwellingUpLvl6"
+					],
+					[
+						"dwellingLvl6B",
+						"dwellingUpLvl6B"
+					],
+					[
+						"dwellingLvl7",
+						"dwellingUpLvl7"
+					]
+				]
 			],
-			"creatures" :
-			[
-				[ "havC01", "havC02" ],
-				[ "havC03", "havC04" ],				
-				[ "havC05", "havC06" ],
-				[ "havC07", "havC08" ],					
-				[ "havC09", "havC10" ],
-				[ "havC11B", "havC12B", "havC11", "havC12" ],
-				[ "havC13", "havC14" ]
+			"creatures" : [
+				[
+					"havC01",
+					"havC02"
+				],
+				[
+					"havC03",
+					"havC04"
+				],
+				[
+					"havC05",
+					"havC06"
+				],
+				[
+					"havC07",
+					"havC08"
+				],
+				[
+					"havC09",
+					"havC10"
+				],
+				[
+					"havC11B",
+					"havC12B",
+					"havC11",
+					"havC12"
+				],
+				[
+					"havC13",
+					"havC14"
+				]
 			],
 			"moatAbility" : "castleMoat",
-			"horde" : [ 3, 2 ],
+			"horde" : [
+				3,
+				2
+			],
 			"mageGuild" : 4,
 			"primaryResource" : "sulfur",
 			"buildingsIcons" : "haven/town-hall.def",
-			"icons" :
-			{
+			"icons" : {
 				"village" : {
 					"normal" : {
 						"small" : "haven/icons/HAV01S.bmp",
@@ -63,59 +172,100 @@
 
 			"mapObject" : {
 				"filters" : {
-					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
-					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
-					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+					"castle" : [
+						"allOf",
+						[
+							"castle"
+						],
+						[
+							"noneOf",
+							[
+								"capitol"
+							]
+						]
+					],
+					"citadel" : [
+						"allOf",
+						[
+							"citadel"
+						],
+						[
+							"noneOf",
+							[
+								"castle"
+							]
+						]
+					],
+					"fort" : [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"noneOf",
+							[
+								"citadel"
+							]
+						]
+					]
 				},
 				"templates" : {
-					"capitol" : { "animation" : "haven/adventure-map/HavTown5.def" },
-					"castle" : { "animation" : "haven/adventure-map/HavTown4.def" },
-					"citadel" : { "animation" : "haven/adventure-map/HavTown3.def" },
-					"fort" : { "animation" : "haven/adventure-map/HavTown2.def" },
-					"village" : { "animation" : "haven/adventure-map/HavTown1.def" }
+					"capitol" : {
+						"animation" : "haven/adventure-map/HavTown5.def"
+					},
+					"castle" : {
+						"animation" : "haven/adventure-map/HavTown4.def"
+					},
+					"citadel" : {
+						"animation" : "haven/adventure-map/HavTown3.def"
+					},
+					"fort" : {
+						"animation" : "haven/adventure-map/HavTown2.def"
+					},
+					"village" : {
+						"animation" : "haven/adventure-map/HavTown1.def"
+					}
 				}
 			},
-			"names" :
-			[
-			"Aquaron",
-			"Illiadia",
-			"Atlantia",
-			"Equatris",
-			"Oceanol",
-			"Philaquis",
-			"Phimonia",
-			"Hydromus",
-			"Abyssis",
-			"Spherius",
-			"Sancras",
-			"Enolia",
-			"Athris",
-			"Caelestin",
-			"Quadron",
-			"Escathorum"
+			"names" : [
+				"Aquaron",
+				"Illiadia",
+				"Atlantia",
+				"Equatris",
+				"Oceanol",
+				"Philaquis",
+				"Phimonia",
+				"Hydromus",
+				"Abyssis",
+				"Spherius",
+				"Sancras",
+				"Enolia",
+				"Athris",
+				"Caelestin",
+				"Quadron",
+				"Escathorum"
 			],
-			"tavern" :
-			{
-				"knight"       : 4,
-				"cleric"       : 4,
-				"ranger"       : 4,
-				"druid"        : 4,
-				"alchemist"    : 4,
-				"wizard"       : 4,
-				"demoniac"     : 4,
-				"heretic"      : 4,
-				"deathknight"  : 4,
-				"necromancer"  : 4,
-				"warlock"      : 4,
-				"overlord"     : 4,
-				"barbarian"    : 4,
-				"battlemage"   : 4,
-				"beastmaster"  : 4,
-				"witch"        : 4,
+			"tavern" : {
+				"knight" : 4,
+				"cleric" : 4,
+				"ranger" : 4,
+				"druid" : 4,
+				"alchemist" : 4,
+				"wizard" : 4,
+				"demoniac" : 4,
+				"heretic" : 4,
+				"deathknight" : 4,
+				"necromancer" : 4,
+				"warlock" : 4,
+				"overlord" : 4,
+				"barbarian" : 4,
+				"battlemage" : 4,
+				"beastmaster" : 4,
+				"witch" : 4,
 				"planeswalker" : 4,
 				"elementalist" : 4,
-				"havAhero"      : 5,
-				"havMhero"      : 5
+				"havAhero" : 5,
+				"havMhero" : 5
 			}
 		}
 	}

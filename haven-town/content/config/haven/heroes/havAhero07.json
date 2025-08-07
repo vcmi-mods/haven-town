@@ -1,29 +1,24 @@
 {
-	"havAhero07" :
-	{
+	"havAhero07" : {
 		"class" : "havAhero",
-		"female": true,
-		"texts" :
-		{
+		"female" : true,
+		"texts" : {
 			"name" : "Gemma",
 			"biography" : "Gemma used to be a subordinate from Captain Bidley, she considered to train females as pirates during the war for establishing Regnan Union. Now she has her own ship and a loyal troop which constituted by female pirates.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "Arbalists",
 				"description" : "Increases the Attack and Defense skills of any Arbalists or Elite Arbalists for each level attained after 3rd level."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero7/skill7S.bmp",
 			"specialtyLarge" : "haven/heroes/havHero7/skill7.bmp",
 			"large" : "haven/heroes/havHero7/hero7.bmp",
 			"small" : "haven/heroes/havHero7/hero7S.bmp"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -41,8 +36,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "archery"
@@ -52,9 +46,9 @@
 				"skill" : "artillery"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "havC05"
-		}	
+		}
 	}
 }

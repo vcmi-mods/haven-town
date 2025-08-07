@@ -1,103 +1,210 @@
 {
-	"core:creatureBank" : 
-	{
-		"types" : 
-		{
-			"fhavenBank02" : 
-			{
+	"core:creatureBank" : {
+		"types" : {
+			"fhavenBank02" : {
 				"name" : "Sunken Temple",
 				"templates" : {
-					"base" : { "animation" : "haven/adventure-map/havenbank2.def", 
-					"visitableFrom" : [ "+++", "+++", "+++" ], 
-					"mask" : [ "VVVVV", "VVVVV", "VBBBV", "VBBBV", "VVBAV" ],
-					"allowedTerrains":["water"] 
+					"base" : {
+						"animation" : "haven/adventure-map/havenbank2.def",
+						"visitableFrom" : [
+							"+++",
+							"+++",
+							"+++"
+						],
+						"mask" : [
+							"VVVVV",
+							"VVVVV",
+							"VBBBV",
+							"VBBBV",
+							"VVBAV"
+						],
+						"allowedTerrains" : [
+							"water"
+						]
 					}
 				},
 				"rmg" : {
-					"value"		: 10000,
-					"rarity"	: 100,
+					"value" : 10000,
+					"rarity" : 100
 				},
 				"sounds" : {
-					"ambient": ["LOOPOCEA"]
+					"ambient" : [
+						"LOOPOCEA"
+					]
 				},
 				"guardsLayout" : "creatureBankNarrow",
 				"onGuardedMessage" : 32,
 				"onVisitedMessage" : 33,
 				"visitMode" : "once",
 				"selectMode" : "selectFirst",
-				"rewards":
-				[
+				"rewards" : [
 					{
 						"message" : 34,
-						"appearChance" : { "min" : 0, "max" : 30 },
-						"guards": [
-							{ "amount": 10, "type" : "havC11" },
-							{ "amount": 6, "type" : "havC13"},
-							{ "amount": 6, "type" : "havC12" },
-							{ "amount": 2, "type" : "havC14" }
+						"appearChance" : {
+							"min" : 0,
+							"max" : 30
+						},
+						"guards" : [
+							{
+								"amount" : 10,
+								"type" : "havC11"
+							},
+							{
+								"amount" : 6,
+								"type" : "havC13"
+							},
+							{
+								"amount" : 6,
+								"type" : "havC12"
+							},
+							{
+								"amount" : 2,
+								"type" : "havC14"
+							}
 						],
-						"resources": 
-						{
+						"resources" : {
 							"gold" : 10000
 						},
-						"artifacts": [ { "class" : "TREASURE" },
-										{ "class" : "MINOR" },
-										{ "class" : "MINOR" },
-										{ "class" : "MAJOR" } ]
+						"artifacts" : [
+							{
+								"class" : "TREASURE"
+							},
+							{
+								"class" : "MINOR"
+							},
+							{
+								"class" : "MINOR"
+							},
+							{
+								"class" : "MAJOR"
+							}
+						]
 					},
 					{
 						"message" : 34,
-						"appearChance" : { "min" : 30, "max" : 60 },
-						"guards": [
-							{ "amount": 12, "type" : "havC11" },
-							{ "amount": 7, "type" : "havC13"},
-							{ "amount": 7, "type" : "havC12" },
-							{ "amount": 3, "type" : "havC14" }
+						"appearChance" : {
+							"min" : 30,
+							"max" : 60
+						},
+						"guards" : [
+							{
+								"amount" : 12,
+								"type" : "havC11"
+							},
+							{
+								"amount" : 7,
+								"type" : "havC13"
+							},
+							{
+								"amount" : 7,
+								"type" : "havC12"
+							},
+							{
+								"amount" : 3,
+								"type" : "havC14"
+							}
 						],
-						"resources": 
-						{
+						"resources" : {
 							"gold" : 15000
 						},
-						"artifacts": [ { "class" : "TREASURE" },
-										{ "class" : "MINOR" },
-										{ "class" : "MAJOR" },
-										{ "class" : "MAJOR" } ]
+						"artifacts" : [
+							{
+								"class" : "TREASURE"
+							},
+							{
+								"class" : "MINOR"
+							},
+							{
+								"class" : "MAJOR"
+							},
+							{
+								"class" : "MAJOR"
+							}
+						]
 					},
 					{
 						"message" : 34,
-						"appearChance" : { "min" : 60, "max" : 90 },
-						"guards": [
-							{ "amount": 12, "type" : "havC11" },
-							{ "amount": 7, "type" : "havC13"},
-							{ "amount": 8, "type" : "havC12" },
-							{ "amount": 4, "type" : "havC14" }
+						"appearChance" : {
+							"min" : 60,
+							"max" : 90
+						},
+						"guards" : [
+							{
+								"amount" : 12,
+								"type" : "havC11"
+							},
+							{
+								"amount" : 7,
+								"type" : "havC13"
+							},
+							{
+								"amount" : 8,
+								"type" : "havC12"
+							},
+							{
+								"amount" : 4,
+								"type" : "havC14"
+							}
 						],
-						"resources": 
-						{
+						"resources" : {
 							"gold" : 20000
 						},
-						"artifacts": [ { "class" : "MINOR" },
-										{ "class" : "MAJOR" },
-										{ "class" : "MAJOR" },
-										{ "class" : "RELIC" }]
+						"artifacts" : [
+							{
+								"class" : "MINOR"
+							},
+							{
+								"class" : "MAJOR"
+							},
+							{
+								"class" : "MAJOR"
+							},
+							{
+								"class" : "RELIC"
+							}
+						]
 					},
 					{
 						"message" : 34,
-						"appearChance" : { "min" : 90, "max" : 100 },
-						"guards": [
-							{ "amount": 12, "type" : "havC11" },
-							{ "amount": 9, "type" : "havC13"},
-							{ "amount": 10, "type" : "havC12" },
-							{ "amount": 5, "type" : "havC14" }
+						"appearChance" : {
+							"min" : 90,
+							"max" : 100
+						},
+						"guards" : [
+							{
+								"amount" : 12,
+								"type" : "havC11"
+							},
+							{
+								"amount" : 9,
+								"type" : "havC13"
+							},
+							{
+								"amount" : 10,
+								"type" : "havC12"
+							},
+							{
+								"amount" : 5,
+								"type" : "havC14"
+							}
 						],
-						"resources": 
-						{
+						"resources" : {
 							"gold" : 30000
 						},
-						"artifacts": [ { "class" : "MAJOR" },
-										{ "class" : "MAJOR" },
-										{ "class" : "RELIC" },
-										{ "class" : "RELIC" }]
+						"artifacts" : [
+							{
+								"class" : "MAJOR"
+							},
+							{
+								"class" : "MAJOR"
+							},
+							{
+								"class" : "RELIC"
+							},
+							{
+								"class" : "RELIC"
+							}
+						]
 					}
 				]
 			}

@@ -1,150 +1,202 @@
 {
-	"havC11":
-	{
-		"name" :
-		{
+	"havC11" : {
+		"name" : {
 			"plural" : "Gaint Turtles",
 			"singular" : "Giant Turtle"
 		},
-		"advMapAmount" :
-		{
-			 "max" : 12,
-			 "min" : 5
+		"advMapAmount" : {
+			"max" : 12,
+			"min" : 5
 		},
 		"faction" : "haven",
 		"aiValue" : 1963,
 		"attack" : 13,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 900
-			
 		},
-		"damage" :
-		{
-			 "max" : 16,
-			 "min" : 13
+		"damage" : {
+			"max" : 16,
+			"min" : 13
 		},
 		"defense" : 17,
 		"fightValue" : 1704,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "haven/battle/Hav11.def",
 			"map" : "haven/map/AVWHAV11.def",
 			"iconSmall" : "haven/iconsSmall/port11S.bmp",
 			"iconLarge" : "haven/iconsBig/port11.bmp",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
-				"walk" : 1.60,
-				"idle" : 10.00,
-				"attack" : 1.00
+			"animationTime" : {
+				"walk" : 1.6,
+				"idle" : 10.0,
+				"attack" : 1.0
 			}
-	
 		},
-		"growth" : 2,	
+		"growth" : 2,
 		"hitPoints" : 90,
 		"doubleWide" : true,
 		"level" : 6,
-		"upgrades":
-		[
+		"upgrades" : [
 			"havC12"
 		],
-		"sound" :
-		{
-			"attack": "CGORATTK.wav",			
+		"sound" : {
+			"attack" : "CGORATTK.wav",
 			"defend" : "CGORDFND.wav",
 			"killed" : "HYDRKILL.wav",
-			"move": "HYDRMOVE.wav",			
-			"wince": "HYDRWNCE.wav"
+			"move" : "HYDRMOVE.wav",
+			"wince" : "HYDRWNCE.wav"
 		},
 		"speed" : 6,
-		"abilities" : 
-		{
-            "shield" : { 
-				"subtype" : "damageTypeMelee", 
-				"type" : "GENERAL_DAMAGE_REDUCTION", 
-				"val" : 30 
+		"abilities" : {
+			"shield" : {
+				"subtype" : "damageTypeMelee",
+				"type" : "GENERAL_DAMAGE_REDUCTION",
+				"val" : 30
 			},
-			"attackInWater" : 
-			{
+			"attackInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "attack",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
 				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
-			"defenceInWater"  : {
+			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
 				"subtype" : "defence",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
-				"limiters" : [ {
-					"type" : "CREATURE_TERRAIN_LIMITER",
-					"terrain" : "water"
-				} ],
+				"limiters" : [
+					{
+						"type" : "CREATURE_TERRAIN_LIMITER",
+						"terrain" : "water"
+					}
+				],
 				"hidden" : true
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageMax",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageMin",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+				"values" : [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			}
 		]
 	}

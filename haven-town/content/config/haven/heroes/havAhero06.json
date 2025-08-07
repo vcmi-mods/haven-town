@@ -1,29 +1,24 @@
 {
-	"havAhero06" :
-	{
+	"havAhero06" : {
 		"class" : "havAhero",
-		"female": false,
-		"texts" :
-		{
+		"female" : false,
+		"texts" : {
 			"name" : "Nadim",
 			"biography" : "Nadim's ethnic group (Marid) is a branch of Efreet and he also lived in Kreegan from his young age. In comparison to his relatives who have red skin, they don't like environment of fire and finally they have adapted their lives in water.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "No description",
 				"name" : "Marids",
 				"description" : "Increases the Attack and Defense skills of any Marid or Marid Sultan for each level attained after 5th level."
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "haven/heroes/havHero6/skill6S.bmp",
 			"specialtyLarge" : "haven/heroes/havHero6/skill6.bmp",
 			"large" : "haven/heroes/havHero6/hero6.bmp",
 			"small" : "haven/heroes/havHero6/hero6S.bmp"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "havC01",
 				"max" : 30,
@@ -41,8 +36,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "tactics"
@@ -52,9 +46,9 @@
 				"skill" : "ballistics"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "havC09"
-		}	
+		}
 	}
 }

@@ -1,97 +1,79 @@
 {
 	"seaWrath" : {
-		"type": "ability",
-		"name": "Sea Wrath",
-		"school":
-		{
-			"air": false,
-			"earth": false,
-			"fire": false,
-			"water": false
+		"type" : "ability",
+		"name" : "Sea Wrath",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"targetType": "CREATURE",
+		"targetType" : "CREATURE",
 		"targetCondition" : {
 			"anyOf" : {
-				"haven:creature.havC14":"absolute"}
+				"haven:creature.havC14" : "absolute"
+			}
 		},
-		"level": 1,
-		"power": 10,
-		"defaultGainChance": 0, 
-		"gainChance":
-		{
-		},
-		"animation":{
-			"affect":[{"defName":"haven/spells/seaWrath.def","verticalPosition":"bottom","transparency" : 0.5}]
+		"level" : 1,
+		"power" : 10,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"animation" : {
+			"affect" : [
+				{
+					"defName" : "haven/spells/seaWrath.def",
+					"verticalPosition" : "bottom",
+					"transparency" : 0.5
+				}
+			]
 		},
 		"flags" : {
-			"positive": true,
-			"nonMagical": true
-					},
-		"sounds": {
-			"cast": "LICHDFND"
+			"positive" : true,
+			"nonMagical" : true
 		},
-		"graphics":
-		{
-			"iconEffect": "haven/spells/havspell2.bmp"
+		"sounds" : {
+			"cast" : "LICHDFND"
+		},
+		"graphics" : {
+			"iconEffect" : "haven/spells/havspell2.bmp"
 		},
 		"levels" : {
-			"base":{
-		
-				"range": "0-1",
-				"power": 10,
-				"cost": 0,
-//				"aiValue": 20,
-				"targetModifier":
-				{
-					"smart": true
+			"base" : {
+				"range" : "0-1",
+				"power" : 10,
+				"cost" : 0,
+				//				"aiValue": 20,
+				"targetModifier" : {
+					"smart" : true
 				},
-				"battleEffects":
-			{
-
-					"lifeEater" :
-				{
-					"type": "core:timed",
-					"cumulative": true,
-					"bonus":
-					{
-					"boostAttack":
-                    {
-                        "type" : "PRIMARY_SKILL",
-						"subtype" : "attack",
-						"val" : 5,
-						"valueType" : "PERCENT_TO_ALL",
-                        "duration": "PERMANENT"
-					},
-					"boostDefense":
-                    {
-                        "type" : "PRIMARY_SKILL",
-						"subtype" : "defence",
-						"val" : 5,
-						"valueType" : "PERCENT_TO_ALL",
-                        "duration": "PERMANENT"
+				"battleEffects" : {
+					"lifeEater" : {
+						"type" : "core:timed",
+						"cumulative" : true,
+						"bonus" : {
+							"boostAttack" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "attack",
+								"val" : 5,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "PERMANENT"
+							},
+							"boostDefense" : {
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "defence",
+								"val" : 5,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "PERMANENT"
+							}
+						}
 					}
-					}
-				}
+				},
+				"description" : "Sea Wrath."
 			},
-				"description": "Sea Wrath."
-			},
-			"none":
-			{
-
-			},
-			"basic":
-			{
-
-			},
-			"advanced":
-			{
-
-			},
-			"expert":
-			{
-
-			}
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
 		}
 	}
 }
-
