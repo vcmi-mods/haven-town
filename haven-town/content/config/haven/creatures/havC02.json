@@ -52,32 +52,33 @@
 			"attackInWater" : 
 			{
 				"type" : "PRIMARY_SKILL",
-				"subtype" : "primarySkill.attack",
+				"subtype" : "attack",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
+				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
 			"defenceInWater"  : {
 				"type" : "PRIMARY_SKILL",
-				"subtype" : "primarySkill.defence",
+				"subtype" : "defence",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"hidden" : true
 			}
 		},
 		"stackExperience" :
@@ -85,7 +86,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL",
 				},
 				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
@@ -93,7 +94,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
 				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]

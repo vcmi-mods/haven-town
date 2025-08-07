@@ -54,15 +54,7 @@
 		],
 		
 		"specialty" : {
-			"bonuses" : {
-				"scouting" : {
-					"targetSourceType" : "SECONDARY_SKILL",
-					"type" : "SIGHT_RADIUS",
-					"val" : 5,
-					"valueType" : "PERCENT_TO_BASE",
-					"updater" : "TIMES_HERO_LEVEL"
-				}
-			}
+			"secondary" : "scouting"
 		}	
 	}
 }

@@ -72,7 +72,7 @@
 			"iceIsComing" :
 			{
 				"type" : "SPELL_LIKE_ATTACK",
-				"subtype" : "spell.iceShot",
+				"subtype" : "iceShot",
 				"val" : 1
 			},
 			"noPenalty" : 
@@ -81,8 +81,8 @@
 			},
 			"caster": {
 				"type" : "SPELL_AFTER_ATTACK",
-				"addInfo" : 1001,
-				"subtype" : "spell.havenWaterWeaken",
+				"addInfo" : [1, 1],
+				"subtype" : "havenWaterWeaken",
 				"val" : 20
 			},
 			"navigationBoost" :
@@ -90,29 +90,33 @@
 				"type" : "MOVEMENT",
 				"subtype" : "heroMovementSea",
 				"val" : 500, 
-				"propagator" : "HERO"
+				"propagator" : "HERO",
+				"description" : "{Navigator}\nInreases hero sea movement points by 500",
+				"icon" : "haven/icons/bonuses/e_whirl.png"
 			},
 			"enraged" :
 			{
 				"type": "ENCHANTER",
-				"subtype": "spell.havenSpell05",
+				"subtype": "havenSpell05",
 				"val" : 3,
 				"addInfo" : 3,				
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["sand"]
-				} ]
+					"terrain" : "sand"
+				} ],
+				"description" : "{Sand Enchanter}\nCan cast Power of Tides at sand terrain once per 3 turns"			
 			},
 			"enraged2" :
 			{
 				"type": "ENCHANTER",
-				"subtype": "spell.havenSpell05",
+				"subtype": "havenSpell05",
 				"val" : 3,
 				"addInfo" : 3,				
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
+					"terrain" : "water"
+				} ],
+				"description" : "{Water Enchanter}\nCan cast Power of Tides at water terrain once per 3 turns"				
 			},
 			"castsCount" :
 			{
@@ -120,7 +124,7 @@
 				"val" : 2,			
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["sand"]
+					"terrain" : "sand"
 				} ]
 			},
 			"castsCount2" :
@@ -129,38 +133,39 @@
 				"val" : 2,			
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
+					"terrain" : "water"
 				} ]
 			},
 			"attackInWater" : 
 			{
 				"type" : "PRIMARY_SKILL",
-				"subtype" : "primarySkill.attack",
+				"subtype" : "attack",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
+				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
 			"defenceInWater"  : {
 				"type" : "PRIMARY_SKILL",
-				"subtype" : "primarySkill.defence",
+				"subtype" : "defence",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"hidden" : true
 			}
 		},
 		"stackExperience" :
@@ -168,7 +173,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
 				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
@@ -176,7 +181,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
 				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
@@ -208,15 +213,7 @@
 				"bonus" :
 				{
 					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeMelee", //shield effect
-				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-				"subtype" : "damageTypeRanged", //shield effect
+				"subtype" : "damageTypeAll", 
 				},
 				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
 			},

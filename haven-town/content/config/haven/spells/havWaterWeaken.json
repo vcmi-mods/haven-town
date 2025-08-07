@@ -52,7 +52,7 @@
 							"defence" : {
 								"val" : -3,
 								"type" : "PRIMARY_SKILL",
-								"subtype" : "primarySkill.defence",
+								"subtype" : "defence",
 								"duration" : "N_TURNS",
 								"turns": 2
 							},

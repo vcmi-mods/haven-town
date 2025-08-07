@@ -58,10 +58,7 @@
 				"targetModifier":
 				{
 					"smart": true
-				}
-			},
-			"none":
-			{
+				},
 				"description": "{Seduce}\n\nMade Control for a troop until being attacked or after two turns.\n",
 	 
 				"cost": 0,
@@ -74,54 +71,23 @@
 						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
 						"turns" : 2						
 					}
-				}
+				}				
+			},
+			"none":
+			{
+
 			},
 			"basic":
 			{
-				"description": "",				
-				"cost": 0,
-	 
-				"effects":
-				{
-				"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
-						"turns" : 2	
-					}
-				}
+
 			},
 			"advanced":
 			{
-				"description": "",
-	 
-				"cost": 0,
-	 
-				"effects":
-				{
-					"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
-						"turns" : 2	
-					}
-				}
+
 			},
 			"expert":
 			{
-				"description": "",
-	 
-				"cost": 0,
-	 
-				"effects":
-				{
-					"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": ["UNTIL_BEING_ATTACKED","N_TURNS"],
-						"turns" : 2	
-					}
-				}
+
 			}
 		}
 	}

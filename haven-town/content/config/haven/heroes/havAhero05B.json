@@ -2,8 +2,8 @@
 	"havAhero05B" :
 	{
 		"class" : "havAhero",
-		"female": false,
 		"onlyOnWaterMap" : true,
+		"female": false,
 		"texts" :
 		{
 			"name" : "Wesley",
@@ -11,7 +11,7 @@
 			"specialty" :
 			{
 				"name" : "Navigation",
-				"description": "{Navigation}\r\n\r\nReceives a 5% per level bonus to movement points at sea.",
+				"description": "Receives a 5% per level bonus to movement points at sea.",
 				"tooltip": "Secondary Skill Bonus: Navigation"
 			}
 		},
@@ -51,16 +51,7 @@
 		],
 		
 		"specialty" : {
-			"bonuses" : {
-				"navigation" : {
-					"targetSourceType" : "SECONDARY_SKILL",
-					"subtype" : "heroMovementSea",
-					"type" : "MOVEMENT",
-					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 5,
-					"valueType" : "PERCENT_TO_TARGET_TYPE"
-				}
-			}
-		}	
+			"secondary" : "navigation"
+		}		
 	}
 }

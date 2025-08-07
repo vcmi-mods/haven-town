@@ -77,7 +77,7 @@
 		    "magicResistance" :
 			{
 				"type" : "SPELL_DAMAGE_REDUCTION",
-				"subtype" : "spellSchool.any",
+				"subtype" : "any",
 				"val" : 5
 			},
 			"castsAmount" :
@@ -98,38 +98,39 @@
 			"canCast" :
 			{
 				"type" : "SPELLCASTER",
-				"subtype" : "spell.bless",
+				"subtype" : "bless",
 				"val" : 3
 			},
 			"attackInWater" : 
 			{
 				"type" : "PRIMARY_SKILL",
-				"subtype" : "primarySkill.attack",
+				"subtype" : "attack",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
+				"icon" : "haven/icons/bonuses/placeholder.png"
 			},
 			"defenceInWater"  : {
 				"type" : "PRIMARY_SKILL",
-				"subtype" : "primarySkill.defence",
+				"subtype" : "defence",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"hidden" : true
 			},
 			"speedInWater" : {
 				"type" : "STACKS_SPEED",
 				"val" : 1,
 				"limiters" : [ {
 					"type" : "CREATURE_TERRAIN_LIMITER",
-					"parameters" : ["water"]
-				} ]
-				
+					"terrain" : "water"
+				} ],
+				"hidden" : true
 			}
 	    }
 	}

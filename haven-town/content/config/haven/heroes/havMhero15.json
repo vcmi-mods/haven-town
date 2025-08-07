@@ -57,7 +57,7 @@
 		"specialty" : {
 			"bonuses" : {
 				"mercury" : {
-					"subtype" : "resource.gems",
+					"subtype" : "gems",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				}

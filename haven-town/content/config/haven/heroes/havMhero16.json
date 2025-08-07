@@ -58,7 +58,7 @@
 			"bonuses" : {
 				"weakness" : {
 					"addInfo" : 0,
-					"subtype" : "spell.cure",
+					"subtype" : "cure",
 					"type" : "SPECIAL_PECULIAR_ENCHANT"
 				}
 			}

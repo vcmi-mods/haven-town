@@ -55,100 +55,41 @@
 				"targetModifier":
 				{
 					"smart": true
-				}
+				},
+				"description": "{Power of Tides}\r\n\r\no description.", 
+				"cost": 0,	 
+				"effects":{
+					"alwaysMaximumDamage" : {
+						"val" : 0,
+						"type" : "ALWAYS_MAXIMUM_DAMAGE",
+						"valueType" : "INDEPENDENT_MAX",
+						"duration" : "N_TURNS",
+						"turns": 3
+					},
+					"stacksSpeed" : {
+//						"addInfo" : 0,
+						"type" : "STACKS_SPEED",
+						"val" : 2,
+						"duration" : "N_TURNS",
+						"turns": 3
+					}
+				}				
 			},
 			"none":
 			{
-				"description": "{Power of Tides}\r\n\r\no description.",
-	 
-				"cost": 0,
-	 
-				"effects":{
-					"alwaysMaximumDamage" : {
-						"val" : 0,
-						"type" : "ALWAYS_MAXIMUM_DAMAGE",
-						"valueType" : "INDEPENDENT_MAX",
-						"duration" : "N_TURNS",
-						"turns": 3
-					},
-					"stacksSpeed" : {
-//						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "N_TURNS",
-						"turns": 3
-					}
-				}
+
 			},
 			"basic":
 			{
-				"description": "{Power of Tides}\r\n\r\no description.",
-	 
-				"cost": 0,
-	 
-				"effects":{
-					"alwaysMaximumDamage" : {
-						"val" : 0,
-						"type" : "ALWAYS_MAXIMUM_DAMAGE",
-						"valueType" : "INDEPENDENT_MAX",
-						"duration" : "N_TURNS",
-						"turns": 3
-					},
-					"stacksSpeed" : {
-//						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "N_TURNS",
-						"turns": 3
-					}
-				}
+
 			},
 			"advanced":
 			{
-				"description": "{Power of Tides}\r\n\r\no description.",
-	 
-				"cost": 0,
-	 
-				"effects":{
-					"alwaysMaximumDamage" : {
-						"val" : 0,
-						"type" : "ALWAYS_MAXIMUM_DAMAGE",
-						"valueType" : "INDEPENDENT_MAX",
-						"duration" : "N_TURNS",
-						"turns": 3
-					},
-					"stacksSpeed" : {
-//						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "N_TURNS",
-						"turns": 3
-					}
-				}
+
 			},
 			"expert":
 			{
-				"description": "{Power of Tides}\r\n\r\no description.",
-	 
-				"cost": 0,
-				"range":"X",
-	 
-				"effects":{
-					"alwaysMaximumDamage" : {
-						"val" : 0,
-						"type" : "ALWAYS_MAXIMUM_DAMAGE",
-						"valueType" : "INDEPENDENT_MAX",
-						"duration" : "N_TURNS",
-						"turns": 3
-					},
-					"stacksSpeed" : {
-//						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "N_TURNS",
-						"turns": 3
-					}
-				}
+				"range":"X"
 			}
 		}
 	}
