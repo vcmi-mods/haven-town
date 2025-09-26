@@ -3,9 +3,13 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.53",
+	"version" : "1.54",
 	"modType" : "Town",
 	"changelog" : {
+		"1.54" : [
+			"Improved Leviathans graphics",
+			"Improved some creature abilities icons"
+		],
 		"1.53" : [
 			"Another update to vcmi-1.7 format"
 		],

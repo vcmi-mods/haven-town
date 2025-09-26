@@ -105,7 +105,7 @@
 					}
 				],
 				"description" : "{Aquarian}\nDuring battles at water gains bonus to attack, defence and speed",
-				"icon" : "haven/icons/bonuses/placeholder.png"
+				"icon" : "haven/icons/bonuses/aquarian.png"
 			},
 			"defenceInWater" : {
 				"type" : "PRIMARY_SKILL",
