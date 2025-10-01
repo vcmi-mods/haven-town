@@ -3,9 +3,14 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.54",
+	"version" : "1.55",
 	"modType" : "Town",
 	"changelog" : {
+		"1.55" : [
+			"Fixed town view palette, now it's correctly recolored per player color",
+			"Converted BMPs to PNGs",
+			"Updated Czech translation"
+		],
 		"1.54" : [
 			"Improved Leviathans graphics",
 			"Improved some creature abilities icons"
@@ -128,7 +133,7 @@
 	},
 	"czech" : {
 		"name" : "Přístav",
-		"description" : "Nové město Přístav",
+		"description" : "Přístav je město na pobřeží, kde se pirátské posádky a mořské bytosti spojily v touze po svobodě a moci. Vládnou mu kapitáni a hydromanti, kteří využívají sílu oceánu i zrádných proudů.<br/><br/>Jeho armádu tvoří <b>krysáci</b>, <b>potápky</b>, <b>kušnice</b> a <b>mořské panny</b>, posílené tajemnými <b>maridy</b>, obřími <b>želvami</b> a hrozivými <b>leviatany</b>.<br/><br/>Přístav se specializuje na <b>vodní magii</b>, námořní bitvy a schopnosti, které zajišťují výhodu na moři. Díky své pohyblivosti a lstivosti dokáže překvapit protivníky a ovládnout širý oceán.<br/><br/>Je to frakce pro hráče, kteří chtějí vládnout mořím, spoléhat na vodní kouzla a využívat smělost pirátů i sílu dávných bytostí hlubin.",
 		"translations" : [
 			"translation/haven/czech.json"
 		]
