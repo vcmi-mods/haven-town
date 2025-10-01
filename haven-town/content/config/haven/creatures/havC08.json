@@ -29,8 +29,8 @@
 		"graphics" : {
 			"animation" : "haven/battle/Hav08.def",
 			"map" : "haven/map/AVWHAV08.def",
-			"iconSmall" : "haven/iconsSmall/port8S.bmp",
-			"iconLarge" : "haven/iconsBig/port8.bmp",
+			"iconSmall" : "haven/iconsSmall/port8S",
+			"iconLarge" : "haven/iconsBig/port8",
 			"timeBetweenFidgets" : 1,
 			"animationTime" : {
 				"walk" : 0.9,

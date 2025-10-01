@@ -28,8 +28,8 @@
 				"walk" : 1
 			},
 			"map" : "haven/map/AVWHAV01.def",
-			"iconSmall" : "haven/iconsSmall/port1S.bmp",
-			"iconLarge" : "haven/iconsBig/port1.bmp",
+			"iconSmall" : "haven/iconsSmall/port1S",
+			"iconLarge" : "haven/iconsBig/port1",
 			"timeBetweenFidgets" : 1
 		},
 

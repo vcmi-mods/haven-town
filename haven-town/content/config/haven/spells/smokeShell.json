@@ -30,7 +30,7 @@
 			"cast" : "HHAGSHOT"
 		},
 		"graphics" : {
-			"iconEffect" : "haven/spells/havspell3.bmp"
+			"iconEffect" : "haven/spells/havspell3"
 		},
 		"levels" : {
 			"base" : {

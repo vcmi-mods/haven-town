@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero15/skill15S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero15/skill15.bmp",
-			"large" : "haven/heroes/havHero15/hero15.bmp",
-			"small" : "haven/heroes/havHero15/hero15S.bmp"
+			"specialtySmall" : "haven/heroes/havHero15/skill15S",
+			"specialtyLarge" : "haven/heroes/havHero15/skill15",
+			"large" : "haven/heroes/havHero15/hero15",
+			"small" : "haven/heroes/havHero15/hero15S"
 		},
 		"spellbook" : [
 			"haste"

@@ -35,7 +35,7 @@
 			"cast" : "LICHDFND"
 		},
 		"graphics" : {
-			"iconEffect" : "haven/spells/havspell2.bmp"
+			"iconEffect" : "haven/spells/havspell2"
 		},
 		"levels" : {
 			"base" : {
