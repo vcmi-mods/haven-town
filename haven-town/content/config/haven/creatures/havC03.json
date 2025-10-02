@@ -29,8 +29,8 @@
 				"walk" : 1
 			},
 			"map" : "haven/map/AVWHAV03.def",
-			"iconSmall" : "haven/iconsSmall/port3S.bmp",
-			"iconLarge" : "haven/iconsBig/port3.bmp",
+			"iconSmall" : "haven/iconsSmall/port3S",
+			"iconLarge" : "haven/iconsBig/port3",
 			"timeBetweenFidgets" : 1
 		},
 

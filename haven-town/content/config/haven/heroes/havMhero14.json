@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero14/skill14S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero14/skill14.bmp",
-			"large" : "haven/heroes/havHero14/hero14.bmp",
-			"small" : "haven/heroes/havHero14/hero14S.bmp"
+			"specialtySmall" : "haven/heroes/havHero14/skill14S",
+			"specialtyLarge" : "haven/heroes/havHero14/skill14",
+			"large" : "haven/heroes/havHero14/hero14",
+			"small" : "haven/heroes/havHero14/hero14S"
 		},
 		"spellbook" : [
 			"dispel"

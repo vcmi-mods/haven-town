@@ -28,8 +28,8 @@
 				"walk" : 1
 			},
 			"map" : "haven/map/AVWHAV06.def",
-			"iconSmall" : "haven/iconsSmall/port6S.bmp",
-			"iconLarge" : "haven/iconsBig/port6.bmp",
+			"iconSmall" : "haven/iconsSmall/port6S",
+			"iconLarge" : "haven/iconsBig/port6",
 			"timeBetweenFidgets" : 1,
 			"missile" : {
 				"projectile" : "PELFX.DEF",

@@ -23,8 +23,8 @@
 		"graphics" : {
 			"animation" : "haven/battle/Hav10.def",
 			"map" : "haven/map/AVWHAV10.def",
-			"iconSmall" : "haven/iconsSmall/port10S.bmp",
-			"iconLarge" : "haven/iconsBig/port10.bmp",
+			"iconSmall" : "haven/iconsSmall/port10S",
+			"iconLarge" : "haven/iconsBig/port10",
 			"timeBetweenFidgets" : 1,
 			"animationTime" : {
 				"walk" : 1.6,

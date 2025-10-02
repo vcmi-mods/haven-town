@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero11/skill11S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero11/skill11.bmp",
-			"large" : "haven/heroes/havHero11/hero11.bmp",
-			"small" : "haven/heroes/havHero11/hero11S.bmp"
+			"specialtySmall" : "haven/heroes/havHero11/skill11S",
+			"specialtyLarge" : "haven/heroes/havHero11/skill11",
+			"large" : "haven/heroes/havHero11/hero11",
+			"small" : "haven/heroes/havHero11/hero11S"
 		},
 		"spellbook" : [
 			"lightningBolt"

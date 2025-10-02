@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero16/skill16S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero16/skill16.bmp",
-			"large" : "haven/heroes/havHero16/hero16.bmp",
-			"small" : "haven/heroes/havHero16/hero16S.bmp"
+			"specialtySmall" : "haven/heroes/havHero16/skill16S",
+			"specialtyLarge" : "haven/heroes/havHero16/skill16",
+			"large" : "haven/heroes/havHero16/hero16",
+			"small" : "haven/heroes/havHero16/hero16S"
 		},
 		"spellbook" : [
 			"cure"

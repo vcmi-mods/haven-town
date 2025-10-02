@@ -28,8 +28,8 @@
 				"walk" : 1
 			},
 			"map" : "haven/map/AVWHAV16.def",
-			"iconSmall" : "haven/iconsSmall/port16S.bmp",
-			"iconLarge" : "haven/iconsBig/port16.bmp",
+			"iconSmall" : "haven/iconsSmall/port16S",
+			"iconLarge" : "haven/iconsBig/port16",
 			"timeBetweenFidgets" : 1,
 			"missile" : {
 				"projectile" : "PICEE.DEF",

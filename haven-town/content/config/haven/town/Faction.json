@@ -14,7 +14,7 @@
 			],
 			"defaultTavern" : 5,
 			"tavernVideo" : "TAVERN.BIK",
-			"guildBackground" : "TPMAGE.bmp",
+			"guildBackground" : "TPMAGE",
 			"townBackground" : "haven/town-screen/TBHVBACK",
 			"guildWindow" : "haven/town-screen/TBHVSPEL",
 			"hallBackground" : "haven/town-screen/TPTHBKHV",
@@ -150,22 +150,22 @@
 			"icons" : {
 				"village" : {
 					"normal" : {
-						"small" : "haven/icons/HAV01S.bmp",
-						"large" : "haven/icons/HAV01.bmp"
+						"small" : "haven/icons/HAV01S",
+						"large" : "haven/icons/HAV01"
 					},
 					"built" : {
-						"small" : "haven/icons/HAV02S.bmp",
-						"large" : "haven/icons/HAV02.bmp"
+						"small" : "haven/icons/HAV02S",
+						"large" : "haven/icons/HAV02"
 					}
 				},
 				"fort" : {
 					"normal" : {
-						"small" : "haven/icons/HAV03S.bmp",
-						"large" : "haven/icons/HAV03.bmp"
+						"small" : "haven/icons/HAV03S",
+						"large" : "haven/icons/HAV03"
 					},
 					"built" : {
-						"small" : "haven/icons/HAV04S.bmp",
-						"large" : "haven/icons/HAV04.bmp"
+						"small" : "haven/icons/HAV04S",
+						"large" : "haven/icons/HAV04"
 					}
 				}
 			},

@@ -14,8 +14,8 @@
 		"images" : {
 			"specialtySmall" : "haven/heroes/havHero8/skill8S.png",
 			"specialtyLarge" : "haven/heroes/havHero8/skill8.png",
-			"large" : "haven/heroes/havHero8/hero8.bmp",
-			"small" : "haven/heroes/havHero8/hero8S.bmp"
+			"large" : "haven/heroes/havHero8/hero8",
+			"small" : "haven/heroes/havHero8/hero8S"
 		},
 
 		"army" : [

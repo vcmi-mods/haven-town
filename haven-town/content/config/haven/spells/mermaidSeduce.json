@@ -38,7 +38,7 @@
 		},
 
 		"graphics" : {
-			"iconEffect" : "haven/spells/havspell1.bmp"
+			"iconEffect" : "haven/spells/havspell1"
 		},
 
 		"sounds" : {

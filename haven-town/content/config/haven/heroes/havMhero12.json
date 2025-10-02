@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero12/skillS12.bmp",
-			"specialtyLarge" : "haven/heroes/havHero12/skill12.bmp",
-			"large" : "haven/heroes/havHero12/hero12.bmp",
-			"small" : "haven/heroes/havHero12/hero12S.bmp"
+			"specialtySmall" : "haven/heroes/havHero12/skillS12",
+			"specialtyLarge" : "haven/heroes/havHero12/skill12",
+			"large" : "haven/heroes/havHero12/hero12",
+			"small" : "haven/heroes/havHero12/hero12S"
 		},
 		"spellbook" : [
 			"bloodlust"

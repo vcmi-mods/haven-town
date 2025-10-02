@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero10/skill10S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero10/skill10.bmp",
-			"large" : "haven/heroes/havHero10/hero10.bmp",
-			"small" : "haven/heroes/havHero10/hero10S.bmp"
+			"specialtySmall" : "haven/heroes/havHero10/skill10S",
+			"specialtyLarge" : "haven/heroes/havHero10/skill10",
+			"large" : "haven/heroes/havHero10/hero10",
+			"small" : "haven/heroes/havHero10/hero10S"
 		},
 		"spellbook" : [
 			"bless"

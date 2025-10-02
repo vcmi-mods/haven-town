@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero9/skill9S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero9/skill9.bmp",
-			"large" : "haven/heroes/havHero9/hero9.bmp",
-			"small" : "haven/heroes/havHero9/hero9S.bmp"
+			"specialtySmall" : "haven/heroes/havHero9/skill9S",
+			"specialtyLarge" : "haven/heroes/havHero9/skill9",
+			"large" : "haven/heroes/havHero9/hero9",
+			"small" : "haven/heroes/havHero9/hero9S"
 		},
 		"spellbook" : [
 			"fortune"

@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero13/skill13S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero13/skill13.bmp",
-			"large" : "haven/heroes/havHero13/hero13.bmp",
-			"small" : "haven/heroes/havHero13/hero13S.bmp"
+			"specialtySmall" : "haven/heroes/havHero13/skill13S",
+			"specialtyLarge" : "haven/heroes/havHero13/skill13",
+			"large" : "haven/heroes/havHero13/hero13",
+			"small" : "haven/heroes/havHero13/hero13S"
 		},
 		"spellbook" : [
 			"frostRing"

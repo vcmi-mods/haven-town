@@ -12,10 +12,10 @@
 			}
 		},
 		"images" : {
-			"specialtySmall" : "haven/heroes/havHero4/skill4S.bmp",
-			"specialtyLarge" : "haven/heroes/havHero4/skill4.bmp",
-			"large" : "haven/heroes/havHero4/hero4.bmp",
-			"small" : "haven/heroes/havHero4/hero4S.bmp"
+			"specialtySmall" : "haven/heroes/havHero4/skill4S",
+			"specialtyLarge" : "haven/heroes/havHero4/skill4",
+			"large" : "haven/heroes/havHero4/hero4",
+			"small" : "haven/heroes/havHero4/hero4S"
 		},
 
 		"army" : [

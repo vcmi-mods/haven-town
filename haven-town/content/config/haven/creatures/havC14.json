@@ -24,8 +24,8 @@
 		"graphics" : {
 			"animation" : "haven/battle/Hav14.def",
 			"map" : "haven/map/AVWHAV14.def",
-			"iconSmall" : "haven/iconsSmall/port14S.bmp",
-			"iconLarge" : "haven/iconsBig/port14.bmp",
+			"iconSmall" : "haven/iconsSmall/port14S",
+			"iconLarge" : "haven/iconsBig/port14",
 			"timeBetweenFidgets" : 1,
 			"animationTime" : {
 				"walk" : 0.9,

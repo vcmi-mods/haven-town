@@ -3,9 +3,12 @@
 	"description" : "Haven Town",
 	"author" : "Ganymed, Necronix, Deo. VCMI port acidchalk.Updated by Ben Yan(Turbanellos) in March 2022.",
 	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
-	"version" : "1.55",
+	"version" : "1.56",
 	"modType" : "Town",
 	"changelog" : {
+		"1.56" : [
+			"Fixed configs after BMPs to PNGs conversion"
+		],
 		"1.55" : [
 			"Fixed town view palette, now it's correctly recolored per player color",
 			"Converted BMPs to PNGs",
