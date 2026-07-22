@@ -314,5 +314,7 @@
 	"spell.haven-town.smokeShell.description.basic" : "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack.",
 	"spell.haven-town.smokeShell.description.expert" : "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack.",
 	"spell.haven-town.smokeShell.description.none" : "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack.",
-	"spell.haven-town.smokeShell.name" : "Precise Marking"
+	"spell.haven-town.smokeShell.name" : "Precise Marking",
+	"mod.name" : "Haven",
+	"mod.description" : "Haven Town"
 }
