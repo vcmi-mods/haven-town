@@ -261,5 +261,17 @@
     "creatures.haven-town.havC04.bonus.attackInWater": "{Wodniak}\nPodczas bitew na wodzie zyskuje premie do ataku, obrony oraz szybkości",
     "creatures.haven-town.havC05.bonus.attackInWater": "{Wodniak}\nPodczas bitew na wodzie zyskuje premie do ataku, obrony oraz szybkości",
     "creatures.haven-town.havC06.bonus.attackInWater": "{Wodniak}\nPodczas bitew na wodzie zyskuje premie do ataku, obrony oraz szybkości",
-    "creatures.haven-town.havC07.bonus.attackInWater": "{Wodniak}\nPodczas bitew na wodzie zyskuje premie do ataku, obrony oraz szybkości"
+    "creatures.haven-town.havC07.bonus.attackInWater": "{Wodniak}\nPodczas bitew na wodzie zyskuje premie do ataku, obrony oraz szybkości",
+    "building.haven-town.haven.special3.description": "Kasyno pozwala raz w tygodniu wydać 1000 sztuk złota, aby wylosować nagrodę, w tym losowe zasoby, skarby a czasami nie wygrać nic.",
+    "building.haven-town.haven.special3.name": "Kasyno",
+    "building.haven-town.haven.special3.onEmpty": "{Kasyno}\n\nSłyszysz okrzyki hazardzistów dobiegające z kasyna. Zapraszają cię, byś spróbował szczęścia, lecz nie stać cię na opłatę za grę. Przekonujesz sam siebie, że nie warto tracić czasu na nudny hazard.",
+    "building.haven-town.haven.special3.onSelect": "{Kasyno}\n\nKasyno pozwala raz w tygodniu wydać 1000 sztuk złota, aby wylosować nagrodę, w tym losowe zasoby, skarby a czasami nie wygrać nic.",
+    "building.haven-town.haven.special3.onVisited": "{Kasyno}\n\nSłyszysz okrzyki hazardzistów dobiegające z kasyna. Zapraszają cię, byś spróbował szczęścia, lecz wciąż uważasz, że nie warto tracić czasu na nudny hazard.",
+    "building.haven-town.haven.special3.rewards.0": "{Kasyno}\n\nPo wydaniu 1000 sztuk złota na udział pracownicy kasyna otwierają skrzynię, lecz nie wygrywasz żadnej nagrody. Spróbuj ponownie następnym razem.",
+    "building.haven-town.haven.special3.rewards.1": "{Kasyno}\n\nPo wydaniu 1000 sztuk złota na udział pracownicy kasyna otwierają skrzynię. Wygrywasz pewną ilość zasobów - gratulacje!",
+    "building.haven-town.haven.special3.rewards.2": "{Kasyno}\n\nPo wydaniu 1000 sztuk złota na udział pracownicy kasyna otwierają skrzynię. Wygrywasz artefakt. Gratulacje!",
+    "building.haven-town.haven.special3.rewards.3": "{Kasyno}\n\nPo wydaniu 1000 sztuk złota na udział pracownicy kasyna otwierają skrzynię. Wygrywasz artefakt i dostajesz zwrot wkładu. Gratulacje!",
+    "building.haven-town.haven.special3.rewards.4": "{Kasyno}\n\nPo wydaniu 1000 sztuk złota na udział pracownicy kasyna otwierają skrzynię. Nagle stajesz się obiektem zainteresowania wszystkich... Trafiasz główną wygraną! Gratulacje! Życzymy szczęścia każdego dnia!",
+    "creatures.haven-town.havC01.description": "{green|Szczurołak}\n\n{gold|Zdolność specjalna: Wodny Wojownik.}\n\nNa terenie wodnym atak, obrona i szybkość szczurołaków zwiększa się o 1.",
+    "creatures.haven-town.havC02.description": "{green|Wściekły szczurołak}\n\n\n\n{gold|Zdolność specjalna: Wodny Wojownik.}\n\nNa terenie wodnym atak, obrona i szybkość wściekłych szczurołaków zwiększa się o 1."
 }
