@@ -120,6 +120,13 @@
 			"translation/chinese.json"
 		]
 	},
+	"french" : {
+		"name" : "Havre",
+		"description" : "La ville Havre",
+		"translations" : [
+			"translation/french.json"
+		]
+	},
 	"german" : {
 		"name" : "Hafen",
 		"description" : "Hafen Stadt",

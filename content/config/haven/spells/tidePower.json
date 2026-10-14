@@ -51,7 +51,7 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"description" : "{Power of Tides}\r\n\r\no description.",
+				"description" : "{Power of Tides}\r\n\r\nNo description.",
 				"cost" : 0,
 				"effects" : {
 					"alwaysMaximumDamage" : {
