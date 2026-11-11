@@ -331,7 +331,7 @@
 						"onEmptyMessage" : "{Casino}\r\n\r\nYou hear the shouts of gamblers in the casino, and they invite you to come and try your luck, but you cannot afford the gambling money. You convince yourself that you should not waste your time on boring gambling.",
 						"visitMode" : "once",
 						"resetParameters" : {
-							"period" : 7,
+							"weeks" : 1,
 							"visitors" : true,
 							"rewards" : true
 						},

@@ -19,7 +19,8 @@
 			]
 		},
 		"flags" : {
-			"offensive" : true
+			"damage" : true,
+			"negative" : true
 		},
 		"targetCondition" : {},
 		"sounds" : {
@@ -35,7 +36,11 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"battleEffects" : {},
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					}
+				},
 				"description" : ""
 			},
 			"none" : {},
