@@ -20,7 +20,7 @@
 		},
 		"flags" : {
 			"damage" : true,
-			"negative" : true
+			"indifferent" : true
 		},
 		"targetCondition" : {},
 		"sounds" : {
