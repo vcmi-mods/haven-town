@@ -53,20 +53,25 @@
 				},
 				"description" : "{Power of Tides}\r\n\r\nNo description.",
 				"cost" : 0,
-				"effects" : {
-					"alwaysMaximumDamage" : {
-						"val" : 0,
-						"type" : "ALWAYS_MAXIMUM_DAMAGE",
-						"valueType" : "INDEPENDENT_MAX",
-						"duration" : "N_TURNS",
-						"turns" : 3
-					},
-					"stacksSpeed" : {
-						//						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "N_TURNS",
-						"turns" : 3
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"alwaysMaximumDamage" : {
+								"val" : 0,
+								"type" : "ALWAYS_MAXIMUM_DAMAGE",
+								"valueType" : "INDEPENDENT_MAX",
+								"duration" : "N_TURNS",
+								"turns" : 3
+							},
+							"stacksSpeed" : {
+								//						"addInfo" : 0,
+								"type" : "STACKS_SPEED",
+								"val" : 2,
+								"duration" : "N_TURNS",
+								"turns" : 3
+							}
+						}
 					}
 				}
 			},

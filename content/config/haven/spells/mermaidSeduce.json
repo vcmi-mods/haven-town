@@ -58,14 +58,19 @@
 
 				"cost" : 0,
 
-				"effects" : {
-					"undead" : {
-						"type" : "HYPNOTIZED",
-						"duration" : [
-							"UNTIL_BEING_ATTACKED",
-							"N_TURNS"
-						],
-						"turns" : 2
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"undead" : {
+								"type" : "HYPNOTIZED",
+								"duration" : [
+									"UNTIL_BEING_ATTACKED",
+									"N_TURNS"
+								],
+								"turns" : 2
+							}
+						}
 					}
 				}
 			},

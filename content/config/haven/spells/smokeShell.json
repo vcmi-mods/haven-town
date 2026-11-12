@@ -40,15 +40,20 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"primarySkill" : {
-						"type" : "GENERAL_DAMAGE_REDUCTION",
-						"val" : -50,
-						"subtype" : "damageTypeRanged",
-						"duration" : [
-							"N_TURNS"
-						],
-						"turns" : 3
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"primarySkill" : {
+								"type" : "GENERAL_DAMAGE_REDUCTION",
+								"val" : -50,
+								"subtype" : "damageTypeRanged",
+								"duration" : [
+									"N_TURNS"
+								],
+								"turns" : 3
+							}
+						}
 					}
 				},
 				"description" : "{Precise Marking}\r\n\r\nAdded 50% damage in ranged attack."
