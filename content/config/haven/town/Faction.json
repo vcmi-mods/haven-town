@@ -6,7 +6,9 @@
 			"130px" : "haven/back130"
 		},
 		"name" : "Haven",
-		"nativeTerrain" : [ "sand" ],
+		"nativeTerrain" : [
+			"sand"
+		],
 		"boat" : "boatHaven",
 		"town" : {
 			"musicTheme" : [
